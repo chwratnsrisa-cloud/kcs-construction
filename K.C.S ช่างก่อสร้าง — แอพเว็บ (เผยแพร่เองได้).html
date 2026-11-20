@@ -1,0 +1,2967 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>K.C.S ช่างก่อสร้าง — รับสร้างบ้าน ต่อเติม ทั่วไทย</title>
+<meta name="description" content="K.C.S ช่างก่อสร้าง รับสร้างบ้าน ต่อเติม ซ่อมแซม ทั่วไทย ดูแบบบ้าน ราคา งวดงาน และขอใบเสนอราคาฟรี โทร 083 431 7893">
+<meta property="og:type" content="website">
+<meta property="og:title" content="K.C.S ช่างก่อสร้าง — แบบบ้าน ราคา งวดงาน">
+<meta property="og:description" content="เลือกชมแบบบ้านที่เราออกแบบและก่อสร้างจริง ปรึกษาและประเมินราคาฟรี โทร 083 431 7893">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&family=IBM+Plex+Mono:wght@600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#f4f2ef; --surface:#fff; --ink:#15181b; --ink2:#4c5258; --ink3:#8d939a;
+    --line:#e3ded8; --line2:#d3ccc3;
+    --accent:#e2560d; --accent-d:#b8430a; --dark:#16191c; --steel:#262b30;
+    --ok:#11804a;
+    --r:12px; --sh:0 1px 2px rgba(20,24,28,.05),0 10px 26px rgba(20,24,28,.06);
+  }
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  html,body{margin:0;padding:0}
+  body{background:var(--bg);color:var(--ink);
+    font-family:'IBM Plex Sans Thai',system-ui,-apple-system,sans-serif;
+    font-size:15px;line-height:1.65;overflow-x:hidden;padding-bottom:64px}
+  img{display:block;max-width:100%}
+  button{font-family:inherit;font-size:inherit;cursor:pointer;border:0;background:none;color:inherit}
+  input,textarea,select{font-family:inherit;font-size:16px}
+  a{color:inherit}
+  .wrap{max-width:900px;margin:0 auto;padding:0 16px}
+  .mono{font-family:'IBM Plex Mono',monospace}
+
+  /* ---------- top ---------- */
+  .top{position:sticky;top:0;z-index:40;background:rgba(244,242,239,.93);
+    backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+  .top-in{display:flex;align-items:center;gap:10px;height:58px}
+  .logo{width:36px;height:36px;border-radius:9px;background:var(--dark);color:#fff;
+    display:grid;place-items:center;font-weight:700;font-size:11px;letter-spacing:.5px;flex:0 0 auto;
+    box-shadow:inset 0 -3px 0 var(--accent)}
+  .brand{font-weight:700;font-size:15px;line-height:1.25;min-width:0}
+  .brand small{display:block;font-weight:400;font-size:11.5px;color:var(--ink3)}
+  .spacer{flex:1}
+  .iconbtn{width:38px;height:38px;border-radius:10px;display:grid;place-items:center;
+    border:1px solid var(--line);background:#fff;color:var(--ink2);flex:0 0 auto}
+  .iconbtn.on{background:var(--accent);border-color:var(--accent);color:#fff}
+  .editbar{position:sticky;top:58px;z-index:35;background:var(--accent);color:#fff;
+    font-size:12.5px;padding:7px 16px;display:none;align-items:center;gap:8px}
+  body.edit .editbar{display:flex}
+
+  /* ---------- hero ---------- */
+  .hero{position:relative;margin:14px 0 0;border-radius:18px;overflow:hidden;
+    background:var(--dark);min-height:370px;display:flex}
+  .hero-ph{position:absolute;inset:0;
+    background:
+      repeating-linear-gradient(0deg,rgba(255,255,255,.045) 0 1px,transparent 1px 34px),
+      repeating-linear-gradient(90deg,rgba(255,255,255,.045) 0 1px,transparent 1px 34px),
+      radial-gradient(130% 100% at 85% -10%,#3b4248 0%,#16191c 62%)}
+  .hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.5;display:none}
+  .hero-in{position:relative;padding:30px 22px 24px;align-self:flex-end;width:100%;
+    background:linear-gradient(to top,rgba(11,13,15,.92) 22%,rgba(11,13,15,.05))}
+  .hero .tagline{display:inline-flex;align-items:center;gap:7px;font-size:11.5px;letter-spacing:1.4px;
+    text-transform:uppercase;color:#f0a87a;font-weight:600;margin-bottom:10px}
+  .hero .tagline::before{content:"";width:22px;height:3px;background:var(--accent);border-radius:2px}
+  .hero h1{margin:0 0 10px;font-size:28px;line-height:1.28;color:#fff;font-weight:700;letter-spacing:-.4px}
+  .hero p{margin:0 0 18px;color:#d9d3cc;font-size:14px;max-width:33em}
+  .cta{display:flex;gap:8px;flex-wrap:wrap}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:11px 16px;
+    border-radius:9px;font-weight:600;font-size:14px;text-decoration:none;white-space:nowrap}
+  .btn-call{background:var(--accent);color:#fff}
+  .btn-line{background:#06c755;color:#fff}
+  .btn-ghost-d{background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.24)}
+  .btn-ghost{border:1px solid var(--line2);background:#fff;color:var(--ink)}
+
+  /* ---------- stats ---------- */
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(96px,1fr));gap:1px;
+    background:var(--line);border:1px solid var(--line);border-radius:12px;overflow:hidden;margin-top:14px}
+  .stat{background:#fff;padding:14px 10px;text-align:center}
+  .stat b{display:block;font-size:21px;font-weight:700;color:var(--accent);line-height:1.25}
+  .stat span{font-size:11.5px;color:var(--ink3)}
+
+  /* ---------- sections ---------- */
+  section{scroll-margin-top:70px}
+  .lab{display:flex;align-items:center;gap:8px;font-size:11px;letter-spacing:1.5px;
+    text-transform:uppercase;color:var(--accent);font-weight:700;margin:38px 0 6px}
+  .lab::before{content:"";width:18px;height:3px;background:var(--accent);border-radius:2px}
+  .h2{margin:0 0 4px;font-size:21px;font-weight:700;letter-spacing:-.3px}
+  .sub{margin:0 0 16px;color:var(--ink3);font-size:13.5px}
+  .addbtn{display:none;width:100%;border:1.5px dashed var(--line2);border-radius:11px;
+    padding:12px;color:var(--accent);font-weight:600;font-size:13.5px;background:#fff;margin-top:10px}
+  body.edit .addbtn{display:block}
+  .blank{border:1.5px dashed var(--line2);border-radius:11px;padding:26px 18px;text-align:center;
+    color:var(--ink3);font-size:13.5px}
+
+  /* ---------- services ---------- */
+  .svc{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+  .svc-i{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:14px;
+    box-shadow:var(--sh);position:relative}
+  .svc-i .ic{font-size:21px;line-height:1;margin-bottom:8px}
+  .svc-i b{display:block;font-size:14.5px;margin-bottom:3px}
+  .svc-i p{margin:0;font-size:12.5px;color:var(--ink3);line-height:1.55}
+
+  /* ---------- houses ---------- */
+  .hfilt{display:grid;grid-template-columns:1fr;gap:8px;margin-bottom:12px}
+  .hfilt input,.hfilt select{width:100%;padding:11px 13px;border:1px solid var(--line2);
+    border-radius:10px;background:#fff;color:var(--ink);outline:none;font-size:15px}
+  .hfilt input:focus,.hfilt select:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(226,86,13,.12)}
+  .hfilt .two{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  .hfilt #hclear{border:1px solid var(--line2);background:#fff;border-radius:10px;padding:10px;
+    font-size:13px;color:var(--accent);font-weight:600}
+  .found{font-size:12.5px;color:var(--ink3);margin:0 0 10px}
+  .chips{display:flex;gap:7px;overflow-x:auto;padding:0 16px 12px;margin:0 -16px;scrollbar-width:none}
+  .chips::-webkit-scrollbar{display:none}
+  .chip{padding:7px 14px;border-radius:999px;border:1px solid var(--line2);background:#fff;
+    font-size:13px;color:var(--ink2);white-space:nowrap;font-weight:500}
+  .chip.on{background:var(--dark);border-color:var(--dark);color:#fff}
+  .grp{font-size:13px;font-weight:700;color:var(--ink2);margin:18px 0 9px;display:flex;align-items:center;gap:9px}
+  .grp::after{content:"";flex:1;height:1px;background:var(--line)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(158px,1fr));gap:11px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;
+    box-shadow:var(--sh);position:relative}
+  .card .ph{aspect-ratio:4/3;width:100%;object-fit:cover;background:#e8e2da}
+  .ph-empty{aspect-ratio:4/3;background:repeating-linear-gradient(45deg,#ece6de 0 10px,#e4ddd3 10px 20px);
+    display:grid;place-items:center;color:#a79e93;font-size:12px}
+  .card-b{padding:10px 12px 12px}
+  .card-t{font-weight:600;font-size:14.5px;line-height:1.35;margin:0 0 3px;
+    display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .card-m{font-size:12px;color:var(--ink3);margin:0}
+  .card-p{font-size:13.5px;font-weight:700;color:var(--accent);margin:5px 0 0}
+  .badge{position:absolute;top:8px;left:8px;background:rgba(22,25,28,.84);color:#fff;
+    font-size:11px;padding:3px 9px;border-radius:6px;backdrop-filter:blur(4px)}
+  .count{position:absolute;top:8px;right:8px;background:rgba(22,25,28,.72);color:#fff;
+    font-size:11px;padding:3px 8px;border-radius:6px}
+  body.edit .count{display:none}
+
+  /* ---------- steps ---------- */
+  .steps{position:relative;padding-left:4px}
+  .step{display:flex;gap:12px;position:relative;padding-bottom:14px}
+  .step:last-child{padding-bottom:0}
+  .step::before{content:"";position:absolute;left:14px;top:30px;bottom:0;width:2px;background:var(--line)}
+  .step:last-child::before{display:none}
+  .step .n{width:30px;height:30px;border-radius:8px;background:var(--steel);color:#fff;flex:0 0 auto;
+    display:grid;place-items:center;font-size:13px;font-weight:700;position:relative;z-index:1}
+  .step .tx{flex:1;min-width:0;padding-top:2px}
+  .step b{display:block;font-size:14.5px}
+  .step p{margin:1px 0 0;font-size:13px;color:var(--ink3);line-height:1.55}
+
+  /* ---------- payments ---------- */
+  .pay{background:#fff;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;box-shadow:var(--sh)}
+  .pay-h{display:flex;background:var(--steel);color:#fff;font-size:11.5px;letter-spacing:.5px;
+    padding:9px 14px;font-weight:600}
+  .pay-r{display:flex;gap:12px;padding:12px 14px;border-top:1px solid var(--line);align-items:flex-start;position:relative}
+  .pay-r:first-of-type{border-top:0}
+  .pay-n{width:34px;height:34px;border-radius:8px;background:#f1ece6;color:var(--ink2);flex:0 0 auto;
+    display:grid;place-items:center;font-weight:700;font-size:13px}
+  .pay-m{flex:1;min-width:0}
+  .pay-m b{display:block;font-size:14px}
+  .pay-m p{margin:0;font-size:12.5px;color:var(--ink3);line-height:1.5}
+  .pay-p{font-weight:700;color:var(--accent);font-size:15px;flex:0 0 auto;padding-top:5px}
+  .pay-note{font-size:12.5px;color:var(--ink3);padding:11px 14px;border-top:1px solid var(--line);background:#faf8f5}
+  .pay-sum{display:flex;justify-content:space-between;padding:11px 14px;border-top:2px solid var(--line2);
+    background:#faf8f5;font-weight:700;font-size:14px}
+
+  /* ---------- links ---------- */
+  .lk{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+  .lk-i{display:flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--line);
+    border-radius:var(--r);padding:13px 14px;text-decoration:none;box-shadow:var(--sh);position:relative}
+  .lk-i .ic{font-size:19px;flex:0 0 auto}
+  .lk-i b{font-size:14px;display:block;line-height:1.3}
+  .lk-i span{font-size:11.5px;color:var(--ink3);display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .lk-i .go{margin-left:auto;color:var(--ink3);font-size:14px}
+  .lk-i.off{opacity:.5}
+
+  /* ---------- faq ---------- */
+  .faq-i{background:#fff;border:1px solid var(--line);border-radius:var(--r);margin-bottom:8px;
+    overflow:hidden;box-shadow:var(--sh);position:relative}
+  .faq-i summary{padding:13px 14px;font-weight:600;font-size:14px;cursor:pointer;list-style:none;
+    display:flex;gap:10px;align-items:flex-start}
+  .faq-i summary::-webkit-details-marker{display:none}
+  .faq-i summary::after{content:"＋";margin-left:auto;color:var(--accent);font-weight:700;flex:0 0 auto}
+  .faq-i[open] summary::after{content:"−"}
+  .faq-i p{margin:0;padding:0 14px 14px;font-size:13.5px;color:var(--ink2);white-space:pre-wrap}
+
+  /* ---------- about / contact ---------- */
+  .panel{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:16px;box-shadow:var(--sh)}
+  .panel p{margin:0;color:var(--ink2);white-space:pre-wrap;font-size:14px}
+  .info{display:grid;gap:9px;margin-top:12px}
+  .info-r{display:flex;gap:10px;font-size:13.5px;align-items:flex-start}
+  .info-r .k{color:var(--ink3);width:92px;flex:0 0 auto}
+  .contact{background:var(--dark);border-radius:18px;padding:26px 20px;margin:34px 0 0;color:#fff;
+    position:relative;overflow:hidden}
+  .contact::before{content:"";position:absolute;inset:0;
+    background:repeating-linear-gradient(135deg,rgba(226,86,13,.14) 0 10px,transparent 10px 20px);height:5px}
+  .contact h2{margin:8px 0 6px;font-size:21px}
+  .contact p{margin:0 0 16px;color:#b4aea7;font-size:13.5px}
+  .foot{text-align:center;color:var(--ink3);font-size:12px;padding:26px 0 30px}
+
+  /* ---------- bottom bar ---------- */
+  .bar{position:fixed;left:0;right:0;bottom:0;z-index:38;display:flex;gap:8px;padding:9px 12px;
+    padding-bottom:calc(9px + env(safe-area-inset-bottom));
+    background:rgba(255,255,255,.95);backdrop-filter:blur(12px);border-top:1px solid var(--line)}
+  .bar .btn{flex:1;padding:12px}
+  body.modal .bar{display:none}
+
+  /* ---------- edit affordances ---------- */
+  .pencil{display:none;position:absolute;z-index:6;background:#fff;border:1px solid var(--line2);
+    width:30px;height:30px;border-radius:8px;place-items:center;box-shadow:var(--sh);top:7px;right:7px;font-size:13px}
+  body.edit .pencil{display:grid}
+  .hero .pencil{width:34px;height:34px;top:12px;right:12px;background:rgba(255,255,255,.95)}
+  .order{display:none;gap:4px;position:absolute;bottom:7px;right:7px;z-index:6}
+  body.edit .order{display:flex}
+  .order button{width:27px;height:27px;border-radius:7px;background:rgba(255,255,255,.96);
+    border:1px solid var(--line2);display:grid;place-items:center;font-size:11px}
+  .fab{position:fixed;right:14px;bottom:72px;z-index:45;background:var(--accent);color:#fff;
+    border-radius:999px;padding:13px 19px;font-weight:600;box-shadow:0 8px 22px rgba(226,86,13,.42);display:none;gap:6px}
+  body.edit .fab{display:flex}
+  body.edit.modal .fab{display:none}
+
+  /* ---------- sheets ---------- */
+  .ov{position:fixed;inset:0;z-index:60;background:rgba(18,20,22,.52);backdrop-filter:blur(3px);
+    display:none;align-items:flex-end;justify-content:center;padding-top:58px}
+  .ov.open{display:flex}
+  .sheet{background:var(--bg);width:100%;max-width:900px;max-height:100%;overflow-y:auto;
+    border-radius:18px 18px 0 0;animation:up .24s cubic-bezier(.2,.8,.3,1)}
+  @keyframes up{from{transform:translateY(26px);opacity:.4}to{transform:none;opacity:1}}
+  .sheet-top{position:sticky;top:0;background:rgba(244,242,239,.96);backdrop-filter:blur(10px);
+    display:flex;align-items:center;gap:10px;padding:11px 14px;border-bottom:1px solid var(--line);z-index:3}
+  .sheet-top b{font-size:15px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .sheet-body{padding:16px}
+  .gal{display:flex;gap:8px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -16px;
+    padding:0 16px 10px;scrollbar-width:none}
+  .gal::-webkit-scrollbar{display:none}
+  .gal img{scroll-snap-align:center;width:88%;flex:0 0 auto;border-radius:12px;aspect-ratio:4/3;
+    object-fit:cover;background:#e8e2da}
+  .pills{display:flex;flex-wrap:wrap;gap:7px;margin:12px 0}
+  .pill{background:#fff;border:1px solid var(--line);border-radius:7px;padding:6px 11px;font-size:12.5px;color:var(--ink3)}
+  .pill b{color:var(--ink);font-weight:600}
+  .price-big{font-size:22px;font-weight:700;color:var(--accent);margin:4px 0 0}
+  .dblock{margin-top:16px}
+  .dblock h4{margin:0 0 6px;font-size:13px;color:var(--accent);letter-spacing:.6px;text-transform:uppercase}
+  .dblock p{margin:0;font-size:13.5px;color:var(--ink2);white-space:pre-wrap;background:#fff;
+    border:1px solid var(--line);border-radius:10px;padding:12px}
+
+  /* ---------- form ---------- */
+  .f{margin-bottom:13px}
+  .f label{display:block;font-size:12.5px;font-weight:600;color:var(--ink2);margin-bottom:5px}
+  .f input,.f textarea{width:100%;padding:11px 13px;border:1px solid var(--line2);border-radius:10px;
+    background:#fff;color:var(--ink);outline:none}
+  .f input:focus,.f textarea:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(226,86,13,.12)}
+  .f textarea{min-height:92px;resize:vertical;line-height:1.6}
+  .f2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .hint{font-size:11.5px;color:var(--ink3);margin:4px 0 0}
+  .thumbs{display:grid;grid-template-columns:repeat(auto-fill,minmax(82px,1fr));gap:8px;margin-top:8px}
+  .thumb{position:relative;aspect-ratio:1;border-radius:10px;overflow:hidden;border:1px solid var(--line)}
+  .thumb img{width:100%;height:100%;object-fit:cover}
+  .thumb .x{position:absolute;top:3px;right:3px;background:rgba(18,20,22,.78);color:#fff;
+    width:22px;height:22px;border-radius:50%;display:grid;place-items:center;font-size:12px}
+  .thumb .cv{position:absolute;bottom:3px;left:3px;background:var(--accent);color:#fff;font-size:10px;
+    padding:1px 6px;border-radius:5px}
+  .up{border:1.5px dashed var(--line2);border-radius:10px;padding:14px;text-align:center;
+    color:var(--ink2);font-size:13.5px;background:#fff;display:block}
+  .row-btn{display:flex;gap:9px;margin-top:18px}
+  .row-btn .btn{flex:1;padding:13px}
+  .btn-save{background:var(--accent);color:#fff}
+  .btn-del{background:#fff;border:1px solid #e6c6bb;color:#a83409}
+  .msg{font-size:12.5px;padding:9px 12px;border-radius:9px;margin-bottom:12px;display:none}
+  .msg.show{display:block}
+  .msg.err{background:#fdece8;color:#95300f}
+  .msg.ok{background:#e8f4ec;color:#146c3c}
+  .skel{height:140px;border-radius:var(--r);background:linear-gradient(90deg,#ece6de,#f6f1eb,#ece6de);
+    background-size:200% 100%;animation:sh 1.3s infinite}
+  @keyframes sh{to{background-position:-200% 0}}
+
+  /* ---------- owner-only documents ---------- */
+  .ownerOnly{display:none}
+  body.owner .ownerOnly{display:block}
+  .ownbar{display:inline-flex;align-items:center;gap:6px;background:#edeae6;border:1px solid var(--line2);
+    border-radius:7px;padding:3px 9px;font-size:11.5px;color:var(--ink2);margin-bottom:8px}
+  .docbtns{display:flex;gap:8px;margin:12px 0 4px;flex-wrap:wrap}
+  .docbtns .btn{flex:1;min-width:140px}
+  .doc-i{display:flex;align-items:center;gap:11px;background:#fff;border:1px solid var(--line);
+    border-radius:var(--r);padding:11px 12px;margin-bottom:8px;box-shadow:var(--sh);width:100%;text-align:left}
+  .doc-ic{width:40px;height:40px;border-radius:9px;background:var(--steel);color:#fff;flex:0 0 auto;
+    display:grid;place-items:center;font-size:12px;font-weight:700;font-family:'IBM Plex Mono',monospace}
+  .doc-tx{flex:1;min-width:0}
+  .doc-tx b{display:block;font-size:14px;line-height:1.3}
+  .doc-tx span{display:block;font-size:11.5px;color:var(--ink3);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .doc-amt{font-weight:700;font-size:13.5px;color:var(--accent);flex:0 0 auto;font-family:'IBM Plex Mono',monospace}
+  .docdel{width:34px;height:34px;border-radius:9px;border:1px solid #e9ccc3;background:#fff;
+    color:#a83409;flex:0 0 auto;display:grid;place-items:center;font-size:14px}
+  .doc-i>[data-doc]{cursor:pointer}
+  .pick{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:9px}
+  .pick button{background:#fff;border:1px solid var(--line2);border-radius:var(--r);padding:14px 12px;
+    text-align:left;box-shadow:var(--sh)}
+  .pick button b{display:block;font-size:14px;margin-bottom:2px}
+  .pick button span{font-size:10.5px;color:var(--ink3);letter-spacing:.5px}
+  .it{background:#fff;border:1px solid var(--line2);border-radius:11px;padding:10px;margin-bottom:9px}
+  .it textarea{width:100%;border:1px solid var(--line);border-radius:8px;padding:8px 10px;min-height:52px;
+    resize:vertical;outline:none;font-size:15px}
+  .it-r{display:grid;grid-template-columns:1fr 1fr 1.3fr 38px;gap:6px;margin-top:7px}
+  .it-r input{width:100%;border:1px solid var(--line);border-radius:8px;padding:8px;outline:none;font-size:15px;min-width:0}
+  .it-x{border:1px solid #e6c6bb;border-radius:8px;color:#a83409;background:#fff}
+  .it-sum{text-align:right;font-size:12px;color:var(--ink3);margin-top:6px;font-family:'IBM Plex Mono',monospace}
+  .sumbox{background:var(--steel);color:#fff;border-radius:11px;padding:13px 15px;margin-top:14px;font-size:13.5px}
+  .sumbox div{display:flex;justify-content:space-between;padding:2px 0}
+  .sumbox .gd{border-top:1px solid rgba(255,255,255,.25);margin-top:6px;padding-top:7px;font-weight:700;font-size:16px}
+  .sumbox .num{font-family:'IBM Plex Mono',monospace}
+  .tog{display:flex;align-items:center;gap:9px;background:#fff;border:1px solid var(--line2);
+    border-radius:10px;padding:10px 12px;margin-bottom:8px;font-size:13.5px}
+  .tog input{width:19px;height:19px;accent-color:var(--accent);flex:0 0 auto}
+  .docacts{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:14px}
+  .docacts .btn{padding:12px}
+
+  /* printable document */
+  .pdoc{background:#fff;color:#000;font-size:12.5px;line-height:1.5;padding:20px;
+    border:1px solid var(--line);border-radius:10px;overflow-x:auto}
+  .pdoc .ph1{display:flex;justify-content:space-between;gap:14px;border-bottom:2px solid #000;
+    padding-bottom:10px;margin-bottom:12px;flex-wrap:wrap}
+  .pdoc .biz b{font-size:16px;display:block}
+  .pdoc .biz span{font-size:11.5px;color:#333;display:block}
+  .pdoc .ttl{text-align:right;min-width:150px}
+  .pdoc .ttl b{font-size:17px;display:block;line-height:1.3}
+  .pdoc .ttl em{font-size:10px;letter-spacing:1.2px;color:#555;font-style:normal;display:block}
+  .pdoc .ttl .meta{margin-top:7px;font-size:11.5px;line-height:1.6}
+  .pdoc .boxes{display:flex;gap:10px;margin-bottom:12px;flex-wrap:wrap}
+  .pdoc .box{flex:1;min-width:200px;border:1px solid #999;border-radius:6px;padding:9px}
+  .pdoc .box h5{margin:0 0 4px;font-size:10px;letter-spacing:.8px;color:#555}
+  .pdoc .box p{margin:0;font-size:11.5px;white-space:pre-wrap}
+  .pdoc table{width:100%;border-collapse:collapse;font-size:12px}
+  .pdoc th{background:#eeeae5;border:1px solid #888;padding:6px 7px;text-align:left;font-size:11px;font-weight:600}
+  .pdoc td{border:1px solid #bbb;padding:6px 7px;vertical-align:top}
+  .pdoc .r{text-align:right}.pdoc .c{text-align:center}
+  .pdoc .num{font-family:'IBM Plex Mono',monospace}
+  .pdoc .tot{display:flex;justify-content:flex-end;margin-top:10px}
+  .pdoc .tot table{width:auto;min-width:250px}
+  .pdoc .tot td{border:0;padding:3px 6px;font-size:12px}
+  .pdoc .tot .gd td{border-top:1px solid #000;border-bottom:3px double #000;font-weight:700;font-size:13px}
+  .pdoc .baht{border:1px dashed #888;border-radius:6px;padding:7px 9px;margin-top:9px;text-align:center;font-weight:600;font-size:12px}
+  .pdoc .note{margin-top:10px;font-size:11.5px;white-space:pre-wrap;color:#222}
+  .pdoc .sig{display:flex;gap:14px;margin-top:28px;flex-wrap:wrap}
+  .pdoc .sig div{flex:1;min-width:140px;text-align:center;font-size:11px}
+  .pdoc .sig .ln{border-bottom:1px dotted #000;height:36px;margin-bottom:5px}
+  /* ---------- owner lock ---------- */
+  #lockRow{display:none;text-align:center;margin-top:30px}
+  .lockbtn{border:1px solid var(--line2);background:#fff;border-radius:999px;padding:9px 16px;
+    font-size:12.5px;color:var(--ink3);font-weight:500}
+
+  /* ---------- decoration ---------- */
+  .hero-art{position:absolute;left:0;right:0;bottom:0;width:100%;height:78%;pointer-events:none}
+  .hero.has-photo .hero-art{display:none}
+  .hero.has-photo .hero-ph{opacity:.25}
+  .tape{height:9px;border-radius:5px;margin:36px 0 -14px;
+    background:repeating-linear-gradient(135deg,var(--accent) 0 9px,#efe2d6 9px 18px);opacity:.45}
+  .trust{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line);
+    border:1px solid var(--line);border-radius:12px;overflow:hidden;margin-top:12px}
+  .trust div{background:#fff;padding:13px 8px;text-align:center}
+  .trust .ic{font-size:19px;line-height:1.2}
+  .trust b{display:block;font-size:12.5px;margin-top:3px}
+  .trust span{font-size:11px;color:var(--ink3)}
+  .svc-i::after{content:"";position:absolute;top:0;right:0;width:0;height:0;
+    border-top:16px solid rgba(226,86,13,.14);border-left:16px solid transparent;border-radius:0 var(--r) 0 0}
+  .card{transition:transform .14s ease}
+  .card:active{transform:scale(.985)}
+  .lab::after{content:"";flex:1;height:1px;
+    background:repeating-linear-gradient(90deg,var(--line2) 0 4px,transparent 4px 8px)}
+  .seal{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:16px;
+    font-size:11.5px;color:var(--ink3);letter-spacing:.3px}
+  .seal span{width:26px;height:1px;background:var(--line2)}
+  /* ---------- tips (knowledge) ---------- */
+  .tip{display:flex;gap:12px;background:#fff;border:1px solid var(--line);border-radius:var(--r);
+    padding:12px;margin-bottom:9px;box-shadow:var(--sh);position:relative}
+  .tip-th{width:92px;height:70px;border-radius:9px;object-fit:cover;flex:0 0 auto;background:#e8e2da}
+  .tip-ph{width:92px;height:70px;border-radius:9px;flex:0 0 auto;display:grid;place-items:center;
+    background:repeating-linear-gradient(45deg,#ece6de 0 8px,#e4ddd3 8px 16px);color:#a79e93;font-size:20px}
+  .tip-tx{flex:1;min-width:0}
+  .tip-tx b{display:block;font-size:14.5px;line-height:1.35}
+  .tip-tx p{margin:2px 0 0;font-size:12.5px;color:var(--ink3);line-height:1.55;
+    display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+  .tip-go{display:inline-flex;align-items:center;gap:4px;margin-top:6px;font-size:12px;
+    font-weight:600;color:var(--accent);text-decoration:none}
+  .vid{display:block;width:100%;aspect-ratio:16/9;border:0;border-radius:12px;background:#000}
+
+  /* ---------- estimator ---------- */
+  .est{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:16px;box-shadow:var(--sh)}
+  .est-row{display:flex;gap:10px;align-items:center}
+  .est-row input{flex:1;padding:12px 13px;border:1px solid var(--line2);border-radius:10px;outline:none;min-width:0}
+  .est-row input:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(226,86,13,.12)}
+  .est-row span{font-size:13.5px;color:var(--ink3);flex:0 0 auto}
+  .est-out{margin-top:14px;background:var(--steel);color:#fff;border-radius:11px;padding:14px}
+  .est-out small{display:block;font-size:11.5px;color:#b4aea7;letter-spacing:.3px}
+  .est-out b{display:block;font-size:22px;font-weight:700;margin-top:2px;font-family:'IBM Plex Mono',monospace}
+  .est-note{font-size:11.5px;color:var(--ink3);margin:10px 0 0;line-height:1.55}
+  .est-cta{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
+  .ratepill{display:inline-block;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.26);
+    color:#fff;font-size:12px;padding:4px 11px;border-radius:999px;margin-bottom:10px}
+  .team{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+  .tm{background:#fff;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;
+    box-shadow:var(--sh);position:relative;text-align:center;padding-bottom:12px}
+  .tm img{width:100%;aspect-ratio:1;object-fit:cover;background:#e8e2da;display:block}
+  .tm .ph-empty{aspect-ratio:1}
+  .tm b{display:block;font-size:14.5px;margin-top:10px}
+  .tm span{display:block;font-size:12px;color:var(--accent);font-weight:600}
+  .tm p{margin:4px 10px 0;font-size:12px;color:var(--ink3);line-height:1.5}
+  .baw{background:#fff;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;
+    box-shadow:var(--sh);margin-bottom:10px;position:relative}
+  .ba2{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line)}
+  .ba2 figure{margin:0;position:relative;background:#e8e2da}
+  .ba2 img{width:100%;aspect-ratio:1;object-fit:cover;display:block}
+  .ba2 figcaption{position:absolute;top:7px;left:7px;background:rgba(22,25,28,.82);color:#fff;
+    font-size:11px;padding:3px 9px;border-radius:6px}
+  .ba2 .after figcaption{background:var(--accent)}
+  .baw .bb{padding:11px 13px 13px}
+  .baw .bb b{display:block;font-size:14.5px}
+  .baw .bb span{font-size:12px;color:var(--ink3)}
+  /* ---------- works gallery ---------- */
+  .works{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+  .work{position:relative;border-radius:var(--r);overflow:hidden;border:1px solid var(--line);
+    background:#fff;box-shadow:var(--sh)}
+  .work img{width:100%;aspect-ratio:1;object-fit:cover;background:#e8e2da;display:block}
+  .work .wl{position:absolute;left:0;right:0;bottom:0;padding:22px 10px 9px;color:#fff;
+    background:linear-gradient(to top,rgba(12,14,16,.88),transparent)}
+  .work .wl b{display:block;font-size:13px;line-height:1.3}
+  .work .wl span{font-size:11px;color:#d8d2cb}
+  /* ---------- reviews ---------- */
+  .rev{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:14px;
+    margin-bottom:9px;box-shadow:var(--sh);position:relative}
+  .rev-h{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+  .rev-av{width:38px;height:38px;border-radius:50%;background:#f1ece6;color:var(--ink2);flex:0 0 auto;
+    display:grid;place-items:center;font-weight:700;font-size:15px}
+  .rev-h b{display:block;font-size:14px;line-height:1.3}
+  .rev-h span{font-size:11.5px;color:var(--ink3)}
+  .stars{color:#e9a63c;font-size:13px;letter-spacing:1px}
+  .rev-b{display:flex;gap:10px;align-items:flex-start}
+  .rev-im{width:86px;height:86px;border-radius:9px;object-fit:cover;flex:0 0 auto;background:#e8e2da}
+  .rev-b p{flex:1;min-width:0}
+  .rev p{margin:0;font-size:13.5px;color:var(--ink2);white-space:pre-wrap;line-height:1.6}
+  /* ---------- section nav ---------- */
+  .nav{display:flex;gap:6px;overflow-x:auto;margin:14px -16px 0;padding:0 16px 2px;scrollbar-width:none}
+  .nav::-webkit-scrollbar{display:none}
+  .nav a{padding:8px 13px;border-radius:999px;border:1px solid var(--line2);background:#fff;
+    font-size:13px;font-weight:500;color:var(--ink2);text-decoration:none;white-space:nowrap}
+  .btn-quote{background:var(--steel);color:#fff}
+  .qbtns{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:18px}
+  .qbtns .btn{padding:13px}
+  .qbtns .wide{grid-column:1/-1}
+  #ovAsk,#ovCopy{z-index:70}
+  .ovx{position:absolute;top:9px;right:14px;width:40px;height:40px;border-radius:50%;
+    background:rgba(255,255,255,.94);color:#16191c;font-size:16px;display:grid;place-items:center;
+    box-shadow:0 4px 14px rgba(10,12,14,.3);z-index:9}
+  .closebig{display:block;width:100%;margin:6px 0 10px;padding:13px;border-radius:10px;
+    border:1px solid var(--line2);background:#fff;color:var(--ink2);font-weight:600;font-size:14px}
+  #pubWarn{display:none;position:sticky;top:58px;z-index:34;background:#7a2e0c;color:#fff;
+    padding:9px 14px;font-size:12.5px;align-items:center;gap:10px;line-height:1.45}
+  body.owner.unpub #pubWarn{display:flex}
+  body.edit #pubWarn{top:91px}
+  #pubWarn button{background:#fff;color:#7a2e0c;border-radius:8px;padding:7px 12px;
+    font-weight:700;font-size:12px;flex:0 0 auto;white-space:nowrap}
+  #lbox{position:fixed;inset:0;z-index:90;background:rgba(10,11,12,.97);display:none;
+    align-items:center;justify-content:center}
+  #lbox.on{display:flex}
+  #lbImg{max-width:100%;max-height:86vh;min-width:120px;min-height:120px;object-fit:contain;display:block}
+  #lbErr{position:absolute;left:0;right:0;top:50%;transform:translateY(-50%);text-align:center;
+    color:#cfcac3;font-size:13.5px;padding:0 30px;display:none;pointer-events:none}
+  #lbox.err #lbErr{display:block}
+  #lbox.err #lbImg{opacity:0}
+  #lbClose{position:absolute;top:calc(12px + env(safe-area-inset-top));right:12px;width:42px;height:42px;
+    border-radius:50%;background:rgba(255,255,255,.14);color:#fff;font-size:17px;display:grid;place-items:center;
+    border:1px solid rgba(255,255,255,.25)}
+  #lbNav{position:absolute;left:0;right:0;bottom:calc(18px + env(safe-area-inset-bottom));
+    display:flex;align-items:center;justify-content:center;gap:18px}
+  #lbNav button{width:46px;height:46px;border-radius:50%;background:rgba(255,255,255,.14);color:#fff;
+    font-size:24px;line-height:1;display:grid;place-items:center;border:1px solid rgba(255,255,255,.25)}
+  #lbCnt{color:#fff;font-size:13px;min-width:62px;text-align:center;font-family:'IBM Plex Mono',monospace}
+  .gal-in{margin:0 0 10px !important;padding:0 !important}
+  .gal-in img{width:62% !important}
+  .taphint{font-size:11.5px;color:var(--ink3);margin:0 0 10px}
+  #toast{position:fixed;left:50%;bottom:78px;transform:translateX(-50%) translateY(16px);z-index:80;
+    background:var(--dark);color:#fff;font-size:13px;padding:10px 16px;border-radius:999px;
+    opacity:0;pointer-events:none;transition:opacity .2s ease,transform .2s ease;max-width:88%;text-align:center;
+    box-shadow:0 8px 24px rgba(20,24,28,.25)}
+  #toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+  #printArea{display:none}
+  @media print{
+    body{background:#fff !important;padding:0 !important}
+    body > *{display:none !important}
+    #printArea{display:block !important}
+    #printArea .pdoc{border:0;border-radius:0;padding:0;font-size:12px;overflow:visible}
+    @page{size:A4;margin:12mm}
+  }
+</style>
+</head>
+<body>
+
+<div class="top"><div class="wrap top-in">
+  <div class="logo">KCS</div>
+  <div class="brand"><span id="bName">K.C.S ช่างก่อสร้าง</span><small id="bTag">รับสร้างบ้าน ต่อเติม ทั่วไทย</small></div>
+  <div class="spacer"></div>
+  <button class="iconbtn" id="btnEdit" style="display:none" title="โหมดแก้ไข">✏️</button>
+</div></div>
+<div class="editbar"><span>🛠️ โหมดแก้ไขเปิดอยู่ — แตะ ✏️ ตรงจุดที่ต้องการแก้ไข</span></div>
+<div id="pubWarn">
+  <span id="pubWarnTx">มีการแก้ไขที่ยังไม่ขึ้นเว็บจริง ลูกค้าจะยังไม่เห็น</span>
+  <button id="pubNow">เผยแพร่เลย</button>
+</div>
+
+<div class="wrap">
+
+  <section class="hero" id="hero">
+    <div class="hero-ph"></div>
+    <svg class="hero-art" viewBox="0 0 820 320" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+<g fill="none" stroke="rgba(255,255,255,.17)" stroke-width="1.6">
+<path d="M0 286h820"/>
+<path d="M120 286V150l92-62 92 62v136"/>
+<path d="M212 88 92 168M212 88l120 80"/>
+<path d="M150 286v-66h50v66M236 196h44v38h-44z"/>
+<path d="M566 286V166h150v120M566 166l75-44 75 44"/>
+<path d="M600 232h40v54h-40M668 212h32v30h-32"/>
+</g>
+<g fill="none" stroke="rgba(226,86,13,.55)" stroke-width="2.2">
+<path d="M212 88 92 168h240z"/>
+<path d="M641 122l-75 44h150z"/>
+</g>
+<g fill="none" stroke="rgba(255,255,255,.26)" stroke-width="1.4">
+<path d="M360 286V96h12v190M470 286V96h12v190"/>
+<path d="M360 120h122M360 170h122M360 220h122M360 268h122"/>
+<path d="M372 96h98"/>
+<path d="M470 96h86M556 96v34M556 130l-22 0M534 130v22"/>
+<circle cx="534" cy="162" r="8"/>
+</g>
+<g fill="none" stroke="rgba(255,255,255,.12)" stroke-width="1.2" stroke-dasharray="5 5">
+<path d="M92 304h240M92 298v12M332 298v12"/>
+<path d="M756 166v120M750 166h12M750 286h12"/>
+</g>
+<g fill="none" stroke="rgba(255,255,255,.14)" stroke-width="1.6">
+<path d="M46 286v-26M34 266l12-10 12 10M784 286v-22M774 270l10-8 10 8"/>
+</g>
+</svg>
+    <img class="hero-img" id="heroImg" alt="">
+    <button class="pencil" id="btnSite" title="แก้ไขหัวเว็บ">✏️</button>
+    <div class="hero-in">
+      <div class="tagline" id="hTag">รับเหมาก่อสร้างครบวงจร</div>
+      <h1 id="hTitle">แบบบ้านสวย ราคาจริง สร้างได้จริง</h1>
+      <p id="hSub"></p>
+      <span class="ratepill" id="ratePill" style="display:none"></span>
+      <div class="cta" id="hCta"></div>
+    </div>
+  </section>
+
+  <div id="statsBox"></div>
+  <button class="addbtn" data-add="stats">＋ เพิ่มตัวเลขผลงาน (เช่น ประสบการณ์ 10 ปี)</button>
+
+  <div class="trust">
+    <div><div class="ic">📋</div><b>ประเมินราคาฟรี</b><span>ไม่มีค่าใช้จ่าย</span></div>
+    <div><div class="ic">📝</div><b>มีสัญญาชัดเจน</b><span>ระบุงวดงาน</span></div>
+    <div><div class="ic">📸</div><b>รายงานทุกงวด</b><span>ส่งรูปให้ดู</span></div>
+  </div>
+
+  <nav class="nav">
+    <a href="#s-svc">บริการ</a><a href="#s-house">แบบบ้าน</a><a href="#s-est">ประเมินงบ</a><a href="#s-work">ผลงาน</a><a href="#s-ba">ก่อน-หลัง</a><a href="#s-team">ทีมช่าง</a><a href="#s-step">ขั้นตอน</a>
+    <a href="#s-pay">งวดงาน</a><a href="#s-rev">รีวิว</a><a href="#s-link">ช่องทาง</a><a href="#s-tips">ความรู้</a><a href="#s-faq">คำถามบ่อย</a>
+    <a href="#s-about">เกี่ยวกับเรา</a>
+  </nav>
+
+  <section id="s-svc">
+    <div class="lab">บริการ</div><h2 class="h2">รับงานอะไรบ้าง</h2>
+    <p class="sub">งานก่อสร้างครบวงจร ดูแลโดยทีมช่างของเราเอง</p>
+    <div id="svcBox"></div>
+    <button class="addbtn" data-add="services">＋ เพิ่มบริการ</button>
+  </section>
+
+  <div class="tape"></div>
+  <section id="s-house">
+    <div class="lab">แบบบ้าน</div><h2 class="h2">เลือกชมแบบบ้าน</h2>
+    <p class="sub" id="hCount">แตะที่แบบบ้านเพื่อดูรายละเอียดเต็ม</p>
+    <div class="hfilt" id="hfiltWrap">
+      <input id="hq" placeholder="🔍 ค้นหาแบบบ้าน">
+      <select id="hbed">
+        <option value="">ห้องนอน: ทั้งหมด</option>
+        <option value="1">1 ห้องนอน</option>
+        <option value="2">2 ห้องนอน</option>
+        <option value="3">3 ห้องนอน</option>
+        <option value="4+">4 ห้องนอนขึ้นไป</option>
+      </select>
+      <select id="hsort">
+        <option value="">เรียง: ปกติ</option>
+        <option value="plo">ราคาน้อย → มาก</option>
+        <option value="phi">ราคามาก → น้อย</option>
+        <option value="alo">พื้นที่น้อย → มาก</option>
+        <option value="ahi">พื้นที่มาก → น้อย</option>
+      </select>
+      <button id="hclear" style="display:none">ล้างตัวกรอง</button>
+    </div>
+    <div class="chips" id="chips"></div>
+    <p class="found" id="found"></p>
+    <div id="list"><div class="grid"><div class="skel"></div><div class="skel"></div></div></div>
+    <button class="addbtn" data-add="houses">＋ เพิ่มแบบบ้าน</button>
+  </section>
+
+  <div class="tape"></div>
+  <section id="s-est">
+    <div class="lab">ประเมินงบ</div><h2 class="h2">คิดงบคร่าวๆ ด้วยตัวเอง</h2>
+    <p class="sub">ใส่ขนาดพื้นที่ใช้สอยที่ต้องการ ระบบจะคิดช่วงราคาให้ดูก่อนคุยกัน</p>
+    <div id="estBox"></div>
+  </section>
+
+  <div class="tape"></div>
+  <section id="s-work">
+    <div class="lab">ผลงานจริง</div><h2 class="h2">ผลงานที่ผ่านมา</h2>
+    <p class="sub">รูปจากหน้างานจริงที่เราก่อสร้างและส่งมอบแล้ว</p>
+    <div id="workBox"></div>
+    <button class="addbtn" data-add="works">＋ เพิ่มรูปผลงาน</button>
+  </section>
+
+  <div class="tape"></div>
+  <section id="s-ba">
+    <div class="lab">ก่อน – หลัง</div><h2 class="h2">เปรียบเทียบก่อนและหลัง</h2>
+    <p class="sub">งานต่อเติมและปรับปรุงของจริง เทียบให้เห็นชัดๆ</p>
+    <div id="baBox"></div>
+    <button class="addbtn" data-add="ba">＋ เพิ่มงานก่อน-หลัง (รูปแรก=ก่อน รูปสอง=หลัง)</button>
+  </section>
+
+  <div class="tape"></div>
+  <section id="s-team">
+    <div class="lab">ทีมงาน</div><h2 class="h2">ทีมช่างของเรา</h2>
+    <p class="sub">คนที่จะเข้าไปทำงานในบ้านคุณจริงๆ</p>
+    <div id="teamBox"></div>
+    <button class="addbtn" data-add="team">＋ เพิ่มช่างในทีม</button>
+  </section>
+
+  <div class="tape"></div>
+  <section id="s-step">
+    <div class="lab">ขั้นตอน</div><h2 class="h2">ทำงานกับเรายังไง</h2>
+    <p class="sub">ชัดเจนทุกขั้นตอน ตั้งแต่คุยครั้งแรกจนส่งมอบ</p>
+    <div class="steps" id="stepBox"></div>
+    <button class="addbtn" data-add="steps">＋ เพิ่มขั้นตอน</button>
+  </section>
+
+  <div class="tape"></div>
+  <section id="s-pay">
+    <div class="lab">งวดงาน</div><h2 class="h2">การแบ่งจ่ายงวดงาน</h2>
+    <p class="sub">จ่ายตามงานที่ทำเสร็จจริงในแต่ละงวด ระบุไว้ในสัญญา</p>
+    <div id="payBox"></div>
+    <button class="addbtn" data-add="payments">＋ เพิ่มงวดงาน</button>
+  </section>
+
+  <div class="tape"></div>
+  <section id="s-rev">
+    <div class="lab">เสียงจากลูกค้า</div><h2 class="h2">รีวิวลูกค้า</h2>
+    <p class="sub">ความเห็นจากลูกค้าที่เราส่งมอบงานแล้ว</p>
+    <div id="revBox"></div>
+    <button class="addbtn" data-add="reviews">＋ เพิ่มรีวิว (ใส่เฉพาะรีวิวจริงจากลูกค้า)</button>
+  </section>
+
+  <section id="s-link">
+    <div class="lab">ช่องทางติดตาม</div><h2 class="h2">ช่องทางของเรา</h2>
+    <p class="sub">กดเพื่อเข้าดูผลงานและติดต่อได้ทันที</p>
+    <div id="lkBox"></div>
+    <button class="addbtn" data-add="links">＋ เพิ่มช่องทางติดต่อ (ไลน์ เพจ TikTok เบอร์โทร อีเมล ฯลฯ)</button>
+  </section>
+
+  <section id="s-faq">
+    <div class="lab">คำถามที่พบบ่อย</div><h2 class="h2">ลูกค้าถามบ่อย</h2>
+    <div id="faqBox" style="margin-top:12px"></div>
+    <button class="addbtn" data-add="faq">＋ เพิ่มคำถาม</button>
+  </section>
+
+  <section id="s-doc" class="ownerOnly">
+    <div class="lab">สำหรับเจ้าของ</div><h2 class="h2">ออกเอกสาร</h2>
+    <div class="ownbar">🔒 หมวดนี้เห็นเฉพาะคุณ — ลูกค้าที่เปิดลิงก์จะไม่เห็น</div>
+    <div class="docbtns">
+      <button class="btn btn-save" id="newDoc">＋ สร้างเอกสารใหม่</button>
+      <button class="btn btn-ghost" id="bizBtn">⚙️ ข้อมูลผู้ออกเอกสาร</button>
+    </div>
+    <input id="docq" placeholder="🔍 ค้นหาเลขที่เอกสาร หรือ ชื่อลูกค้า"
+      style="width:100%;padding:11px 13px;border:1px solid var(--line2);border-radius:10px;margin:10px 0 2px;outline:none;font-size:15px">
+    <div class="chips" id="docChips"></div>
+    <div id="docSum"></div>
+    <div id="docList"></div>
+
+    <div class="lab" style="margin-top:30px">เครื่องมือเจ้าของ</div>
+    <div class="docbtns">
+      <button class="btn btn-save" id="pubGo">🚀 เผยแพร่ขึ้นเว็บเลย</button>
+      <button class="btn btn-ghost" id="pubCfgBtn">⚙️ ตั้งค่าการเผยแพร่</button>
+    </div>
+    <p class="sub" id="pubLog" style="display:none;margin-top:8px"></p>
+    <div class="docbtns">
+      <button class="btn btn-ghost" id="pubBtn">⬇️ ดาวน์โหลดไฟล์เว็บ (สำรอง)</button>
+      <button class="btn btn-ghost" id="helpBtn">📖 วิธีขึ้นเว็บ</button>
+    </div>
+    <div class="docbtns">
+      <button class="btn btn-ghost" id="copyCust">🔗 คัดลอกลิงก์เว็บนี้</button>
+      <button class="btn btn-ghost" id="bkDl">⬇️ สำรองข้อมูล</button>
+      <label class="btn btn-ghost" style="cursor:pointer">⬆️ กู้คืนจากไฟล์
+        <input type="file" id="bkFile" accept=".json,application/json" style="display:none"></label>
+    </div>
+    <p class="sub" style="margin-top:8px">แก้ไขแล้วข้อมูลเก็บในเครื่องนี้ทันที ถ้าต้องการให้ลูกค้าเห็นของใหม่ ให้กด
+      <b>สร้างไฟล์เว็บเวอร์ชันใหม่</b> แล้วอัปไฟล์ขึ้นโฮสต์ทับไฟล์เดิม</p>
+    <p class="sub" id="szNote" style="margin-top:4px"></p>
+  </section>
+
+  <div class="tape"></div>
+  <section id="s-tips">
+    <div class="lab">ความรู้ก่อนสร้างบ้าน</div><h2 class="h2">เรื่องที่ลูกค้าควรรู้</h2>
+    <p class="sub">คลิปและบทความสั้นๆ จากหน้างานจริง อ่านก่อนตัดสินใจจะช่วยได้มาก</p>
+    <div id="tipBox"></div>
+    <button class="addbtn" data-add="tips">＋ เพิ่มเรื่องน่ารู้ (คลิป / รูป / ลิงก์)</button>
+  </section>
+
+  <section id="s-about">
+    <div class="lab">เกี่ยวกับเรา</div><h2 class="h2">K.C.S ช่างก่อสร้าง</h2>
+    <div class="panel"><p id="about">—</p><div class="info" id="info"></div></div>
+  </section>
+
+  <section class="contact">
+    <h2>สนใจแบบไหน ทักมาคุยได้เลย</h2>
+    <p>ประเมินราคาฟรี ดูหน้างานทั่วประเทศ</p>
+    <div class="cta" id="fCta"></div>
+  </section>
+
+  <div id="lockRow"><button class="lockbtn" id="lockBtn">🔒 เฉพาะเจ้าของลิงก์ · ใส่รหัสเพื่อแก้ไข</button></div>
+
+  <div class="seal"><span></span>K.C.S · ช่างก่อสร้าง · ทั่วไทย<span></span></div>
+  <div class="foot" id="foot">© K.C.S ช่างก่อสร้าง</div>
+</div>
+
+<button class="fab" id="fab">＋ เพิ่มแบบบ้าน</button>
+<div class="bar" id="bar"></div>
+
+<!-- ===== house detail ===== -->
+<div class="ov" id="ovView"><div class="sheet">
+  <div class="sheet-top">
+    <button class="iconbtn" data-close>✕</button><b id="vTitle">—</b>
+    <div class="spacer"></div><button class="iconbtn" id="vShare" title="แชร์แบบนี้">📤</button>
+    <button class="iconbtn" id="vEdit" style="display:none">✏️</button>
+  </div>
+  <div class="sheet-body">
+    <div class="gal" id="vGal"></div>
+    <p class="taphint" id="vHint"></p>
+    <div class="price-big" id="vPrice"></div>
+    <div class="pills" id="vPills"></div>
+    <p id="vDesc" style="color:var(--ink2);white-space:pre-wrap;margin:0;font-size:14px"></p>
+    <div id="vBlocks"></div>
+    <div class="cta" id="vCta" style="margin-top:20px"></div>
+    <div style="height:24px"></div>
+  </div>
+</div></div>
+
+<!-- ===== generic editor ===== -->
+<div class="ov" id="ovForm"><div class="sheet">
+  <div class="sheet-top">
+    <button class="iconbtn" data-close>✕</button><b id="fTitle">แก้ไข</b>
+    <div class="spacer"></div><button class="btn btn-save" id="fSave" style="padding:9px 17px">บันทึก</button>
+  </div>
+  <div class="sheet-body">
+    <div class="msg" id="fMsg"></div>
+    <div id="fFields"></div>
+    <div class="row-btn">
+      <button class="btn btn-del" id="fDel" style="display:none">ลบรายการนี้</button>
+      <button class="btn btn-save" id="fSave2">บันทึก</button>
+    </div>
+    <div style="height:26px"></div>
+  </div>
+</div></div>
+
+<!-- ===== site settings ===== -->
+<div class="ov" id="ovSite"><div class="sheet">
+  <div class="sheet-top">
+    <button class="iconbtn" data-close>✕</button><b>ข้อมูลร้าน &amp; หัวเว็บ</b>
+    <div class="spacer"></div><button class="btn btn-save" id="sSave" style="padding:9px 17px">บันทึก</button>
+  </div>
+  <div class="sheet-body">
+    <div class="msg" id="sMsg"></div>
+    <div class="f"><label>รูปหน้าปกเว็บ</label><div class="thumbs" id="sThumbs"></div>
+      <label class="up" style="margin-top:8px">＋ เลือกรูปปก<input type="file" id="sFile" accept="image/*" style="display:none"></label></div>
+    <div class="f"><label>ชื่อร้าน</label><input id="sBrand"></div>
+    <div class="f"><label>คำโปรยใต้ชื่อร้าน</label><input id="sTag"></div>
+    <div class="f"><label>ป้ายเล็กบนปก</label><input id="sKicker" placeholder="รับเหมาก่อสร้างครบวงจร"></div>
+    <div class="f"><label>หัวข้อใหญ่บนปก</label><input id="sTitle"></div>
+    <div class="f"><label>คำอธิบายใต้หัวข้อ</label><textarea id="sSub" style="min-height:66px"></textarea></div>
+    <div class="f"><label>เบอร์โทร</label><input id="sPhone" inputmode="tel"></div>
+    <div class="f"><label>LINE ID</label><input id="sLine"></div>
+    <div class="f"><label>ลิงก์เพจเฟซบุ๊ก</label><input id="sFb" placeholder="https://facebook.com/..."></div>
+    <div class="f"><label>เกี่ยวกับเรา</label><textarea id="sAbout"></textarea></div>
+    <div class="f"><label>พื้นที่ให้บริการ</label><input id="sArea" placeholder="เช่น ทั่วประเทศไทย"></div>
+    <div class="f"><label>เวลาทำการ</label><input id="sHour" placeholder="เช่น ทุกวัน 08:00–18:00"></div>
+    <div class="f"><label>ที่อยู่ / ที่ตั้ง</label><input id="sAddr"></div>
+    <div class="f"><label>การรับประกันงาน</label><input id="sWarr" placeholder="เช่น รับประกันโครงสร้างตามที่ระบุในสัญญา"></div>
+    <div class="f2"><div class="f"><label>ราคาประเมิน ต่ำสุด (บาท/ตร.ม.)</label><input id="sRateLow" inputmode="numeric" placeholder="เช่น 12000"></div>
+      <div class="f"><label>ราคาประเมิน สูงสุด (บาท/ตร.ม.)</label><input id="sRateHigh" inputmode="numeric" placeholder="เช่น 16000"></div></div>
+    <div class="f"><label>หมายเหตุใต้ตารางงวดงาน</label><textarea id="sPayNote" style="min-height:66px"></textarea></div>
+    <div class="row-btn"><button class="btn btn-save" id="sSave2">บันทึก</button></div>
+    <div style="height:26px"></div>
+  </div>
+</div></div>
+
+<!-- ===== tip detail ===== -->
+<div class="ov" id="ovTip"><div class="sheet">
+  <div class="sheet-top"><button class="iconbtn" data-close>✕</button><b id="tTitle"></b></div>
+  <div class="sheet-body">
+    <div class="gal" id="tGal"></div>
+    <p id="tDesc" style="color:var(--ink2);white-space:pre-wrap;margin:0;font-size:14px"></p>
+    <div class="cta" id="tCta" style="margin-top:18px"></div>
+    <div style="height:24px"></div>
+  </div>
+</div></div>
+
+<!-- ===== owner unlock ===== -->
+<div class="ov" id="ovLock"><div class="sheet">
+  <div class="sheet-top"><button class="iconbtn" data-close>✕</button><b>🔒 เฉพาะเจ้าของลิงก์</b></div>
+  <div class="sheet-body">
+    <p class="sub" style="margin-top:0">ส่วนนี้สำหรับเจ้าของเว็บเท่านั้น<br>ถ้าคุณเป็นลูกค้า ไม่ต้องใส่รหัสครับ กดปิด (✕) แล้วดูเว็บต่อได้เลย</p>
+    <div class="msg" id="lkMsg"></div>
+    <div class="f"><label>รหัสเข้าโหมดแก้ไข</label>
+      <input id="lkCode" type="password" inputmode="numeric" autocomplete="off" placeholder="ใส่รหัส"></div>
+    <div class="row-btn"><button class="btn btn-save" id="lkGo">ปลดล็อกโหมดแก้ไข</button></div>
+    <div style="height:26px"></div>
+  </div>
+</div></div>
+
+<!-- ===== quote request (customer) ===== -->
+<div class="ov" id="ovQuote"><div class="sheet">
+  <div class="sheet-top"><button class="iconbtn" data-close>✕</button><b>ขอใบเสนอราคา</b></div>
+  <div class="sheet-body">
+    <p class="sub" style="margin-top:0">กรอกสั้นๆ แล้วกดส่งทางไลน์หรือ SMS ได้เลย เราจะติดต่อกลับโดยเร็ว</p>
+    <div class="f"><label>ชื่อ-นามสกุล</label><input id="qName"></div>
+    <div class="f"><label>เบอร์โทรติดต่อกลับ</label><input id="qTel" inputmode="tel"></div>
+    <div class="f"><label>แบบบ้าน / งานที่สนใจ</label><input id="qHouse" list="qdl" placeholder="เช่น บ้านชั้นเดียว หรือ ต่อเติมครัว">
+      <datalist id="qdl"></datalist></div>
+    <div class="f2"><div class="f"><label>งบประมาณ</label><input id="qBudget" placeholder="เช่น 1.2 ล้าน"></div>
+      <div class="f"><label>ที่ตั้งที่ดิน</label><input id="qPlace" placeholder="อำเภอ/จังหวัด"></div></div>
+    <div class="f"><label>รายละเอียดเพิ่มเติม</label><textarea id="qMore" style="min-height:76px" placeholder="เช่น ต้องการ 3 ห้องนอน มีที่ดินแล้ว อยากเริ่มต้นปีหน้า"></textarea></div>
+    <div class="qbtns">
+      <button class="btn btn-line wide" id="qLine">💬 ส่งทางไลน์</button>
+      <button class="btn btn-call" id="qSms">✉️ ส่ง SMS</button>
+      <button class="btn btn-ghost" id="qCopy">📋 คัดลอก</button>
+    </div>
+    <div style="height:26px"></div>
+  </div>
+</div></div>
+
+<!-- ===== pick doc type ===== -->
+<div class="ov" id="ovPick"><div class="sheet">
+  <div class="sheet-top"><button class="iconbtn" data-close>✕</button><b>เลือกชนิดเอกสาร</b></div>
+  <div class="sheet-body"><div class="pick" id="pickBox"></div><div style="height:26px"></div></div>
+</div></div>
+
+<!-- ===== edit doc ===== -->
+<div class="ov" id="ovDocEdit"><div class="sheet">
+  <div class="sheet-top">
+    <button class="iconbtn" data-close>✕</button><b id="deTitle">เอกสาร</b>
+    <div class="spacer"></div><button class="btn btn-save" id="deSave" style="padding:9px 17px">บันทึก</button>
+  </div>
+  <div class="sheet-body">
+    <div class="msg" id="deMsg"></div>
+    <div class="f2"><div class="f"><label>เลขที่เอกสาร</label><input id="deNo"></div>
+      <div class="f"><label>วันที่</label><input id="deDate" type="date"></div></div>
+    <div class="f"><label id="deDueL">ยืนราคาถึงวันที่ / กำหนดชำระ</label><input id="deDue" type="date"></div>
+    <div class="f"><label>ชื่อลูกค้า / ผู้ว่าจ้าง</label><input id="deCName" placeholder="ชื่อ-นามสกุล หรือ ชื่อบริษัท"></div>
+    <div class="f2"><div class="f"><label>เลขประจำตัวผู้เสียภาษี</label><input id="deCTax" inputmode="numeric"></div>
+      <div class="f"><label>เบอร์โทรลูกค้า</label><input id="deCTel" inputmode="tel"></div></div>
+    <div class="f"><label>ที่อยู่ลูกค้า</label><textarea id="deCAddr" style="min-height:64px"></textarea></div>
+    <div class="f2"><div class="f"><label>ชื่องาน / สถานที่ก่อสร้าง</label><input id="deProj"></div>
+      <div class="f"><label>อ้างอิงเอกสารเลขที่</label><input id="deRef"></div></div>
+
+    <div class="lab" style="margin:22px 0 8px">รายการ</div>
+    <div id="deItems"></div>
+    <div class="docbtns" style="margin-top:0">
+      <button class="btn btn-ghost" id="deAddItem">＋ เพิ่มรายการ</button>
+      <button class="btn btn-ghost" id="deFromPay">⚡ ดึงงวดงานมาใส่</button>
+    </div>
+
+    <div class="f" style="margin-top:16px"><label>ส่วนลด (บาท)</label><input id="deDisc" inputmode="decimal" placeholder="0"></div>
+    <label class="tog"><input type="checkbox" id="deVat"><span>คิดภาษีมูลค่าเพิ่ม 7%</span></label>
+    <label class="tog"><input type="checkbox" id="deInc"><span>ราคาที่กรอกรวม VAT แล้ว</span></label>
+    <label class="tog"><input type="checkbox" id="deWht"><span>หักภาษี ณ ที่จ่าย 3% (งานรับเหมา)</span></label>
+    <div class="sumbox" id="deSum"></div>
+    <div class="f" style="margin-top:14px"><label>หมายเหตุ / เงื่อนไข</label><textarea id="deNote"></textarea></div>
+    <div class="row-btn">
+      <button class="btn btn-del" id="deDel" style="display:none">ลบเอกสาร</button>
+      <button class="btn btn-save" id="deSave2">บันทึก</button>
+    </div>
+    <div style="height:26px"></div>
+  </div>
+</div></div>
+
+<!-- ===== view doc ===== -->
+<div class="ov" id="ovDoc"><div class="sheet">
+  <div class="sheet-top"><button class="iconbtn" data-close>✕</button><b id="dvTitle">เอกสาร</b></div>
+  <div class="sheet-body">
+    <div class="docacts">
+      <button class="btn btn-save" id="dvPrint">🖨 พิมพ์ / บันทึก PDF</button>
+      <button class="btn btn-ghost" id="dvEdit">✏️ แก้ไข</button>
+      <button class="btn btn-ghost" id="dvCopy">📋 คัดลอกข้อความ</button>
+      <button class="btn btn-ghost" id="dvDup">⧉ ทำซ้ำเป็นฉบับใหม่</button>
+      <button class="btn btn-ghost" id="dvDl" style="grid-column:1/-1">⬇️ บันทึกไฟล์เอกสาร</button>
+    </div>
+    <div id="dvBox"></div>
+    <div style="height:26px"></div>
+  </div>
+</div></div>
+
+<!-- ===== business profile ===== -->
+<div class="ov" id="ovBiz"><div class="sheet">
+  <div class="sheet-top">
+    <button class="iconbtn" data-close>✕</button><b>ข้อมูลผู้ออกเอกสาร</b>
+    <div class="spacer"></div><button class="btn btn-save" id="bzSave" style="padding:9px 17px">บันทึก</button>
+  </div>
+  <div class="sheet-body">
+    <div class="msg" id="bzMsg"></div>
+    <div class="f"><label>ชื่อกิจการ (ตามที่จดทะเบียน)</label><input id="bzName"></div>
+    <div class="f"><label>ที่อยู่กิจการ</label><textarea id="bzAddr" style="min-height:72px"></textarea></div>
+    <div class="f2"><div class="f"><label>เลขประจำตัวผู้เสียภาษี</label><input id="bzTax" inputmode="numeric"></div>
+      <div class="f"><label>สำนักงาน / สาขา</label><input id="bzBranch" placeholder="สำนักงานใหญ่"></div></div>
+    <div class="f2"><div class="f"><label>โทรศัพท์</label><input id="bzTel" inputmode="tel"></div>
+      <div class="f"><label>อีเมล</label><input id="bzMail"></div></div>
+    <div class="f"><label>ธนาคาร</label><input id="bzBank" placeholder="เช่น กสิกรไทย สาขา..."></div>
+    <div class="f2"><div class="f"><label>เลขที่บัญชี</label><input id="bzAcc" inputmode="numeric"></div>
+      <div class="f"><label>ชื่อบัญชี</label><input id="bzAccName"></div></div>
+    <div class="f"><label>ชื่อผู้มีอำนาจลงนาม</label><input id="bzSign"></div>
+    <div class="row-btn"><button class="btn btn-save" id="bzSave2">บันทึก</button></div>
+    <div style="height:26px"></div>
+  </div>
+</div></div>
+
+<div class="ov" id="ovCopy"><div class="sheet">
+  <div class="sheet-top"><button class="iconbtn" data-close>✕</button><b>คัดลอกข้อความ</b></div>
+  <div class="sheet-body">
+    <p class="sub" style="margin-top:0">กดปุ่มด้านล่าง หรือกดค้างที่ข้อความแล้วเลือกคัดลอก</p>
+    <textarea id="copyTa" readonly style="width:100%;min-height:190px;padding:12px;border:1px solid var(--line2);border-radius:10px;font-size:14px;line-height:1.6;background:#fff;color:var(--ink)"></textarea>
+    <div class="row-btn"><button class="btn btn-save" id="copySel">เลือกทั้งหมดและคัดลอก</button></div>
+    <div style="height:22px"></div>
+  </div>
+</div></div>
+
+<div class="ov" id="ovAsk"><div class="sheet">
+  <div class="sheet-top"><button class="iconbtn" data-close>✕</button><b>ยืนยัน</b></div>
+  <div class="sheet-body">
+    <p id="askMsg" style="margin:4px 0 20px;font-size:15px;line-height:1.6"></p>
+    <div class="row-btn">
+      <button class="btn btn-ghost" data-close>ยกเลิก</button>
+      <button class="btn btn-del" id="askOk">ยืนยัน</button>
+    </div>
+    <div style="height:22px"></div>
+  </div>
+</div></div>
+
+<div id="lbox">
+  <button id="lbClose" aria-label="ปิด">✕</button>
+  <img id="lbImg" alt="">
+  <div id="lbErr">โหลดรูปนี้ไม่สำเร็จ ลองปิดแล้วเปิดใหม่ หรือเช็คสัญญาณเน็ต</div>
+  <div id="lbNav">
+    <button data-lb="-1" aria-label="รูปก่อนหน้า">‹</button>
+    <span id="lbCnt"></span>
+    <button data-lb="1" aria-label="รูปถัดไป">›</button>
+  </div>
+</div>
+<script id="kcs-data" type="application/json">
+{"site": {"brand": "K.C.S ช่างก่อสร้าง", "tag": "รับสร้างบ้าน ต่อเติม ทั่วไทย", "kicker": "รับเหมาก่อสร้างครบวงจร", "title": "แบบบ้านสวย ราคาจริง สร้างได้จริง", "sub": "เลือกชมแบบบ้านที่เราออกแบบและก่อสร้างจริง ปรึกษาและประเมินราคาฟรี ไม่มีค่าใช้จ่าย", "phone": "083 431 7893", "line": "0834317893", "fb": "", "cover": "", "about": "K.C.S ช่างก่อสร้าง รับสร้างบ้าน ต่อเติม ซ่อมแซม งานโครงสร้างและงานตกแต่ง ดูแลงานเองทุกขั้นตอน ใช้วัสดุตามสเปกที่ตกลงไว้ในสัญญา รายงานความคืบหน้าให้ลูกค้าทราบตลอดการก่อสร้าง", "area": "รับงานทั่วประเทศไทย", "hour": "ทุกวัน 08:00 – 18:00", "addr": "", "warr": "รับประกันงานตามเงื่อนไขที่ระบุในสัญญา", "rateLow": "", "rateHigh": "", "payNote": "เปอร์เซ็นต์และรายละเอียดงวดงานปรับได้ตามขนาดงานและข้อตกลงในสัญญาของแต่ละหลัง กรุณาสอบถามเพื่อขอใบเสนอราคาจริง"}, "houses": [], "stats": [], "works": [], "reviews": [], "team": [], "ba": [], "tips": [{"id": "tp1", "title": "เตรียมที่ดินก่อนสร้าง ต้องดูอะไร", "url": "", "imgs": [], "ord": 1, "detail": "ตรวจแนวเขตที่ดินให้ชัดเจน ดูทางเข้าออกว่ารถขนวัสดุเข้าได้ไหม เช็คระดับดินเทียบกับถนน และดูว่ามีไฟฟ้ากับน้ำถึงหน้างานแล้วหรือยัง\n\nถ้าต้องถมดิน ควรเผื่อเวลาให้ดินยุบตัวก่อนลงมือก่อสร้าง จะช่วยลดปัญหาพื้นทรุดในอนาคต"}, {"id": "tp2", "title": "เสาเข็มเลือกแบบไหนดี", "url": "", "imgs": [], "ord": 2, "detail": "ชนิดและความยาวเสาเข็มขึ้นอยู่กับชั้นดินของแต่ละพื้นที่และน้ำหนักของตัวบ้าน พื้นที่ดินอ่อนกับดินแข็งใช้ไม่เหมือนกัน\n\nควรให้ช่างเข้าดูหน้างานจริงก่อนสรุป และไม่ควรลดสเปกเสาเข็มเพื่อประหยัดงบ เพราะเป็นส่วนที่แก้ไขทีหลังยากที่สุด"}, {"id": "tp3", "title": "อ่านสัญญาก่อนเซ็น ดูอะไรบ้าง", "url": "", "imgs": [], "ord": 3, "detail": "สิ่งที่ควรมีในสัญญา: ราคารวมทั้งโครงการ สเปกวัสดุแยกรายการ ตารางงวดงานและเงื่อนไขการจ่ายเงิน ระยะเวลาก่อสร้าง ค่าปรับเมื่อล่าช้า และเงื่อนไขการรับประกันงาน\n\nถ้ามีจุดไหนไม่ชัดเจน ให้ถามและแก้ไว้ในสัญญาก่อนเซ็น ไม่ควรตกลงกันแค่ปากเปล่า"}, {"id": "tp4", "title": "ขออนุญาตก่อสร้างต้องทำอะไร", "url": "", "imgs": [], "ord": 4, "detail": "ก่อนเริ่มงานต้องยื่นขออนุญาตก่อสร้างกับเทศบาลหรือ อบต. ในพื้นที่ โดยเตรียมแบบแปลน เอกสารสิทธิ์ที่ดิน และเอกสารประจำตัวเจ้าของที่ดิน\n\nระยะเวลาพิจารณาแต่ละพื้นที่ไม่เท่ากัน ควรเผื่อเวลาไว้ในแผนงานตั้งแต่ต้น"}, {"id": "tp5", "title": "งบที่คนมักลืมคิด", "url": "", "imgs": [], "ord": 5, "detail": "ค่าใช้จ่ายที่มักไม่อยู่ในราคาสร้างบ้าน: ค่ามิเตอร์ไฟและมิเตอร์น้ำ ค่าถมดิน ค่ารื้อถอนของเดิม ค่าทำรั้วและประตู ถนนทางเข้า ภูมิทัศน์ และเฟอร์นิเจอร์\n\nแนะนำให้เผื่องบสำรองไว้ประมาณ 10–15% ของราคาก่อสร้าง"}, {"id": "tp6", "title": "ตรวจงานแต่ละงวดอย่างไร", "url": "", "imgs": [], "ord": 6, "detail": "ถ่ายรูปเก็บไว้ทุกงวด เทียบงานที่เสร็จกับแบบและสเปกวัสดุที่ระบุในสัญญา ดูความเรียบร้อยของงานที่จะถูกปิดทับ เช่น งานระบบไฟ-ประปา ก่อนฉาบหรือปูทับ\n\nถ้าพบจุดที่ไม่ตรงตามตกลง ให้แจ้งช่างและแก้ให้เรียบร้อยก่อนจ่ายเงินงวดนั้น"}], "services": [{"id": "sv1", "ic": "🏠", "title": "รับสร้างบ้าน", "detail": "สร้างบ้านใหม่ตามแบบมาตรฐานของเรา หรือแบบที่ลูกค้ามีอยู่แล้ว", "ord": 1}, {"id": "sv2", "ic": "🧱", "title": "ต่อเติม – ปรับปรุง", "detail": "ต่อเติมครัว ห้องน้ำ โรงจอดรถ ห้องเก็บของ ต่อเติมหลังบ้าน", "ord": 2}, {"id": "sv3", "ic": "🏗️", "title": "งานโครงสร้าง", "detail": "เสาเข็ม ฐานราก เสา คาน พื้น บันได โครงหลังคา", "ord": 3}, {"id": "sv4", "ic": "🎨", "title": "งานตกแต่ง", "detail": "ก่อ ฉาบ ทาสี ปูกระเบื้อง ฝ้าเพดาน ติดตั้งประตู-หน้าต่าง", "ord": 4}, {"id": "sv5", "ic": "🔧", "title": "งานซ่อมแซม", "detail": "ซ่อมหลังคารั่ว ซ่อมพื้น ผนังร้าว งานระบบไฟฟ้า-ประปา", "ord": 5}, {"id": "sv6", "ic": "📐", "title": "ออกแบบ – ประเมินราคา", "detail": "เขียนแบบ ถอดแบบ ประเมินราคา ให้คำปรึกษาก่อนตัดสินใจ", "ord": 6}], "steps": [{"id": "st1", "title": "ปรึกษา และ เข้าดูหน้างาน", "detail": "นัดวันเข้าดูพื้นที่จริง เก็บข้อมูล ฟังความต้องการและงบประมาณ ไม่มีค่าใช้จ่าย", "ord": 1}, {"id": "st2", "title": "เสนอแบบ และ ใบเสนอราคา", "detail": "เสนอแบบบ้านที่เหมาะกับพื้นที่ พร้อมใบเสนอราคาแยกรายการให้เห็นชัดเจน", "ord": 2}, {"id": "st3", "title": "ทำสัญญา และ กำหนดงวดงาน", "detail": "ตกลงราคา ระยะเวลา สเปกวัสดุ และงวดการชำระเงิน เป็นลายลักษณ์อักษร", "ord": 3}, {"id": "st4", "title": "เริ่มงานก่อสร้าง", "detail": "เคลียร์พื้นที่ วางผัง ลงเสาเข็ม และดำเนินงานตามแผนงานที่วางไว้", "ord": 4}, {"id": "st5", "title": "รายงานความคืบหน้า", "detail": "ส่งรูปและอัปเดตความคืบหน้าให้ลูกค้าทราบทุกงวดงาน เข้าดูหน้างานได้ตลอด", "ord": 5}, {"id": "st6", "title": "ตรวจรับงาน และ ส่งมอบ", "detail": "ตรวจงานร่วมกัน แก้ไขจุดที่ยังไม่เรียบร้อย ทำความสะอาด ก่อนส่งมอบบ้าน", "ord": 6}, {"id": "st7", "title": "รับประกันงานหลังส่งมอบ", "detail": "ดูแลแก้ไขงานตามเงื่อนไขการรับประกันที่ระบุไว้ในสัญญา", "ord": 7}], "payments": [{"id": "pm1", "title": "ทำสัญญา และ เตรียมงาน", "pc": "15", "amt": "", "detail": "เซ็นสัญญา เคลียร์พื้นที่ วางผัง เตรียมวัสดุเข้าหน้างาน", "ord": 1}, {"id": "pm2", "title": "งานฐานราก", "pc": "20", "amt": "", "detail": "เสาเข็ม ฐานราก ตอม่อ คานคอดิน", "ord": 2}, {"id": "pm3", "title": "งานโครงสร้าง", "pc": "20", "amt": "", "detail": "เสา คาน พื้น บันได โครงหลังคา", "ord": 3}, {"id": "pm4", "title": "งานหลังคา และ ผนัง", "pc": "20", "amt": "", "detail": "มุงหลังคา ก่อผนัง ติดตั้งวงกบประตู-หน้าต่าง", "ord": 4}, {"id": "pm5", "title": "งานระบบ ฉาบ และ ปูกระเบื้อง", "pc": "15", "amt": "", "detail": "เดินระบบไฟฟ้า-ประปา ฉาบผนัง ปูกระเบื้อง ติดฝ้าเพดาน", "ord": 5}, {"id": "pm6", "title": "เก็บงาน และ ส่งมอบ", "pc": "10", "amt": "", "detail": "ทาสี เก็บรายละเอียด ทำความสะอาด ตรวจรับ และส่งมอบงาน", "ord": 6}], "links": [{"id": "lk1", "ic": "💬", "label": "LINE", "url": "https://line.me/ti/p/~0834317893", "note": "ID: 0834317893", "ord": 1, "btn": false}, {"id": "lk2", "ic": "📘", "label": "เพจเฟซบุ๊ก", "url": "", "note": "K.C.S ช่างก่อสร้าง", "ord": 2, "btn": false}, {"id": "lk3", "ic": "🎵", "label": "TikTok", "url": "", "note": "ดูคลิปหน้างานจริง", "ord": 3, "btn": false}, {"id": "lk4", "ic": "▶️", "label": "YouTube", "url": "", "note": "ผลงานและรีวิว", "ord": 4, "btn": false}, {"id": "lk5", "ic": "📞", "label": "โทรหาเรา", "url": "tel:0834317893", "note": "083 431 7893", "ord": 5, "btn": false}], "faq": [{"id": "fq1", "q": "รับงานพื้นที่ไหนบ้าง", "a": "รับงานทั่วประเทศไทย สอบถามพื้นที่หน้างานของคุณเข้ามาได้โดยตรง เราจะแจ้งว่าสะดวกเข้าดูหน้างานได้ช่วงไหน", "ord": 1}, {"id": "fq2", "q": "ประเมินราคามีค่าใช้จ่ายไหม", "a": "ปรึกษาและประเมินราคาเบื้องต้นฟรี ไม่มีค่าใช้จ่าย", "ord": 2}, {"id": "fq3", "q": "มีสัญญาไหม", "a": "ทำสัญญาเป็นลายลักษณ์อักษรทุกงาน ระบุราคา สเปกวัสดุ งวดงาน และระยะเวลาก่อสร้างไว้ชัดเจน", "ord": 3}, {"id": "fq4", "q": "ใช้เวลาสร้างนานเท่าไหร่", "a": "ขึ้นอยู่กับขนาดและแบบบ้าน โดยจะแจ้งระยะเวลาที่ชัดเจนไว้ในสัญญาก่อนเริ่มงาน", "ord": 4}, {"id": "fq5", "q": "เปลี่ยนแบบหรือเปลี่ยนวัสดุระหว่างก่อสร้างได้ไหม", "a": "ได้ โดยแจ้งล่วงหน้าก่อนถึงงวดงานนั้น และปรับราคาเพิ่ม-ลดตามจริง มีเอกสารแจ้งให้ตรวจสอบทุกครั้ง", "ord": 5}, {"id": "fq6", "q": "จ่ายเงินยังไง", "a": "แบ่งจ่ายเป็นงวดตามความคืบหน้าของงานจริง ตามตารางงวดงานที่ตกลงกันไว้ในสัญญา", "ord": 6}], "v": 0}
+</script>
+
+<div class="ov" id="ovPubCfg"><div class="sheet">
+  <div class="sheet-top">
+    <button class="iconbtn" data-close>✕</button><b>ตั้งค่าการเผยแพร่ (ทำครั้งเดียว)</b>
+    <div class="spacer"></div><button class="btn btn-save" id="pcSave" style="padding:9px 17px">บันทึก</button>
+  </div>
+  <div class="sheet-body">
+    <div class="msg" id="pcMsg"></div>
+    <p class="sub" style="margin-top:0">ตั้งครั้งเดียว หลังจากนั้นกดปุ่มเดียวเว็บอัปเดตเอง ข้อมูลนี้เก็บในเครื่องนี้เท่านั้น ไม่ถูกใส่ลงไฟล์เว็บ</p>
+    <div class="f2">
+      <div class="f"><label>ชื่อผู้ใช้ GitHub</label><input id="pcOwner" placeholder="เช่น kcsconstruction" autocapitalize="off"></div>
+      <div class="f"><label>ชื่อที่เก็บ (repo)</label><input id="pcRepo" placeholder="kcs" autocapitalize="off"></div>
+    </div>
+    <div class="f2">
+      <div class="f"><label>Branch</label><input id="pcBranch" placeholder="main" autocapitalize="off"></div>
+      <div class="f"><label>ชื่อไฟล์</label><input id="pcPath" placeholder="index.html" autocapitalize="off"></div>
+    </div>
+    <div class="f"><label>โทเคน (Token)</label>
+      <input id="pcToken" type="password" placeholder="วางโทเคนที่คัดลอกจาก GitHub" autocapitalize="off"></div>
+    <div class="f"><label>ลิงก์เว็บจริง (ใส่ไว้ดูง่าย)</label>
+      <input id="pcLive" placeholder="https://kcsconstructionth.netlify.app" autocapitalize="off"></div>
+    <div class="row-btn"><button class="btn btn-ghost" id="pcTest">ทดสอบการเชื่อมต่อ</button></div>
+
+    <div class="lab">วิธีเอาค่ามาใส่ (ทำครั้งเดียว)</div>
+    <div class="steps">
+      <div class="step"><div class="n">1</div><div class="tx"><b>สมัคร GitHub</b>
+        <p>ไปที่ github.com สมัครฟรี ชื่อผู้ใช้ที่ตั้งคือค่าในช่อง “ชื่อผู้ใช้ GitHub”</p></div></div>
+      <div class="step"><div class="n">2</div><div class="tx"><b>สร้างที่เก็บไฟล์</b>
+        <p>github.com/new → ตั้งชื่อ kcs → เลือก Public → ติ๊ก Add a README → Create</p></div></div>
+      <div class="step"><div class="n">3</div><div class="tx"><b>อัปไฟล์เว็บขึ้นครั้งแรก</b>
+        <p>ในหน้า repo กด Add file → Upload files → เลือกไฟล์ index.html → Commit</p></div></div>
+      <div class="step"><div class="n">4</div><div class="tx"><b>สร้างโทเคน</b>
+        <p>github.com/settings/personal-access-tokens → Generate new token → เลือก repo ของคุณ → ตั้ง Contents เป็น Read and write → Generate แล้วคัดลอกมาวางในช่องโทเคน</p></div></div>
+      <div class="step"><div class="n">5</div><div class="tx"><b>เปิดเว็บให้คนเข้าดู</b>
+        <p>ใน repo → Settings → Pages → Branch เลือก main → Save (หรือผูก repo นี้กับ Netlify เดิมเพื่อใช้ลิงก์เดิมต่อ)</p></div></div>
+    </div>
+    <div class="panel" style="margin-top:12px"><p>โทเคนเก็บอยู่ในเครื่องนี้เท่านั้น ไม่ถูกใส่ลงไฟล์เว็บและไม่อยู่ในไฟล์สำรอง ถ้าเปลี่ยนเครื่องต้องใส่ใหม่</p></div>
+    <div style="height:20px"></div>
+  </div>
+</div></div>
+
+<div class="ov" id="ovHelp"><div class="sheet">
+  <div class="sheet-top"><button class="iconbtn" data-close>✕</button><b>วิธีขึ้นเว็บ (ของคุณเอง)</b></div>
+  <div class="sheet-body">
+    <div class="lab" style="margin-top:0">ขั้นตอนหลัก</div>
+    <div class="steps">
+      <div class="step"><div class="n">1</div><div class="tx"><b>แก้ไขเนื้อหาในหน้านี้</b>
+        <p>ใส่แบบบ้าน รูป ผลงาน รีวิว ทีมช่าง ราคาต่อตารางเมตร ข้อมูลจะเก็บในเครื่องนี้ทันที</p></div></div>
+      <div class="step"><div class="n">2</div><div class="tx"><b>กด “สร้างไฟล์เว็บเวอร์ชันใหม่”</b>
+        <p>จะได้ไฟล์ index.html ไฟล์เดียว ข้างในมีทั้งเว็บและรูปทั้งหมดแล้ว</p></div></div>
+      <div class="step"><div class="n">3</div><div class="tx"><b>อัปไฟล์ขึ้นโฮสต์</b>
+        <p>ลากไฟล์ไปวางที่ app.netlify.com/drop หรือ Cloudflare Pages จะได้ลิงก์ของคุณทันที ครั้งต่อไปลากทับไฟล์เดิม</p></div></div>
+      <div class="step"><div class="n">4</div><div class="tx"><b>ตั้งชื่อลิงก์เป็นชื่อร้าน</b>
+        <p>สมัครฟรีกับโฮสต์ แล้วเปลี่ยนชื่อเป็น kcs-changkosang หรือจะซื้อโดเมนของตัวเองมาผูกก็ได้</p></div></div>
+    </div>
+    <div class="lab">สิ่งที่ควรรู้</div>
+    <div class="panel"><p>• ไฟล์เว็บที่สร้างมีเฉพาะข้อมูลที่ลูกค้าเห็น — เอกสาร ใบเสนอราคา และข้อมูลลูกค้า ไม่ถูกใส่ลงไปในไฟล์
+<br>• เอกสารทั้งหมดเก็บอยู่ในเครื่องนี้เท่านั้น ควรกด “สำรองข้อมูล” เก็บไฟล์ไว้เป็นระยะ
+<br>• รหัสเข้าโหมดแก้ไขกันความสับสนของลูกค้า ไม่ใช่ระบบความปลอดภัย คนที่เปิดดูโค้ดหน้าเว็บจะเห็นรหัสได้ แต่แก้ได้แค่ในเครื่องของตัวเอง ไม่กระทบเว็บจริง
+<br>• แก้ไขจากเครื่องไหน ข้อมูลอยู่ในเครื่องนั้น ถ้าจะย้ายเครื่อง ให้สำรองข้อมูลแล้วกู้คืนในเครื่องใหม่</p></div>
+    <div class="row-btn"><button class="btn btn-ghost" id="resetFile">โหลดข้อมูลจากไฟล์เว็บนี้ (ทับของในเครื่อง)</button></div>
+    <div style="height:20px"></div>
+  </div>
+</div></div>
+
+<div id="toast"></div>
+<div id="printArea"></div>
+
+<script>
+(function(){
+"use strict";
+
+/* ================= config ================= */
+var DEF = {
+  brand:"K.C.S ช่างก่อสร้าง", tag:"รับสร้างบ้าน ต่อเติม ทั่วไทย",
+  kicker:"รับเหมาก่อสร้างครบวงจร",
+  title:"แบบบ้านสวย ราคาจริง สร้างได้จริง",
+  sub:"เลือกชมแบบบ้านที่เราออกแบบและก่อสร้างจริง ปรึกษาและประเมินราคาฟรี",
+  phone:"083 431 7893", line:"0834317893", fb:"", cover:"",
+  about:"", area:"", hour:"", addr:"", warr:"",
+  rateLow:"", rateHigh:"",
+  payNote:"เปอร์เซ็นต์และรายละเอียดงวดงานปรับได้ตามขนาดงานและข้อตกลงในสัญญาแต่ละหลัง"
+};
+
+var SCHEMA = {
+  houses:{ t:"แบบบ้าน", fields:[
+    {k:"imgs", l:"รูปภาพ (รูปแรกคือรูปหน้าปก)", type:"imgs"},
+    {k:"name", l:"ชื่อแบบบ้าน", ph:"เช่น บ้านชั้นเดียว ทรงโมเดิร์น A1", req:true},
+    {k:"cat",  l:"หมวดหมู่", ph:"เช่น บ้านชั้นเดียว", list:true},
+    {k:"price",l:"ราคา", ph:"เช่น 1,250,000 บาท หรือ สอบถามราคา"},
+    {k:"area", l:"พื้นที่ใช้สอย", ph:"เช่น 120 ตร.ม.", half:true},
+    {k:"land", l:"ขนาดที่ดินแนะนำ", ph:"เช่น 50 ตร.ว.", half:true},
+    {k:"bed",  l:"ห้องนอน", ph:"3", half:true},
+    {k:"bath", l:"ห้องน้ำ", ph:"2", half:true},
+    {k:"park", l:"ที่จอดรถ", ph:"1 คัน", half:true},
+    {k:"floor",l:"จำนวนชั้น", ph:"1", half:true},
+    {k:"time", l:"ระยะเวลาก่อสร้างโดยประมาณ", ph:"เช่น 5–6 เดือน"},
+    {k:"desc", l:"รายละเอียดแบบบ้าน", type:"area", ph:"จุดเด่นของแบบบ้านนี้…"},
+    {k:"simgs", l:"รูปวัสดุที่ใช้ (ใส่ได้หลายรูป)", type:"imgs"},
+    {k:"spec", l:"สเปกวัสดุหลัก", type:"area", ph:"เช่น เสาเข็มตอก / หลังคาเมทัลชีท / พื้นกระเบื้อง 60x60"},
+    {k:"inc",  l:"ราคานี้รวมอะไรบ้าง", type:"area", ph:"เช่น งานโครงสร้าง งานสถาปัตย์ งานระบบไฟ-ประปา"},
+    {k:"exc",  l:"ไม่รวมอะไรบ้าง", type:"area", ph:"เช่น ค่ามิเตอร์ไฟ-น้ำ ค่าถมดิน เฟอร์นิเจอร์"}
+  ]},
+  services:{ t:"บริการ", fields:[
+    {k:"ic", l:"ไอคอน (อิโมจิ)", ph:"🏠", half:true},
+    {k:"title", l:"ชื่อบริการ", req:true, half:true},
+    {k:"detail", l:"รายละเอียดสั้นๆ", type:"area"}
+  ]},
+  steps:{ t:"ขั้นตอน", fields:[
+    {k:"title", l:"ชื่อขั้นตอน", req:true},
+    {k:"detail", l:"รายละเอียด", type:"area"}
+  ]},
+  payments:{ t:"งวดงาน", fields:[
+    {k:"title", l:"ชื่องวดงาน", ph:"เช่น งานฐานราก", req:true},
+    {k:"pc", l:"เปอร์เซ็นต์ (ใส่เฉพาะตัวเลข)", ph:"20", half:true},
+    {k:"amt", l:"จำนวนเงิน (ถ้ามี)", ph:"เช่น 200,000", half:true},
+    {k:"detail", l:"งานที่ต้องเสร็จในงวดนี้", type:"area"}
+  ]},
+  links:{ t:"ช่องทาง", fields:[
+    {k:"ic", l:"ไอคอน (อิโมจิ)", ph:"🎵", half:true},
+    {k:"label", l:"ชื่อช่องทาง", ph:"TikTok", req:true, half:true},
+    {k:"url", l:"ลิงก์ หรือ เบอร์โทร / อีเมล", ph:"https://... หรือ tel:08x... หรือ mailto:..."},
+    {k:"note", l:"ข้อความใต้ชื่อ", ph:"เช่น @kcs.builder"},
+    {k:"btn", l:"แสดงเป็นปุ่มติดต่อบนหัวเว็บและท้ายเว็บด้วย", type:"check"}
+  ]},
+  faq:{ t:"คำถาม", fields:[
+    {k:"q", l:"คำถาม", req:true},
+    {k:"a", l:"คำตอบ", type:"area"}
+  ]},
+  team:{ t:"ทีมช่าง", fields:[
+    {k:"imgs", l:"รูปช่าง / รูปทีม", type:"imgs"},
+    {k:"name", l:"ชื่อ-ชื่อเล่น", req:true, ph:"เช่น ช่างบาส", half:true},
+    {k:"role", l:"ตำแหน่ง / หน้าที่", ph:"หัวหน้าช่าง", half:true},
+    {k:"detail", l:"ประสบการณ์ / ความถนัด", type:"area", ph:"เช่น งานโครงสร้าง 12 ปี"}
+  ]},
+  ba:{ t:"งานก่อน-หลัง", fields:[
+    {k:"imgs", l:"รูปก่อน (รูปแรก) และ รูปหลัง (รูปที่สอง)", type:"imgs"},
+    {k:"title", l:"ชื่องาน", req:true, ph:"เช่น ต่อเติมครัวหลังบ้าน"},
+    {k:"place", l:"สถานที่", ph:"อ.เมือง จ.ขอนแก่น", half:true},
+    {k:"days", l:"ใช้เวลา", ph:"เช่น 21 วัน", half:true},
+    {k:"detail", l:"รายละเอียดงาน", type:"area"}
+  ]},
+  works:{ t:"รูปผลงาน", fields:[
+    {k:"imgs", l:"รูปผลงาน (ใส่ได้หลายรูป)", type:"imgs"},
+    {k:"title", l:"ชื่องาน", req:true, ph:"เช่น บ้านชั้นเดียว คุณสมชาย"},
+    {k:"place", l:"สถานที่", ph:"เช่น อ.เมือง จ.ขอนแก่น", half:true},
+    {k:"year", l:"ปีที่ส่งมอบ", ph:"2568", half:true},
+    {k:"detail", l:"รายละเอียดงาน", type:"area"}
+  ]},
+  reviews:{ t:"รีวิว", fields:[
+    {k:"imgs", l:"รูป / ภาพหน้าจอรีวิว / ภาพปกคลิป (ใส่ได้หลายรูป)", type:"imgs"},
+    {k:"name", l:"ชื่อลูกค้า", req:true, ph:"คุณสมชาย", half:true},
+    {k:"place", l:"พื้นที่", ph:"จ.ขอนแก่น", half:true},
+    {k:"star", l:"ดาว (1-5)", ph:"5"},
+    {k:"url", l:"ลิงก์คลิปรีวิว (TikTok / ยูทูบ / เฟซบุ๊ก)", ph:"https://..."},
+    {k:"text", l:"ข้อความรีวิว", type:"area", ph:"คัดลอกข้อความจริงจากลูกค้ามาใส่"}
+  ]},
+  tips:{ t:"เรื่องน่ารู้", fields:[
+    {k:"imgs", l:"รูป หรือ ภาพปกคลิป", type:"imgs"},
+    {k:"title", l:"หัวเรื่อง", req:true, ph:"เช่น เลือกเสาเข็มแบบไหนดี"},
+    {k:"url", l:"ลิงก์คลิป (ยูทูบ / TikTok / เฟซบุ๊ก)", ph:"https://..."},
+    {k:"detail", l:"รายละเอียด", type:"area", ph:"อธิบายให้ลูกค้าเข้าใจง่ายๆ"}
+  ]},
+  stats:{ t:"ตัวเลขผลงาน", fields:[
+    {k:"v", l:"ตัวเลข", ph:"เช่น 10+", req:true, half:true},
+    {k:"l", l:"คำอธิบาย", ph:"เช่น ปีประสบการณ์", half:true}
+  ]}
+};
+
+/* ================= state ================= */
+var $=function(i){return document.getElementById(i);};
+var db=null, assets=null, dl=null, canEdit=false, editMode=false;
+var site=Object.assign({},DEF);
+var D={houses:[],services:[],steps:[],payments:[],links:[],faq:[],stats:[],tips:[],works:[],reviews:[],team:[],ba:[]};
+var filter="ทั้งหมด", curCol=null, curRec=null, curImgs={}, curCover="";
+
+function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){
+  return {"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c];});}
+function url(id){ if(!id) return ""; return /^(https?:|data:|blob:|\/)/.test(id)?id:"/_blob/"+id; }
+function rows(s){
+  var a=Array.isArray(s)?s:(s&&Array.isArray(s.docs)?s.docs:[]);
+  return a.map(function(d){
+    var v=(d&&typeof d.data==="function")?d.data():(d&&d.data?d.data:d);
+    var id=(d&&(d.id||d.key))||(v&&v.id)||""; var o=Object.assign({},v||{}); o.id=o.id||id; return o;
+  }).filter(function(o){return o&&o.id;});
+}
+function one(s){ if(!s) return null; if(typeof s.data==="function") return s.data();
+  if(s.data) return s.data; return s; }
+function flash(el,t,k){ el.textContent=t; el.className="msg show "+(k||"ok");
+  if(k!=="err") setTimeout(function(){el.className="msg";},2600); }
+function syncModal(){
+  var lb=document.getElementById("lbox");
+  var any=document.querySelector(".ov.open")||(lb&&lb.classList.contains("on"));
+  document.body.classList.toggle("modal",!!any);
+  document.body.style.overflow= any ? "hidden" : "";
+}
+function open(o){ if(!o) return; o.classList.add("open"); syncModal(); }
+function close(o){ if(!o) return; o.classList.remove("open"); syncModal(); }
+/* ---- full-screen image viewer ---- */
+var lbList=[], lbI=0;
+function lbEl(){ return document.getElementById("lbox"); }
+function lbShow(){
+  var im=document.getElementById("lbImg");
+  if(!im) return;
+  var e=lbEl(); if(e) e.classList.remove("err");
+  im.onerror=function(){ var x=lbEl(); if(x) x.classList.add("err"); };
+  im.onload=function(){ var x=lbEl(); if(x) x.classList.remove("err"); };
+  im.src=lbList[lbI]||"";
+  var c=document.getElementById("lbCnt");
+  if(c) c.textContent=(lbI+1)+" / "+lbList.length;
+  var nv=document.getElementById("lbNav");
+  if(nv) nv.style.display=lbList.length>1?"flex":"none";
+}
+function lbOpen(list,i){
+  list=(list||[]).filter(Boolean);
+  if(!list.length) return;
+  lbList=list; lbI=Math.max(0,Math.min(i||0,list.length-1));
+  lbShow(); var e=lbEl(); if(e) e.classList.add("on"); syncModal();
+}
+function lbClose(){ var e=lbEl(); if(e) e.classList.remove("on"); syncModal(); }
+function lbStep(d){
+  if(lbList.length<2) return;
+  lbI=(lbI+d+lbList.length)%lbList.length; lbShow();
+}
+document.addEventListener("click",function(e){
+  var nb=e.target.closest("[data-lb]");
+  if(nb){ e.stopPropagation(); lbStep(parseInt(nb.getAttribute("data-lb"),10)||1); return; }
+  if(e.target.id==="lbClose"||e.target.id==="lbox"||e.target.id==="lbImg"){ lbClose(); return; }
+  var g=e.target.closest("#vGal img, #tGal img, .dblock .gal img");
+  if(!g) return;
+  var box=g.closest(".gal")||g.parentElement;
+  var list=[], idx=0;
+  var all=box?box.querySelectorAll("img"):[g];
+  for(var i=0;i<all.length;i++){ list.push(all[i].getAttribute("src")); if(all[i]===g) idx=i; }
+  lbOpen(list,idx);
+});
+document.addEventListener("keydown",function(e){
+  var el=lbEl(); if(!el||!el.classList.contains("on")) return;
+  if(e.key==="Escape") lbClose();
+  else if(e.key==="ArrowLeft") lbStep(-1);
+  else if(e.key==="ArrowRight") lbStep(1);
+});
+(function(){
+  var sx=null;
+  document.addEventListener("touchstart",function(e){
+    var el=lbEl(); if(!el||!el.classList.contains("on")) return;
+    if(e.touches&&e.touches.length===1) sx=e.touches[0].clientX;
+  },{passive:true});
+  document.addEventListener("touchend",function(e){
+    var el=lbEl(); if(!el||!el.classList.contains("on")||sx===null) return;
+    var ex=(e.changedTouches&&e.changedTouches[0])?e.changedTouches[0].clientX:sx;
+    var d=ex-sx; sx=null;
+    if(Math.abs(d)>55) lbStep(d<0?1:-1);
+  },{passive:true});
+})();
+
+document.addEventListener("click",function(e){
+  var b=e.target.closest("[data-close]"); if(b){ close(b.closest(".ov")); return; }
+  if(e.target.classList&&e.target.classList.contains("ov")) close(e.target);
+});
+document.addEventListener("DOMContentLoaded",function(){});
+(function(){
+  var ok=document.getElementById("askOk");
+  if(ok) ok.onclick=function(){ var f=askFn; askFn=null; close(document.getElementById("ovAsk")); if(f) try{ f(); }catch(e){ toast("ทำรายการไม่สำเร็จ"); } };
+  var cs=document.getElementById("copySel");
+  if(cs) cs.onclick=function(){
+    var ta=document.getElementById("copyTa");
+    try{ ta.focus(); ta.setSelectionRange(0,ta.value.length);
+      var done=document.execCommand&&document.execCommand("copy");
+      toast(done?"คัดลอกแล้ว":"กดค้างที่ข้อความแล้วเลือกคัดลอก");
+    }catch(e){ toast("กดค้างที่ข้อความแล้วเลือกคัดลอก"); }
+  };
+})();
+function sortA(a){ a.sort(function(x,y){return (x.ord||0)-(y.ord||0);}); }
+
+/* ---- resilient async layer: nothing may ever hang the UI ---- */
+function P(v){
+  try{ return (v && typeof v.then==="function") ? v : Promise.resolve(v); }
+  catch(e){ return Promise.reject(e); }
+}
+function withTimeout(p,ms){
+  return new Promise(function(res,rej){
+    var fin=false;
+    var t=setTimeout(function(){ if(!fin){ fin=true; rej(new Error("TIMEOUT")); } }, ms||15000);
+    P(p).then(function(v){ if(!fin){ fin=true; clearTimeout(t); res(v); } },
+              function(e){ if(!fin){ fin=true; clearTimeout(t); rej(e||new Error("ERR")); } });
+  });
+}
+function docRef(path){
+  if(typeof db.doc==="function") return db.doc(path);
+  if(typeof db.collection==="function"){
+    var i=path.lastIndexOf("/");
+    return db.collection(path.slice(0,i)).doc(path.slice(i+1));
+  }
+  return null;
+}
+function dbSet(path,data){
+  if(!db) return Promise.reject(new Error("NODB"));
+  try{
+    var r=docRef(path);
+    if(r&&typeof r.set==="function") return withTimeout(r.set(data),15000);
+    if(typeof db.set==="function") return withTimeout(db.set(path,data),15000);
+    return Promise.reject(new Error("NOAPI"));
+  }catch(e){ return Promise.reject(e); }
+}
+function dbDel(path){
+  if(!db) return Promise.reject(new Error("NODB"));
+  try{
+    var r=docRef(path);
+    if(r&&typeof r.delete==="function") return withTimeout(r.delete(),15000);
+    if(typeof db.delete==="function") return withTimeout(db.delete(path),15000);
+    return Promise.reject(new Error("NOAPI"));
+  }catch(e){ return Promise.reject(e); }
+}
+function dbGetDoc(path){
+  if(!db) return Promise.reject(new Error("NODB"));
+  try{
+    var r=docRef(path);
+    if(r&&typeof r.get==="function") return withTimeout(r.get(),12000);
+    if(typeof db.get==="function") return withTimeout(db.get(path),12000);
+    return Promise.reject(new Error("NOAPI"));
+  }catch(e){ return Promise.reject(e); }
+}
+function dbGetCol(col){
+  if(!db) return Promise.reject(new Error("NODB"));
+  try{
+    if(typeof db.collection==="function") return withTimeout(db.collection(col).get(),12000);
+    if(typeof db.list==="function") return withTimeout(db.list(col),12000);
+    return Promise.reject(new Error("NOAPI"));
+  }catch(e){ return Promise.reject(e); }
+}
+function errMsg(e,verb){
+  var m=(e&&e.message)||"";
+  if(m==="TIMEOUT") return "ระบบไม่ตอบกลับ ข้อมูลยังไม่ถูก"+verb+" กด"+verb+"อีกครั้งได้เลย";
+  if(m==="NODB"||m==="NOAPI") return "ยังเชื่อมต่อระบบไม่ได้ ลองปิดหน้านี้แล้วเปิดใหม่";
+  return verb+"ไม่สำเร็จ — บัญชีนี้อาจไม่มีสิทธิ์แก้ไข";
+}
+function busy(ids,on,label){
+  ids.forEach(function(id){
+    var b=$(id); if(!b) return;
+    b.disabled=!!on; b.style.opacity=on?".55":"";
+    if(on){
+      if(label){ if(!b.getAttribute("data-t")) b.setAttribute("data-t",b.textContent); b.textContent=label; }
+    } else {
+      var t=b.getAttribute("data-t");
+      if(t){ b.textContent=t; b.removeAttribute("data-t"); }
+    }
+  });
+}
+function toast(msg){
+  var t=$("toast"); if(!t) return;
+  t.textContent=msg; t.classList.add("on");
+  clearTimeout(toast._t); toast._t=setTimeout(function(){ t.classList.remove("on"); },4200);
+}
+window.addEventListener("error",function(e){ if(e&&e.message) toast("เกิดข้อผิดพลาดบางอย่าง ลองอีกครั้ง"); });
+window.addEventListener("unhandledrejection",function(){});
+/* ---- in-page dialogs: native confirm/alert/prompt are blocked inside an iframe ---- */
+var askFn=null;
+function ask(msg,label,yes){
+  if($("askMsg")){ $("askMsg").textContent=msg; }
+  if($("askOk")){ $("askOk").textContent=label||"ยืนยัน"; }
+  askFn=yes; open($("ovAsk"));
+}
+function showCopy(t){
+  var ta=$("copyTa"); if(!ta){ toast("คัดลอกไม่ได้"); return; }
+  ta.value=t; open($("ovCopy"));
+  setTimeout(function(){ try{ ta.focus(); ta.setSelectionRange(0,ta.value.length); }catch(e){} },140);
+}
+function copyText(t,msg){
+  try{
+    if(navigator.clipboard&&navigator.clipboard.writeText){
+      return withTimeout(P(navigator.clipboard.writeText(t)),4000)
+        .then(function(){ toast(msg||"คัดลอกแล้ว"); })
+        .catch(function(){ showCopy(t); });
+    }
+  }catch(e){}
+  showCopy(t);
+  return Promise.resolve();
+}
+function openExt(u){
+  if(!u) return;
+  try{
+    var a=document.createElement("a");
+    a.href=u; a.target="_blank"; a.rel="noopener";
+    document.body.appendChild(a); a.click(); a.remove();
+  }catch(e){ showCopy(u); }
+}
+
+
+
+/* ================= render ================= */
+function ctaHTML(dark){
+  var h="";
+  if(site.phone) h+='<a class="btn btn-call" href="tel:'+esc(site.phone.replace(/[^0-9+]/g,""))+'">📞 โทร '+esc(site.phone)+'</a>';
+  if(site.line)  h+='<a class="btn btn-line" target="_blank" rel="noopener" href="https://line.me/ti/p/~'+esc(site.line.replace(/\s/g,""))+'">💬 แอดไลน์</a>';
+  (D.links||[]).forEach(function(l){
+    if(l.btn&&l.url) h+='<a class="btn '+(dark?"btn-ghost-d":"btn-ghost")+'" target="_blank" rel="noopener" href="'+esc(l.url)+'">'+esc(l.ic||"🔗")+' '+esc(l.label)+'</a>';
+  });
+  h+='<button class="btn btn-quote" data-quote>📝 ขอใบเสนอราคา</button>';
+  if(site.fb)    h+='<a class="btn '+(dark?"btn-ghost-d":"btn-ghost")+'" target="_blank" rel="noopener" href="'+esc(site.fb)+'">📘 เพจเฟซบุ๊ก</a>';
+  return h;
+}
+function renderSite(){
+  $("bName").textContent=site.brand||DEF.brand;
+  $("bTag").textContent=site.tag||"";
+  $("hTag").textContent=site.kicker||DEF.kicker;
+  $("hTitle").textContent=site.title||DEF.title;
+  $("hSub").textContent=site.sub||"";
+  var rp=$("ratePill");
+  if(rp){ var lo=parseFloat(site.rateLow)||0, hi=parseFloat(site.rateHigh)||0;
+    if(lo||hi){ rp.style.display="inline-block";
+      rp.textContent="เริ่มต้น "+(lo||hi).toLocaleString("en-US")+" บาท/ตร.ม."; }
+    else rp.style.display="none"; }
+  $("about").textContent=site.about||"ยังไม่ได้ใส่ข้อมูลแนะนำร้าน";
+  $("hCta").innerHTML=ctaHTML(true);
+  $("fCta").innerHTML=ctaHTML(true);
+  $("foot").textContent="© "+(site.brand||DEF.brand);
+  document.title=(site.brand||DEF.brand)+" — รับสร้างบ้าน ต่อเติม";
+  var im=$("heroImg");
+  if(site.cover){ im.src=url(site.cover); im.style.display="block"; $("hero").classList.add("has-photo"); }
+  else { im.style.display="none"; $("hero").classList.remove("has-photo"); }
+  var inf=[];
+  if(site.area) inf.push(["พื้นที่บริการ",site.area]);
+  if(site.hour) inf.push(["เวลาทำการ",site.hour]);
+  if(site.addr) inf.push(["ที่ตั้ง",site.addr]);
+  if(site.warr) inf.push(["การรับประกัน",site.warr]);
+  if(site.phone) inf.push(["โทรศัพท์",site.phone]);
+  if(site.line) inf.push(["LINE ID",site.line]);
+  $("info").innerHTML=inf.map(function(x){
+    return '<div class="info-r"><span class="k">'+esc(x[0])+'</span><span>'+esc(x[1])+'</span></div>';}).join("");
+  var b="";
+  if(site.phone) b+='<a class="btn btn-call" href="tel:'+esc(site.phone.replace(/[^0-9+]/g,""))+'">📞 โทรเลย</a>';
+  if(site.line)  b+='<a class="btn btn-line" target="_blank" rel="noopener" href="https://line.me/ti/p/~'+esc(site.line.replace(/\s/g,""))+'">💬 ไลน์</a>';
+  b+='<button class="btn btn-quote" data-quote>📝 ขอราคา</button>';
+  $("bar").innerHTML=b;
+}
+function ebtn(col,id){ return '<button class="pencil" data-ed="'+col+'" data-id="'+esc(id)+'">✏️</button>'+
+  '<div class="order"><button data-mv="up" data-col="'+col+'" data-id="'+esc(id)+'">▲</button>'+
+  '<button data-mv="down" data-col="'+col+'" data-id="'+esc(id)+'">▼</button></div>'; }
+
+function renderStats(){
+  var a=D.stats;
+  $("statsBox").innerHTML = a.length ? '<div class="stats">'+a.map(function(s){
+    return '<div class="stat" style="position:relative"><b>'+esc(s.v)+'</b><span>'+esc(s.l||"")+'</span>'+
+      '<button class="pencil" style="top:3px;right:3px;width:24px;height:24px;font-size:11px" data-ed="stats" data-id="'+esc(s.id)+'">✏️</button></div>';
+  }).join("")+'</div>' : "";
+}
+function renderSvc(){
+  var a=D.services;
+  $("svcBox").innerHTML = a.length ? '<div class="svc">'+a.map(function(s){
+    return '<div class="svc-i"><div class="ic">'+esc(s.ic||"🔧")+'</div><b>'+esc(s.title)+'</b>'+
+      '<p>'+esc(s.detail||"")+'</p>'+ebtn("services",s.id)+'</div>';}).join("")+'</div>'
+    : '<div class="blank">ยังไม่ได้ใส่รายการบริการ</div>';
+}
+function renderSteps(){
+  var a=D.steps;
+  $("stepBox").innerHTML = a.length ? a.map(function(s,i){
+    return '<div class="step"><div class="n">'+(i+1)+'</div><div class="tx"><b>'+esc(s.title)+'</b>'+
+      '<p>'+esc(s.detail||"")+'</p></div>'+
+      '<button class="pencil" style="position:static;margin-top:2px" data-ed="steps" data-id="'+esc(s.id)+'">✏️</button>'+
+      '<div class="order" style="position:static;align-items:flex-start;margin-top:2px">'+
+      '<button data-mv="up" data-col="steps" data-id="'+esc(s.id)+'">▲</button>'+
+      '<button data-mv="down" data-col="steps" data-id="'+esc(s.id)+'">▼</button></div></div>';
+  }).join("") : '<div class="blank">ยังไม่ได้ใส่ขั้นตอนการทำงาน</div>';
+}
+function renderPay(){
+  var a=D.payments, tot=0;
+  a.forEach(function(p){ var n=parseFloat(p.pc); if(!isNaN(n)) tot+=n; });
+  if(!a.length){ $("payBox").innerHTML='<div class="blank">ยังไม่ได้ใส่งวดงาน</div>'; return; }
+  $("payBox").innerHTML='<div class="pay"><div class="pay-h"><span style="flex:1">งวดงานและเงื่อนไขการชำระ</span><span>สัดส่วน</span></div>'+
+    a.map(function(p,i){
+      return '<div class="pay-r"><div class="pay-n mono">'+(i+1)+'</div><div class="pay-m"><b>'+esc(p.title)+'</b>'+
+        '<p>'+esc(p.detail||"")+'</p>'+(p.amt?'<p style="color:var(--ink2);margin-top:3px">จำนวนเงิน '+esc(p.amt)+' บาท</p>':'')+'</div>'+
+        (p.pc?'<div class="pay-p mono">'+esc(p.pc)+'%</div>':'')+ebtn("payments",p.id)+'</div>';
+    }).join("")+
+    (tot>0?'<div class="pay-sum"><span>รวมทั้งหมด</span><span class="mono">'+(Math.round(tot*10)/10)+'%</span></div>':'')+
+    (site.payNote?'<div class="pay-note">※ '+esc(site.payNote)+'</div>':'')+'</div>';
+}
+function renderLinks(){
+  var a=D.links.filter(function(l){ return l.url || editMode; });
+  if(!a.length){ $("lkBox").innerHTML='<div class="blank">ยังไม่ได้ใส่ช่องทางติดตาม</div>'; return; }
+  $("lkBox").innerHTML='<div class="lk">'+a.map(function(l){
+    var on=!!l.url;
+    return '<'+(on?'a':'div')+' class="lk-i'+(on?'':' off')+'"'+(on?' href="'+esc(l.url)+'" target="_blank" rel="noopener"':'')+'>'+
+      '<span class="ic">'+esc(l.ic||"🔗")+'</span><span style="min-width:0"><b>'+esc(l.label)+'</b>'+
+      '<span>'+esc(l.note|| (on?"":"ยังไม่ได้ใส่ลิงก์"))+'</span></span>'+
+      (on?'<span class="go">↗</span>':'')+ebtn("links",l.id)+'</'+(on?'a':'div')+'>';
+  }).join("")+'</div>';
+}
+
+function renderEst(){
+  var lo=parseFloat(site.rateLow)||0, hi=parseFloat(site.rateHigh)||0;
+  var el=document.getElementById("estBox");
+  if(!el) return;
+  if(!lo&&!hi){ el.innerHTML='<div class="blank">ยังไม่ได้ตั้งราคาประเมินต่อตารางเมตร</div>'; return; }
+  el.innerHTML='<div class="est"><div class="est-row">'+
+    '<input id="estA" inputmode="decimal" placeholder="พื้นที่ใช้สอย เช่น 120"><span>ตร.ม.</span></div>'+
+    '<div class="est-out"><small>ประมาณการค่าก่อสร้าง</small><b id="estR">—</b></div>'+
+    '<p class="est-note">คิดจากราคาประเมิน '+(lo?fmt(lo):"")+(hi&&hi!==lo?(" – "+fmt(hi)):"")+' บาท/ตร.ม. '+
+    'เป็นตัวเลขประมาณการเท่านั้น ราคาจริงขึ้นอยู่กับแบบบ้าน สเปกวัสดุ สภาพพื้นที่ และต้องประเมินหน้างานก่อน</p>'+
+    '<div class="est-cta">'+ctaHTML(false)+'</div></div>';
+  var inp=document.getElementById("estA"), out=document.getElementById("estR");
+  function calc(){
+    var a=parseFloat(inp.value)||0;
+    if(!a){ out.textContent="—"; return; }
+    var l=Math.round(a*(lo||hi)), h=Math.round(a*(hi||lo));
+    out.textContent = (l===h) ? (fmt(l)+" บาท") : (fmt(l)+" – "+fmt(h)+" บาท");
+  }
+  inp.addEventListener("input",calc);
+}
+function fmt(n){ return (Number(n)||0).toLocaleString("en-US"); }
+function renderTeam(){
+  var a=D.team||[], el=$("teamBox"); if(!el) return;
+  el.innerHTML = a.length ? '<div class="team">'+a.map(function(t){
+    var im=(t.imgs||[])[0];
+    return '<div class="tm" data-team="'+esc(t.id)+'">'+
+      (im?'<img loading="lazy" src="'+esc(url(im))+'" alt="'+esc(t.name||"")+'">':'<div class="ph-empty">ยังไม่มีรูป</div>')+
+      '<b>'+esc(t.name||"")+'</b><span>'+esc(t.role||"")+'</span>'+
+      (t.detail?'<p>'+esc(t.detail)+'</p>':'')+ebtn("team",t.id)+'</div>';
+  }).join("")+'</div>' : '<div class="blank">ยังไม่ได้ใส่ทีมช่าง</div>';
+}
+function renderBA(){
+  var a=D.ba||[], el=$("baBox"); if(!el) return;
+  el.innerHTML = a.length ? a.map(function(w){
+    var im=w.imgs||[];
+    return '<div class="baw" data-ba="'+esc(w.id)+'"><div class="ba2">'+
+      '<figure>'+(im[0]?'<img loading="lazy" src="'+esc(url(im[0]))+'" alt="">':'<div class="ph-empty"></div>')+'<figcaption>ก่อน</figcaption></figure>'+
+      '<figure class="after">'+(im[1]?'<img loading="lazy" src="'+esc(url(im[1]))+'" alt="">':'<div class="ph-empty"></div>')+'<figcaption>หลัง</figcaption></figure>'+
+      '</div><div class="bb"><b>'+esc(w.title||"")+'</b>'+
+      '<span>'+esc([w.place,w.days].filter(Boolean).join(" · "))+'</span></div>'+
+      ebtn("ba",w.id)+'</div>';
+  }).join("") : '<div class="blank">ยังไม่มีงานก่อน-หลัง</div>';
+}
+function viewTeam(id){
+  var t=find("team",id); if(!t) return;
+  $("tTitle").textContent=(t.name||"")+(t.role?" · "+t.role:"");
+  var im=t.imgs||[];
+  $("tGal").innerHTML=im.length?im.map(function(x){return '<img src="'+esc(url(x))+'" alt="">';}).join(""):"";
+  $("tDesc").textContent=t.detail||"";
+  $("tCta").innerHTML=ctaHTML(false); open($("ovTip"));
+}
+function viewBA(id){
+  var w=find("ba",id); if(!w) return;
+  $("tTitle").textContent=w.title||"";
+  var im=w.imgs||[];
+  $("tGal").innerHTML=im.length?im.map(function(x,i){
+    return '<img src="'+esc(url(x))+'" alt="'+(i===0?"ก่อน":"หลัง")+'">'; }).join(""):"";
+  $("tDesc").textContent=[[w.place,w.days].filter(Boolean).join(" · "),w.detail||""].filter(Boolean).join("\n\n");
+  $("tCta").innerHTML=ctaHTML(false); open($("ovTip"));
+}
+function renderWorks(){
+  var a=(D.works||[]), el=document.getElementById("workBox");
+  if(!el) return;
+  el.innerHTML = a.length ? '<div class="works">'+a.map(function(w){
+    var im=(w.imgs||[])[0];
+    return '<div class="work" data-work="'+esc(w.id)+'">'+
+      (im?'<img loading="lazy" src="'+esc(url(im))+'" alt="'+esc(w.title||"")+'">':'<div class="ph-empty" style="aspect-ratio:1">ยังไม่มีรูป</div>')+
+      '<div class="wl"><b>'+esc(w.title||"")+'</b><span>'+esc([w.place,w.year].filter(Boolean).join(" · "))+'</span></div>'+
+      ebtn("works",w.id)+'</div>';
+  }).join("")+'</div>' : '<div class="blank">ยังไม่มีรูปผลงาน</div>';
+}
+function renderRev(){
+  var a=(D.reviews||[]), el=document.getElementById("revBox");
+  if(!el) return;
+  el.innerHTML = a.length ? a.map(function(r){
+    var n=parseInt(r.star,10); if(isNaN(n)||n<1) n=5; if(n>5) n=5;
+    var st=""; for(var i=0;i<5;i++) st+= i<n ? "\u2605" : "\u2606";
+    var ini=(r.name||"?").trim().charAt(0);
+    var im=(r.imgs||[])[0];
+    return '<div class="rev" data-rev="'+esc(r.id)+'"><div class="rev-h"><div class="rev-av">'+esc(ini)+'</div>'+
+      '<div style="min-width:0"><b>'+esc(r.name||"")+'</b>'+
+      '<span>'+esc(r.place||"")+'</span></div>'+
+      '<div class="stars" style="margin-left:auto">'+st+'</div></div>'+
+      '<div class="rev-b">'+
+      (im?'<img class="rev-im" loading="lazy" src="'+esc(url(im))+'" alt="">':'')+
+      '<p>'+esc(r.text||"")+'</p></div>'+
+      (r.url?'<span class="tip-go">\u25b6 \u0e14\u0e39\u0e04\u0e25\u0e34\u0e1b\u0e23\u0e35\u0e27\u0e34\u0e27</span>':'')+
+      ebtn("reviews",r.id)+'</div>';
+  }).join("") : '<div class="blank">\u0e22\u0e31\u0e07\u0e44\u0e21\u0e48\u0e21\u0e35\u0e23\u0e35\u0e27\u0e34\u0e27</div>';
+}
+
+function renderTips(){
+  var a=D.tips||[];
+  $("tipBox").innerHTML = a.length ? a.map(function(t){
+    var im=(t.imgs||[])[0];
+    return '<div class="tip" data-tip="'+esc(t.id)+'">'+
+      (im?'<img class="tip-th" src="'+esc(url(im))+'" alt="">'
+         :'<div class="tip-ph">'+(t.url?'\u25b6':'\ud83d\udcc4')+'</div>')+
+      '<div class="tip-tx"><b>'+esc(t.title)+'</b><p>'+esc(t.detail||"")+'</p>'+
+      (t.url?'<span class="tip-go">\u25b6 \u0e14\u0e39\u0e04\u0e25\u0e34\u0e1b / \u0e40\u0e1b\u0e34\u0e14\u0e25\u0e34\u0e07\u0e01\u0e4c</span>':'')+'</div>'+
+      ebtn("tips",t.id)+'</div>';
+  }).join("") : '<div class="blank">\u0e22\u0e31\u0e07\u0e44\u0e21\u0e48\u0e21\u0e35\u0e40\u0e23\u0e37\u0e48\u0e2d\u0e07\u0e19\u0e48\u0e32\u0e23\u0e39\u0e49</div>';
+}
+function showRev(r, ctas){
+  var n=parseInt(r.star,10); if(isNaN(n)||n<1) n=5; if(n>5) n=5;
+  var st=""; for(var i=0;i<5;i++) st+= i<n ? "\u2605" : "\u2606";
+  $("tTitle").textContent=(r.name||"")+(r.place?" \u00b7 "+r.place:"");
+  var im=r.imgs||[];
+  $("tGal").innerHTML=im.length?im.map(function(x){return '<img src="'+esc(url(x))+'" alt="">';}).join(""):"";
+  $("tDesc").textContent=st+"\n\n"+(r.text||"");
+  var h="";
+  if(r.url) h+='<a class="btn btn-call" target="_blank" rel="noopener" href="'+esc(r.url)+'">\u25b6 \u0e14\u0e39\u0e04\u0e25\u0e34\u0e1b\u0e23\u0e35\u0e27\u0e34\u0e27</a>';
+  $("tCta").innerHTML=h+ctas;
+  open($("ovTip"));
+}
+function viewRev(id){
+  var r=find("reviews",id); if(!r) return;
+  showRev(r, ctaHTML(false));
+}
+function viewWork(id){
+  var w=find("works",id); if(!w) return;
+  $("tTitle").textContent=w.title||"";
+  var im=w.imgs||[];
+  $("tGal").innerHTML=im.length?im.map(function(i){return '<img src="'+esc(url(i))+'" alt="">';}).join(""):"";
+  $("tDesc").textContent=[ [w.place,w.year].filter(Boolean).join(" · "), w.detail||"" ].filter(Boolean).join("\n\n");
+  $("tCta").innerHTML=ctaHTML(false);
+  open($("ovTip"));
+}
+function viewTip(id){
+  var t=find("tips",id); if(!t) return;
+  $("tTitle").textContent=t.title||"";
+  var im=t.imgs||[];
+  $("tGal").innerHTML=im.length?im.map(function(i){return '<img src="'+esc(url(i))+'" alt="">';}).join(""):"";
+  $("tDesc").textContent=t.detail||"";
+  var h="";
+  if(t.url) h+='<a class="btn btn-call" target="_blank" rel="noopener" href="'+esc(t.url)+'">\u25b6 \u0e40\u0e1b\u0e34\u0e14\u0e04\u0e25\u0e34\u0e1b / \u0e25\u0e34\u0e07\u0e01\u0e4c</a>';
+  h+=ctaHTML(false);
+  $("tCta").innerHTML=h;
+  open($("ovTip"));
+}
+function renderFaq(){
+  var a=D.faq;
+  $("faqBox").innerHTML = a.length ? a.map(function(f){
+    return '<details class="faq-i"><summary>'+esc(f.q)+'</summary><p>'+esc(f.a||"")+'</p>'+
+      '<button class="pencil" style="top:auto;bottom:7px" data-ed="faq" data-id="'+esc(f.id)+'">✏️</button></details>';
+  }).join("") : '<div class="blank">ยังไม่ได้ใส่คำถามที่พบบ่อย</div>';
+}
+function cats(){ var s={}; D.houses.forEach(function(h){ if(h.cat) s[h.cat]=1; });
+  return ["ทั้งหมด"].concat(Object.keys(s)); }
+function renderChips(){
+  var c=cats();
+  $("chips").innerHTML = c.length>1 ? c.map(function(x){
+    return '<button class="chip'+(x===filter?" on":"")+'" data-cat="'+esc(x)+'">'+esc(x)+'</button>';}).join("") : "";
+}
+function numOf(v){
+  var m=String(v==null?"":v).replace(/[^0-9.]/g,"");
+  var n=parseFloat(m); return isNaN(n)?null:n;
+}
+function fval(id){ var e=document.getElementById(id); return e?e.value:""; }
+function activeFilt(){ return !!(fval("hq").trim()||fval("hbed")||fval("hsort")); }
+function filteredHouses(){
+  var q=fval("hq").trim().toLowerCase(), bed=fval("hbed"), sort=fval("hsort");
+  var list=(D.houses||[]).filter(function(h){
+    if(filter!=="ทั้งหมด" && h.cat!==filter) return false;
+    if(bed){
+      var b=parseInt(h.bed,10)||0;
+      if(bed==="4+"){ if(b<4) return false; } else if(String(b)!==bed) return false;
+    }
+    if(q){
+      var hay=[h.name,h.cat,h.desc,h.spec,h.price,h.area,h.land].join(" ").toLowerCase();
+      if(hay.indexOf(q)<0) return false;
+    }
+    return true;
+  });
+  if(sort){
+    var key=(sort==="plo"||sort==="phi")?"price":"area";
+    var dir=(sort==="plo"||sort==="alo")?1:-1;
+    list=list.slice().sort(function(a,b){
+      var x=numOf(a[key]), y=numOf(b[key]);
+      if(x===null&&y===null) return 0;
+      if(x===null) return 1;
+      if(y===null) return -1;
+      return (x-y)*dir;
+    });
+  }
+  return list;
+}
+
+function cardHTML(h){
+  var im=h.imgs||[], m=[];
+  if(h.area) m.push(h.area);
+  if(h.bed) m.push(h.bed+" นอน");
+  if(h.bath) m.push(h.bath+" น้ำ");
+  return '<div class="card" data-house="'+esc(h.id)+'">'+
+    (im[0]?'<img class="ph" loading="lazy" src="'+esc(url(im[0]))+'" alt="'+esc(h.name)+'">':'<div class="ph-empty">ยังไม่มีรูป</div>')+
+    (h.cat?'<span class="badge">'+esc(h.cat)+'</span>':'')+
+    (im.length>1?'<span class="count">🖼 '+im.length+'</span>':'')+
+    ebtn("houses",h.id)+
+    '<div class="card-b"><p class="card-t">'+esc(h.name||"ไม่มีชื่อ")+'</p>'+
+    '<p class="card-m">'+esc(m.join(" · "))+'</p>'+
+    (h.price?'<p class="card-p">'+esc(h.price)+'</p>':'')+'</div></div>';
+}
+function renderHouses(){
+  var el=$("list"), all=D.houses||[];
+  $("hCount").textContent = all.length ? "ทั้งหมด "+all.length+" แบบ — แตะเพื่อดูรายละเอียดเต็ม"
+                                       : "แตะที่แบบบ้านเพื่อดูรายละเอียดเต็ม";
+  var fb=$("hfiltWrap"); if(fb) fb.style.display = all.length>1 ? "" : "none";
+  if(!all.length){
+    $("found").textContent="";
+    el.innerHTML='<div class="blank">'+(canEdit?"เปิดโหมดแก้ไขแล้วกด “เพิ่มแบบบ้าน”":"กำลังอัปเดตแบบบ้าน ติดต่อสอบถามได้เลยครับ")+'</div>';
+    return;
+  }
+  var act=activeFilt(), list=filteredHouses();
+  var cl=$("hclear"); if(cl) cl.style.display = act ? "block" : "none";
+  $("found").textContent = (act||filter!=="ทั้งหมด") ? ("พบ "+list.length+" แบบ") : "";
+  if(!list.length){
+    el.innerHTML='<div class="blank">ไม่พบแบบบ้านที่ตรงกับที่เลือก ลองล้างตัวกรอง</div>';
+    return;
+  }
+  if(act||filter!=="ทั้งหมด"){
+    el.innerHTML='<div class="grid">'+list.map(cardHTML).join("")+'</div>';
+    return;
+  }
+  var g={}, ord=[];
+  list.forEach(function(h){ var k=h.cat||"อื่นๆ"; if(!g[k]){g[k]=[];ord.push(k);} g[k].push(h); });
+  el.innerHTML = (ord.length>1)
+    ? ord.map(function(k){ return '<div class="grp">'+esc(k)+' ('+g[k].length+')</div><div class="grid">'+
+        g[k].map(cardHTML).join("")+'</div>'; }).join("")
+    : '<div class="grid">'+list.map(cardHTML).join("")+'</div>';
+}
+(function(){
+  ["hq","hbed","hsort"].forEach(function(id){
+    var e=document.getElementById(id); if(!e) return;
+    e.addEventListener("input",renderHouses);
+    e.addEventListener("change",renderHouses);
+  });
+  var c=document.getElementById("hclear");
+  if(c) c.onclick=function(){ ["hq","hbed","hsort"].forEach(function(id){
+    var e=document.getElementById(id); if(e) e.value=""; }); renderHouses(); };
+})();
+function setCtas(){ $("hCta").innerHTML=ctaHTML(true); $("fCta").innerHTML=ctaHTML(true); }
+function hideEmptyPublic(){
+  var own=document.body.classList.contains("owner");
+  var rules=[
+    ["s-est", !(parseFloat(site.rateLow)||parseFloat(site.rateHigh))],
+    ["s-work", !(D.works||[]).length],
+    ["s-rev", !(D.reviews||[]).length],
+    ["s-team", !(D.team||[]).length],
+    ["s-ba", !(D.ba||[]).length],
+    ["s-tips", !(D.tips||[]).length],
+    ["s-link", !(D.links||[]).filter(function(l){return l.url;}).length]
+  ];
+  rules.forEach(function(r){
+    var el=document.getElementById(r[0]); if(!el) return;
+    var hide=(!own)&&r[1];
+    el.style.display=hide?"none":"";
+    var prev=el.previousElementSibling;
+    if(prev&&prev.classList&&prev.classList.contains("tape")) prev.style.display=hide?"none":"";
+    var a=document.querySelector('.nav a[href="#'+r[0]+'"]');
+    if(a) a.style.display=hide?"none":"";
+  });
+}
+function renderAll(){ renderStats(); renderSvc(); renderChips(); renderHouses();
+  renderSteps(); renderPay(); renderLinks(); renderTips(); renderFaq();
+  renderEst(); renderWorks(); renderRev(); renderTeam(); renderBA(); setCtas(); hideEmptyPublic(); }
+
+/* ================= clicks ================= */
+document.addEventListener("click",function(e){
+  var c=e.target.closest("[data-cat]");
+  if(c){ filter=c.getAttribute("data-cat"); renderChips(); renderHouses(); return; }
+  var mv=e.target.closest("[data-mv]");
+  if(mv){ e.preventDefault(); e.stopPropagation(); move(mv.getAttribute("data-col"),mv.getAttribute("data-id"),mv.getAttribute("data-mv")); return; }
+  var ed=e.target.closest("[data-ed]");
+  if(ed){ e.preventDefault(); e.stopPropagation(); var col=ed.getAttribute("data-ed");
+    openForm(col, find(col,ed.getAttribute("data-id"))); return; }
+  var ad=e.target.closest("[data-add]");
+  if(ad){ openForm(ad.getAttribute("data-add"),null); return; }
+  var tmx=e.target.closest("[data-team]");
+  if(tmx){ viewTeam(tmx.getAttribute("data-team")); return; }
+  var bax=e.target.closest("[data-ba]");
+  if(bax){ viewBA(bax.getAttribute("data-ba")); return; }
+  var rvx=e.target.closest("[data-rev]");
+  if(rvx){ viewRev(rvx.getAttribute("data-rev")); return; }
+  var wkx=e.target.closest("[data-work]");
+  if(wkx){ viewWork(wkx.getAttribute("data-work")); return; }
+  var tpx=e.target.closest("[data-tip]");
+  if(tpx){ viewTip(tpx.getAttribute("data-tip")); return; }
+  var hc=e.target.closest("[data-house]");
+  if(hc){ view(find("houses",hc.getAttribute("data-house"))); }
+});
+function find(col,id){ var a=D[col]||[]; for(var i=0;i<a.length;i++) if(a[i].id===id) return a[i]; return null; }
+
+/* ================= detail ================= */
+function view(h){
+  if(!h) return; curRec=h; curCol="houses";
+  $("vTitle").textContent=h.name||"แบบบ้าน";
+  var im=h.imgs||[];
+  $("vGal").innerHTML= im.length ? im.map(function(i){return '<img src="'+esc(url(i))+'" alt="">';}).join("")
+    : '<div class="ph-empty" style="width:100%;border-radius:12px">ยังไม่มีรูป</div>';
+  $("vHint").textContent=im.length?"แตะรูปเพื่อดูเต็มจอ":"";
+  $("vPrice").textContent=h.price||"";
+  var p=[];
+  if(h.cat)p.push(["หมวด",h.cat]); if(h.floor)p.push(["ชั้น",h.floor]);
+  if(h.area)p.push(["พื้นที่ใช้สอย",h.area]); if(h.land)p.push(["ที่ดิน",h.land]);
+  if(h.bed)p.push(["ห้องนอน",h.bed]); if(h.bath)p.push(["ห้องน้ำ",h.bath]);
+  if(h.park)p.push(["จอดรถ",h.park]); if(h.time)p.push(["ระยะเวลา",h.time]);
+  $("vPills").innerHTML=p.map(function(x){return '<span class="pill">'+esc(x[0])+' <b>'+esc(x[1])+'</b></span>';}).join("");
+  $("vDesc").textContent=h.desc||"";
+  var bl="";
+  var sim=h.simgs||[];
+  if(h.spec||sim.length){
+    bl+='<div class="dblock"><h4>สเปกวัสดุหลัก</h4>'+
+      (sim.length?'<div class="gal gal-in">'+sim.map(function(x){
+        return '<img loading="lazy" src="'+esc(url(x))+'" alt="">'; }).join("")+'</div>':'')+
+      (h.spec?'<p>'+esc(h.spec)+'</p>':'')+'</div>';
+  }
+  if(h.inc)  bl+='<div class="dblock"><h4>ราคานี้รวม</h4><p>'+esc(h.inc)+'</p></div>';
+  if(h.exc)  bl+='<div class="dblock"><h4>ไม่รวม</h4><p>'+esc(h.exc)+'</p></div>';
+  $("vBlocks").innerHTML=bl;
+  $("vCta").innerHTML=ctaHTML(false);
+  $("vEdit").style.display=(canEdit&&editMode)?"grid":"none";
+  open($("ovView"));
+}
+$("vEdit").onclick=function(){ close($("ovView")); openForm("houses",curRec); };
+
+/* ================= generic form ================= */
+function openForm(col,rec){
+  curCol=col; curRec=rec;
+  var sc=SCHEMA[col]; if(!sc) return;
+  curImgs = {};
+  sc.fields.forEach(function(f){
+    if(f.type==="imgs") curImgs[f.k] = (rec&&rec[f.k]&&rec[f.k].length)?rec[f.k].slice():[];
+  });
+  $("fTitle").textContent=(rec?"แก้ไข":"เพิ่ม")+sc.t;
+  $("fDel").style.display=rec?"block":"none";
+  $("fMsg").className="msg";
+  var h="", open2=false;
+  sc.fields.forEach(function(f,i){
+    if(f.type==="imgs"){
+      if(open2){ h+='</div>'; open2=false; }
+      h+='<div class="f"><label>'+esc(f.l)+'</label><div class="thumbs" id="fTh_'+f.k+'"></div>'+
+         '<label class="up" style="margin-top:8px">＋ เลือกรูปจากเครื่อง'+
+         '<input type="file" data-up="'+f.k+'" accept="image/*" multiple style="display:none"></label>'+
+         '<p class="hint">เลือกได้หลายรูปพร้อมกัน ขนาดไม่เกิน 20 MB ต่อรูป</p></div>';
+      return;
+    }
+    if(f.type==="check"){
+      var ck = rec && rec[f.k] ? " checked" : "";
+      if(open2){ h+='</div>'; open2=false; }
+      h+='<label class="tog"><input type="checkbox" id="fld_'+f.k+'"'+ck+'><span>'+esc(f.l)+'</span></label>';
+      return;
+    }
+    var v = rec ? (rec[f.k]||"") : "";
+    var inp = (f.type==="area")
+      ? '<textarea id="fld_'+f.k+'" placeholder="'+esc(f.ph||"")+'">'+esc(v)+'</textarea>'
+      : '<input id="fld_'+f.k+'" value="'+esc(v)+'" placeholder="'+esc(f.ph||"")+'"'+(f.list?' list="dl"':'')+'>';
+    var block='<div class="f"><label>'+esc(f.l)+'</label>'+inp+'</div>';
+    if(f.half){
+      if(!open2){ h+='<div class="f2">'; open2=true; h+=block; }
+      else { h+=block+'</div>'; open2=false; }
+    } else {
+      if(open2){ h+='</div>'; open2=false; }
+      h+=block;
+    }
+  });
+  if(open2) h+='</div>';
+  if(col==="houses") h+='<datalist id="dl">'+cats().slice(1).map(function(c){return '<option value="'+esc(c)+'">';}).join("")+'</datalist>';
+  $("fFields").innerHTML=h;
+  sc.fields.forEach(function(f){ if(f.type==="imgs") drawThumbs(f.k); });
+  open($("ovForm"));
+}
+function drawThumbs(k){
+  var t=$("fTh_"+k); if(!t) return;
+  var list=curImgs[k]||[];
+  t.innerHTML=list.map(function(i,ix){
+    return '<div class="thumb"><img src="'+esc(url(i))+'">'+
+      '<button class="x" data-rm="'+k+":"+ix+'">✕</button>'+
+      ((k==="imgs"&&ix===0)?'<span class="cv">ปก</span>':'')+'</div>';}).join("");
+}
+(function(){
+  var box=document.getElementById("fFields"); if(!box) return;
+  box.addEventListener("change",function(e){
+    var inp=e.target.closest("input[data-up]"); if(!inp) return;
+    var k=inp.getAttribute("data-up");
+    upload(inp.files,function(ids){
+      curImgs[k]=(curImgs[k]||[]).concat(ids); drawThumbs(k);
+    },$("fMsg"));
+    inp.value="";
+  });
+  box.addEventListener("click",function(e){
+    var b=e.target.closest("[data-rm]"); if(!b) return;
+    var p=String(b.getAttribute("data-rm")).split(":");
+    var k=p[0], ix=parseInt(p[1],10);
+    if(curImgs[k]&&!isNaN(ix)){ curImgs[k].splice(ix,1); drawThumbs(k); }
+  });
+})();
+function upload(files,done,msg){
+  if(!files||!files.length) return;
+  if(!assets){ flash(msg,"ยังอัปโหลดรูปไม่ได้ กรุณาเปิดหน้านี้จากบัญชีเจ้าของ","err"); return; }
+  var l=Array.prototype.slice.call(files), out=[], i=0, fail=0;
+  var lock=["fSave","fSave2","fDel","sSave","sSave2"];
+  busy(lock,true,"กำลังอัปโหลดรูป…");
+  flash(msg,"กำลังอัปโหลด "+l.length+" รูป…","ok");
+  (function next(){
+    if(i>=l.length){
+      busy(lock,false);
+      if(fail) flash(msg,"อัปโหลดสำเร็จ "+out.length+" รูป ไม่สำเร็จ "+fail+" รูป — ลองย่อรูปให้เล็กลงแล้วเพิ่มใหม่","err");
+      else flash(msg,"อัปโหลดเสร็จแล้ว ✓ กดบันทึกได้เลย","ok");
+      done(out); return;
+    }
+    var p;
+    try{ p=withTimeout(P(assets.upload(l[i])),90000); }catch(e){ p=Promise.reject(e); }
+    p.then(function(r){ if(r&&(r.id||r.url)) out.push(r.id||r.url); else fail++; i++; next(); })
+     .catch(function(){ fail++; i++; next(); });
+  })();
+}
+function save(){
+  if(!db){ flash($("fMsg"),"ยังบันทึกไม่ได้ ลองใหม่อีกครั้ง","err"); return; }
+  var sc=SCHEMA[curCol], rec={}, bad=null;
+  sc.fields.forEach(function(f){
+    if(f.type==="imgs"){ rec[f.k]=(curImgs[f.k]||[]).filter(Boolean); return; }
+    if(f.type==="check"){ var cb=$("fld_"+f.k); rec[f.k]=cb?cb.checked:false; return; }
+    var el=$("fld_"+f.k); var v=el?el.value.trim():"";
+    if(f.req&&!v) bad=f.l;
+    rec[f.k]=v;
+  });
+  if(bad){ flash($("fMsg"),"กรุณากรอก “"+bad+"”","err"); return; }
+  var id=curRec?curRec.id:(curCol.charAt(0)+Date.now()+Math.floor(Math.random()*900));
+  rec.id=id;
+  rec.ord=(curRec&&typeof curRec.ord==="number")?curRec.ord:Date.now();
+  flash($("fMsg"),"กำลังบันทึก…","ok");
+  busy(["fSave","fSave2","fDel"],true,"กำลังบันทึก…");
+  dbSet(curCol+"/"+id,rec).then(function(){
+    busy(["fSave","fSave2","fDel"],false);
+    var a=D[curCol], k=-1;
+    for(var i=0;i<a.length;i++) if(a[i].id===id) k=i;
+    if(k>=0) a[k]=rec; else a.push(rec);
+    sortA(a); renderAll(); close($("ovForm")); toast("บันทึกแล้ว ✓");
+  }).catch(function(err){
+    busy(["fSave","fSave2","fDel"],false);
+    flash($("fMsg"),errMsg(err,"บันทึก"),"err");
+  });
+}
+$("fSave").onclick=save; $("fSave2").onclick=save;
+$("fDel").onclick=function(){
+  if(!curRec||!db) return;
+  var id=curRec.id, col=curCol;
+  ask("ลบ “"+(curRec.name||curRec.title||curRec.label||curRec.q||"รายการนี้")+"” ออกจากเว็บ?","ยืนยันลบ",function(){ doDel(col,id); });
+}
+function doDel(col,id){
+  if(!db) return;
+  busy(["fSave","fSave2","fDel"],true,"กำลังลบ…");
+  dbDel(col+"/"+id).then(function(){
+    busy(["fSave","fSave2","fDel"],false);
+    D[col]=D[col].filter(function(x){return x.id!==id;}); renderAll(); close($("ovForm")); toast("ลบแล้ว");
+  }).catch(function(e){ busy(["fSave","fSave2","fDel"],false);
+    flash($("fMsg"),errMsg(e,"ลบ"),"err"); });
+};
+function move(col,id,dir){
+  var a=D[col], i=-1;
+  for(var n=0;n<a.length;n++) if(a[n].id===id) i=n;
+  var j=dir==="up"?i-1:i+1;
+  if(i<0||j<0||j>=a.length||!db) return;
+  var x=a[i], y=a[j], t=x.ord; x.ord=y.ord; y.ord=t;
+  sortA(a); renderAll();
+  dbSet(col+"/"+x.id,x).catch(function(){ toast("เรียงลำดับยังไม่ถูกบันทึก"); });
+  dbSet(col+"/"+y.id,y).catch(function(){});
+}
+
+/* ================= site form ================= */
+function drawCover(){
+  $("sThumbs").innerHTML=curCover?'<div class="thumb"><img src="'+esc(url(curCover))+'"><button class="x" id="rmC">✕</button></div>':"";
+  var r=$("rmC"); if(r) r.onclick=function(){ curCover=""; drawCover(); };
+}
+$("btnSite").onclick=function(){
+  curCover=site.cover||"";
+  ["brand","tag","kicker","title","sub","phone","line","fb","about","area","hour","addr","warr","payNote","rateLow","rateHigh"]
+    .forEach(function(k){
+      var map={brand:"sBrand",tag:"sTag",kicker:"sKicker",title:"sTitle",sub:"sSub",phone:"sPhone",
+        line:"sLine",fb:"sFb",about:"sAbout",area:"sArea",hour:"sHour",addr:"sAddr",warr:"sWarr",payNote:"sPayNote",
+        rateLow:"sRateLow",rateHigh:"sRateHigh"};
+      var el=$(map[k]); if(el) el.value=site[k]||"";
+    });
+  $("sMsg").className="msg"; drawCover(); open($("ovSite"));
+};
+function saveSite(){
+  if(!db){ flash($("sMsg"),"ยังบันทึกไม่ได้","err"); return; }
+  var rec={ brand:$("sBrand").value.trim(), tag:$("sTag").value.trim(), kicker:$("sKicker").value.trim(),
+    title:$("sTitle").value.trim(), sub:$("sSub").value.trim(), phone:$("sPhone").value.trim(),
+    line:$("sLine").value.trim(), fb:$("sFb").value.trim(), about:$("sAbout").value.trim(),
+    area:$("sArea").value.trim(), hour:$("sHour").value.trim(), addr:$("sAddr").value.trim(),
+    warr:$("sWarr").value.trim(), payNote:$("sPayNote").value.trim(), cover:curCover,
+    rateLow:$("sRateLow").value.trim(), rateHigh:$("sRateHigh").value.trim() };
+  flash($("sMsg"),"กำลังบันทึก…","ok");
+  busy(["sSave","sSave2"],true,"กำลังบันทึก…");
+  dbSet("site/info",rec).then(function(){
+    busy(["sSave","sSave2"],false);
+    site=Object.assign({},DEF,rec); renderSite(); renderPay(); renderEst(); close($("ovSite")); toast("บันทึกแล้ว ✓");
+  }).catch(function(e){ busy(["sSave","sSave2"],false);
+    flash($("sMsg"),errMsg(e,"บันทึก"),"err"); });
+}
+$("sSave").onclick=saveSite; $("sSave2").onclick=saveSite;
+
+/* ================= edit mode ================= */
+$("btnEdit").onclick=function(){
+  editMode=!editMode;
+  document.body.classList.toggle("edit",editMode);
+  this.classList.toggle("on",editMode);
+  renderLinks();
+};
+$("fab").onclick=function(){ openForm("houses",null); };
+
+
+/* ================= เก็บข้อมูลในเครื่อง (ไม่พึ่งเซิร์ฟเวอร์ใดๆ) ================= */
+var STORE={}, APP_DATA={};
+var PUBLIC_COLS=["services","steps","payments","links","faq","stats","tips","works","reviews","team","ba","houses"];
+
+function idbOpen(){
+  return new Promise(function(res,rej){
+    try{
+      if(!window.indexedDB) return rej(new Error("NOIDB"));
+      var r=indexedDB.open("kcs_site",1);
+      r.onupgradeneeded=function(){ try{ r.result.createObjectStore("kv"); }catch(e){} };
+      r.onsuccess=function(){ res(r.result); };
+      r.onerror=function(){ rej(r.error||new Error("IDB")); };
+    }catch(e){ rej(e); }
+  });
+}
+var IDB=null;
+function idbGet(k){
+  if(!IDB) return Promise.reject(new Error("NOIDB"));
+  return new Promise(function(res,rej){
+    try{
+      var tx=IDB.transaction("kv","readonly").objectStore("kv").get(k);
+      tx.onsuccess=function(){ res(tx.result); };
+      tx.onerror=function(){ rej(tx.error); };
+    }catch(e){ rej(e); }
+  });
+}
+function idbPut(k,v){
+  if(!IDB) return Promise.reject(new Error("NOIDB"));
+  return new Promise(function(res,rej){
+    try{
+      var tx=IDB.transaction("kv","readwrite").objectStore("kv").put(v,k);
+      tx.onsuccess=function(){ res(true); };
+      tx.onerror=function(){ rej(tx.error); };
+    }catch(e){ rej(e); }
+  });
+}
+function lsPut(k,v){ try{ localStorage.setItem(k,JSON.stringify(v)); return true; }catch(e){ return false; } }
+function lsGet(k){ try{ var r=localStorage.getItem(k); return r?JSON.parse(r):null; }catch(e){ return null; } }
+
+var saveTimer=null, saving=false;
+function persist(){
+  if(saveTimer) clearTimeout(saveTimer);
+  return new Promise(function(res){
+    saveTimer=setTimeout(function(){
+      saving=true;
+      var done=function(ok){ saving=false; updateSize(); updatePubFlag(); res(ok); };
+      idbPut("data",STORE).then(function(){ done(true); })
+        .catch(function(){ done(lsPut("kcs_data",STORE)?true:false); });
+    },120);
+  });
+}
+function markEdit(){ STORE.__mod=Date.now(); }
+function updatePubFlag(){
+  var dirty=(STORE.__mod||0)>(STORE.__pub||0);
+  document.body.classList.toggle("unpub",!!dirty);
+  var tx=document.getElementById("pubWarnTx");
+  if(tx&&dirty){
+    var d=STORE.__pub?("แก้ไขล่าสุด "+new Date(STORE.__mod).toLocaleString("th-TH",{day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"})):"";
+    tx.textContent="ยังไม่ขึ้นเว็บจริง ลูกค้าจะยังไม่เห็นของใหม่"+(d?" · "+d:"");
+  }
+}
+function storeBytes(){
+  try{ return JSON.stringify(STORE).length; }catch(e){ return 0; }
+}
+function updateSize(){
+  var el=document.getElementById("szNote"); if(!el) return;
+  var mb=storeBytes()/1048576;
+  el.textContent="ขนาดข้อมูลตอนนี้ประมาณ "+(mb<0.1?"<0.1":mb.toFixed(1))+" MB"+
+    (mb>8?" — ใหญ่แล้ว ควรลบรูปที่ไม่ใช้ออก":"");
+}
+
+/* db adapter with the same shape the app already uses */
+db={
+  doc:function(p){
+    return {
+      get:function(){ return Promise.resolve({ data:function(){ return STORE[p]; } }); },
+      set:function(d){
+        try{ STORE[p]=JSON.parse(JSON.stringify(d)); }catch(e){ return Promise.reject(e); }
+        markEdit(); return persist();
+      },
+      "delete":function(){ delete STORE[p]; markEdit(); return persist(); }
+    };
+  },
+  collection:function(c){
+    return {
+      get:function(){
+        return Promise.resolve({ docs:Object.keys(STORE)
+          .filter(function(k){ return k.indexOf(c+"/")===0; })
+          .map(function(k){ return { id:k.slice(c.length+1), data:function(){ return STORE[k]; } }; }) });
+      },
+      doc:function(id){ return db.doc(c+"/"+id); }
+    };
+  }
+};
+
+/* images are embedded straight into the page, resized first */
+function shrink(file){
+  return new Promise(function(res,rej){
+    var fr=new FileReader();
+    fr.onerror=function(){ rej(new Error("READ")); };
+    fr.onload=function(){
+      var raw=String(fr.result);
+      if(file.size<340000 && /image\/(png|webp)/.test(file.type||"")) return res(raw);
+      var img=new Image();
+      img.onerror=function(){ res(raw); };
+      img.onload=function(){
+        try{
+          var w=img.naturalWidth||img.width, h=img.naturalHeight||img.height;
+          var sc=Math.min(1,1200/Math.max(w,h));
+          var cw=Math.max(1,Math.round(w*sc)), ch=Math.max(1,Math.round(h*sc));
+          var cv=document.createElement("canvas"); cv.width=cw; cv.height=ch;
+          var cx=cv.getContext("2d");
+          cx.fillStyle="#ffffff"; cx.fillRect(0,0,cw,ch);
+          cx.drawImage(img,0,0,cw,ch);
+          var out=cv.toDataURL("image/jpeg",0.72);
+          res(out.length<raw.length?out:raw);
+        }catch(e){ res(raw); }
+      };
+      img.src=raw;
+    };
+    fr.readAsDataURL(file);
+  });
+}
+assets={ upload:function(file){ return shrink(file).then(function(u){ return {id:u,url:u}; }); } };
+
+var LOCAL={
+  start:function(){
+    try{ APP_DATA=JSON.parse(document.getElementById("kcs-data").textContent)||{}; }catch(e){ APP_DATA={}; }
+    return idbOpen().then(function(d){ IDB=d; return idbGet("data"); })
+      .catch(function(){ return lsGet("kcs_data"); })
+      .then(function(saved){
+        if(saved&&typeof saved==="object"&&Object.keys(saved).length){ STORE=saved; }
+        else { STORE=LOCAL.fromFile(); return persist(); }
+      })
+      .then(function(){ updateSize(); return true; });
+  },
+  fromFile:function(){
+    var out={};
+    var src=APP_DATA, snap=(typeof SNAP!=="undefined")?SNAP:{};
+    out["site/info"]=Object.assign({},DEF,snap.site||{},src.site||{});
+    PUBLIC_COLS.forEach(function(c){
+      var list=(src[c]&&src[c].length)?src[c]:(snap[c]||[]);
+      list.forEach(function(r){ if(r&&r.id) out[c+"/"+r.id]=r; });
+    });
+    return out;
+  }
+};
+
+/* ================= snapshot (shown to visitors who are not signed in) ================= */
+var SNAP={
+ site:{brand:"K.C.S ช่างก่อสร้าง",tag:"รับสร้างบ้าน ต่อเติม ทั่วไทย",kicker:"รับเหมาก่อสร้างครบวงจร",
+  title:"แบบบ้านสวย ราคาจริง สร้างได้จริง",
+  sub:"เลือกชมแบบบ้านที่เราออกแบบและก่อสร้างจริง ปรึกษาและประเมินราคาฟรี ไม่มีค่าใช้จ่าย",
+  phone:"083 431 7893",line:"0834317893",fb:"",cover:"",
+  about:"K.C.S ช่างก่อสร้าง รับสร้างบ้าน ต่อเติม ซ่อมแซม งานโครงสร้างและงานตกแต่ง ดูแลงานเองทุกขั้นตอน ใช้วัสดุตามสเปกที่ตกลงไว้ในสัญญา รายงานความคืบหน้าให้ลูกค้าทราบตลอดการก่อสร้าง",
+  area:"รับงานทั่วประเทศไทย",hour:"ทุกวัน 08:00 – 18:00",addr:"",
+  warr:"รับประกันงานตามเงื่อนไขที่ระบุในสัญญา",
+  payNote:"เปอร์เซ็นต์และรายละเอียดงวดงานปรับได้ตามขนาดงานและข้อตกลงในสัญญาของแต่ละหลัง กรุณาสอบถามเพื่อขอใบเสนอราคาจริง"},
+ houses:[], stats:[],
+ services:[
+  {id:"sv1",ic:"🏠",title:"รับสร้างบ้าน",detail:"สร้างบ้านใหม่ตามแบบมาตรฐานของเรา หรือแบบที่ลูกค้ามีอยู่แล้ว",ord:1},
+  {id:"sv2",ic:"🧱",title:"ต่อเติม – ปรับปรุง",detail:"ต่อเติมครัว ห้องน้ำ โรงจอดรถ ห้องเก็บของ ต่อเติมหลังบ้าน",ord:2},
+  {id:"sv3",ic:"🏗️",title:"งานโครงสร้าง",detail:"เสาเข็ม ฐานราก เสา คาน พื้น บันได โครงหลังคา",ord:3},
+  {id:"sv4",ic:"🎨",title:"งานตกแต่ง",detail:"ก่อ ฉาบ ทาสี ปูกระเบื้อง ฝ้าเพดาน ติดตั้งประตู-หน้าต่าง",ord:4},
+  {id:"sv5",ic:"🔧",title:"งานซ่อมแซม",detail:"ซ่อมหลังคารั่ว ซ่อมพื้น ผนังร้าว งานระบบไฟฟ้า-ประปา",ord:5},
+  {id:"sv6",ic:"📐",title:"ออกแบบ – ประเมินราคา",detail:"เขียนแบบ ถอดแบบ ประเมินราคา ให้คำปรึกษาก่อนตัดสินใจ",ord:6}],
+ steps:[
+  {id:"st1",title:"ปรึกษา และ เข้าดูหน้างาน",detail:"นัดวันเข้าดูพื้นที่จริง เก็บข้อมูล ฟังความต้องการและงบประมาณ ไม่มีค่าใช้จ่าย",ord:1},
+  {id:"st2",title:"เสนอแบบ และ ใบเสนอราคา",detail:"เสนอแบบบ้านที่เหมาะกับพื้นที่ พร้อมใบเสนอราคาแยกรายการให้เห็นชัดเจน",ord:2},
+  {id:"st3",title:"ทำสัญญา และ กำหนดงวดงาน",detail:"ตกลงราคา ระยะเวลา สเปกวัสดุ และงวดการชำระเงิน เป็นลายลักษณ์อักษร",ord:3},
+  {id:"st4",title:"เริ่มงานก่อสร้าง",detail:"เคลียร์พื้นที่ วางผัง ลงเสาเข็ม และดำเนินงานตามแผนงานที่วางไว้",ord:4},
+  {id:"st5",title:"รายงานความคืบหน้า",detail:"ส่งรูปและอัปเดตความคืบหน้าให้ลูกค้าทราบทุกงวดงาน เข้าดูหน้างานได้ตลอด",ord:5},
+  {id:"st6",title:"ตรวจรับงาน และ ส่งมอบ",detail:"ตรวจงานร่วมกัน แก้ไขจุดที่ยังไม่เรียบร้อย ทำความสะอาด ก่อนส่งมอบบ้าน",ord:6},
+  {id:"st7",title:"รับประกันงานหลังส่งมอบ",detail:"ดูแลแก้ไขงานตามเงื่อนไขการรับประกันที่ระบุไว้ในสัญญา",ord:7}],
+ payments:[
+  {id:"pm1",title:"ทำสัญญา และ เตรียมงาน",pc:"15",amt:"",detail:"เซ็นสัญญา เคลียร์พื้นที่ วางผัง เตรียมวัสดุเข้าหน้างาน",ord:1},
+  {id:"pm2",title:"งานฐานราก",pc:"20",amt:"",detail:"เสาเข็ม ฐานราก ตอม่อ คานคอดิน",ord:2},
+  {id:"pm3",title:"งานโครงสร้าง",pc:"20",amt:"",detail:"เสา คาน พื้น บันได โครงหลังคา",ord:3},
+  {id:"pm4",title:"งานหลังคา และ ผนัง",pc:"20",amt:"",detail:"มุงหลังคา ก่อผนัง ติดตั้งวงกบประตู-หน้าต่าง",ord:4},
+  {id:"pm5",title:"งานระบบ ฉาบ และ ปูกระเบื้อง",pc:"15",amt:"",detail:"เดินระบบไฟฟ้า-ประปา ฉาบผนัง ปูกระเบื้อง ติดฝ้าเพดาน",ord:5},
+  {id:"pm6",title:"เก็บงาน และ ส่งมอบ",pc:"10",amt:"",detail:"ทาสี เก็บรายละเอียด ทำความสะอาด ตรวจรับ และส่งมอบงาน",ord:6}],
+ links:[
+  {id:"lk1",ic:"💬",label:"LINE",url:"https://line.me/ti/p/~0834317893",note:"ID: 0834317893",ord:1},
+  {id:"lk5",ic:"📞",label:"โทรหาเรา",url:"tel:0834317893",note:"083 431 7893",ord:5}],
+ faq:[
+  {id:"fq1",q:"รับงานพื้นที่ไหนบ้าง",a:"รับงานทั่วประเทศไทย สอบถามพื้นที่หน้างานของคุณเข้ามาได้โดยตรง เราจะแจ้งว่าสะดวกเข้าดูหน้างานได้ช่วงไหน",ord:1},
+  {id:"fq2",q:"ประเมินราคามีค่าใช้จ่ายไหม",a:"ปรึกษาและประเมินราคาเบื้องต้นฟรี ไม่มีค่าใช้จ่าย",ord:2},
+  {id:"fq3",q:"มีสัญญาไหม",a:"ทำสัญญาเป็นลายลักษณ์อักษรทุกงาน ระบุราคา สเปกวัสดุ งวดงาน และระยะเวลาก่อสร้างไว้ชัดเจน",ord:3},
+  {id:"fq4",q:"ใช้เวลาสร้างนานเท่าไหร่",a:"ขึ้นอยู่กับขนาดและแบบบ้าน โดยจะแจ้งระยะเวลาที่ชัดเจนไว้ในสัญญาก่อนเริ่มงาน",ord:4},
+  {id:"fq5",q:"เปลี่ยนแบบหรือเปลี่ยนวัสดุระหว่างก่อสร้างได้ไหม",a:"ได้ โดยแจ้งล่วงหน้าก่อนถึงงวดงานนั้น และปรับราคาเพิ่ม-ลดตามจริง มีเอกสารแจ้งให้ตรวจสอบทุกครั้ง",ord:5},
+  {id:"fq6",q:"จ่ายเงินยังไง",a:"แบ่งจ่ายเป็นงวดตามความคืบหน้าของงานจริง ตามตารางงวดงานที่ตกลงกันไว้ในสัญญา",ord:6}]
+};
+function applySnap(){
+  site=Object.assign({},DEF,SNAP.site||{});
+  Object.keys(D).forEach(function(k){ if(SNAP[k]&&SNAP[k].length) D[k]=SNAP[k].slice(); });
+  renderSite();
+}
+
+/* ================= quote request + share ================= */
+document.addEventListener("click",function(e){
+  var q=e.target.closest("[data-quote]"); if(!q) return;
+  var pre=($("ovView").classList.contains("open")&&curRec&&curRec.name)?curRec.name:"";
+  close($("ovView")); openQuote(pre);
+});
+function openQuote(pre){
+  $("qdl").innerHTML=D.houses.map(function(h){return '<option value="'+esc(h.name)+'">';}).join("");
+  if(pre) $("qHouse").value=pre;
+  open($("ovQuote"));
+}
+function qText(){
+  var L=["สนใจขอใบเสนอราคา — "+(site.brand||"")];
+  [["ชื่อ","qName"],["เบอร์โทร","qTel"],["แบบบ้าน/งานที่สนใจ","qHouse"],
+   ["งบประมาณ","qBudget"],["ที่ตั้งที่ดิน","qPlace"],["รายละเอียด","qMore"]]
+  .forEach(function(x){ var v=$(x[1]).value.trim(); if(v) L.push(x[0]+": "+v); });
+  return L.join("\n");
+}
+$("qLine").onclick=function(){
+  var t=qText(), u=site.line?("https://line.me/ti/p/~"+site.line.replace(/\s/g,"")):"";
+  copyText(t,"คัดลอกข้อความแล้ว เปิดไลน์แล้ววางส่งได้เลย").then(function(){ if(u) openExt(u); });
+};
+$("qSms").onclick=function(){
+  var n=(site.phone||"").replace(/[^0-9+]/g,"");
+  window.location.href="sms:"+n+"?body="+encodeURIComponent(qText());
+};
+$("qCopy").onclick=function(){ copyText(qText(),"คัดลอกแล้ว"); };
+$("vShare").onclick=function(){
+  if(!curRec) return;
+  var link=location.origin+location.pathname+"#h="+encodeURIComponent(curRec.id);
+  var txt=(curRec.name||"แบบบ้าน")+(curRec.price?" "+curRec.price:"")+" — "+(site.brand||"");
+  if(navigator.share){ navigator.share({title:curRec.name||"แบบบ้าน",text:txt,url:link}).catch(function(){}); return; }
+  copyText(txt+"\n"+link,"คัดลอกลิงก์แบบบ้านนี้แล้ว");
+};
+function openFromHash(){
+  var m=(location.hash||"").match(/^#h=(.+)$/);
+  if(!m) return;
+  var h=find("houses",decodeURIComponent(m[1])); if(h) view(h);
+}
+
+/* ================= documents (owner only) ================= */
+var DT={
+  qt:{n:"ใบเสนอราคา", en:"QUOTATION", p:"QT",
+      note:"• ยืนราคา 30 วัน นับจากวันที่ในเอกสาร\n• เริ่มงานหลังเซ็นสัญญาและชำระเงินงวดแรก\n• ราคานี้ไม่รวมค่ามิเตอร์ไฟ-น้ำ ค่าถมดิน และงานนอกเหนือจากที่ระบุ"},
+  iv:{n:"ใบแจ้งหนี้ / ใบวางบิล", en:"INVOICE / BILLING NOTE", p:"IV",
+      note:"กรุณาชำระเงินภายในวันที่กำหนด โอนเข้าบัญชีตามรายละเอียดด้านล่าง"},
+  tx:{n:"ใบกำกับภาษี", en:"TAX INVOICE", p:"TX", note:""},
+  tr:{n:"ใบเสร็จรับเงิน / ใบกำกับภาษี", en:"RECEIPT / TAX INVOICE", p:"TR", note:""},
+  rc:{n:"ใบเสร็จรับเงิน", en:"RECEIPT", p:"RC", note:"ได้รับเงินตามรายการข้างต้นไว้เรียบร้อยแล้ว"},
+  dp:{n:"ใบรับเงินมัดจำ", en:"DEPOSIT RECEIPT", p:"DP",
+      note:"ได้รับเงินมัดจำไว้แล้ว และจะนำไปหักจากยอดงวดงานถัดไป"},
+  dn:{n:"ใบส่งมอบงาน", en:"DELIVERY / HANDOVER NOTE", p:"DN",
+      note:"ผู้ว่าจ้างได้ตรวจรับงานตามรายการข้างต้นเรียบร้อยแล้ว"},
+  cn:{n:"ใบลดหนี้", en:"CREDIT NOTE", p:"CN", note:"ออกเพื่อลดยอดหนี้ตามเอกสารอ้างอิง"},
+  po:{n:"ใบสั่งซื้อวัสดุ", en:"PURCHASE ORDER", p:"PO", note:"กรุณาส่งของตามรายการและกำหนดเวลาข้างต้น"}
+};
+var docs=[], biz={}, docFilter="ทั้งหมด", curDoc=null, docsLoaded=false;
+
+function fm(n){ n=Number(n)||0; return n.toLocaleString("en-US",{minimumFractionDigits:2,maximumFractionDigits:2}); }
+function r2(n){ return Math.round((Number(n)||0)*100)/100; }
+function readInt(n){
+  n=Math.floor(n); if(n<=0) return "";
+  if(n>999999){ var h=Math.floor(n/1000000), t=n%1000000;
+    return readInt(h)+"ล้าน"+(t?readInt(t):""); }
+  var DG=["","หนึ่ง","สอง","สาม","สี่","ห้า","หก","เจ็ด","แปด","เก้า"],
+      UN=["","สิบ","ร้อย","พัน","หมื่น","แสน"], s="", str=String(n), L=str.length;
+  for(var i=0;i<L;i++){
+    var d=+str.charAt(i), p=L-i-1; if(!d) continue;
+    if(p===0&&d===1&&L>1) s+="เอ็ด";
+    else if(p===1&&d===1) s+="";
+    else if(p===1&&d===2) s+="ยี่";
+    else s+=DG[d];
+    s+=UN[p];
+  }
+  return s;
+}
+function baht(n){
+  n=r2(Math.abs(Number(n)||0));
+  var i=Math.floor(n), d=Math.round((n-i)*100);
+  var s=(readInt(i)||"ศูนย์")+"บาท";
+  s += d>0 ? readInt(d)+"สตางค์" : "ถ้วน";
+  return s;
+}
+function calc(d){
+  var g=0; (d.items||[]).forEach(function(it){ g+=(Number(it.q)||0)*(Number(it.p)||0); });
+  g=r2(g);
+  var disc=r2(d.disc||0), aft=r2(g-disc), base=aft, vat=0;
+  if(d.vat){ if(d.inc){ base=r2(aft/1.07); vat=r2(aft-base); } else { vat=r2(aft*0.07); } }
+  var total=r2(base+vat), wht=d.wht?r2(base*0.03):0;
+  return {g:g,disc:disc,base:base,vat:vat,total:total,wht:wht,pay:r2(total-wht)};
+}
+function dnum(type){
+  var be=String(new Date().getFullYear()+543).slice(-2);
+  var n=docs.filter(function(x){return x.type===type;}).length+1;
+  return DT[type].p+"-"+be+"-"+("000"+n).slice(-3);
+}
+function thDate(s){
+  if(!s) return "";
+  var p=String(s).split("-"); if(p.length!==3) return s;
+  var M=["ม.ค.","ก.พ.","มี.ค.","เม.ย.","พ.ค.","มิ.ย.","ก.ค.","ส.ค.","ก.ย.","ต.ค.","พ.ย.","ธ.ค."];
+  return (+p[2])+" "+M[(+p[1])-1]+" "+(+p[0]+543);
+}
+function today(){ var d=new Date(), m=("0"+(d.getMonth()+1)).slice(-2), dd=("0"+d.getDate()).slice(-2);
+  return d.getFullYear()+"-"+m+"-"+dd; }
+
+function renderDocs(){
+  var types=["ทั้งหมด"].concat(Object.keys(DT).filter(function(k){
+    return docs.some(function(d){return d.type===k;}); }));
+  $("docChips").innerHTML = types.length>1 ? types.map(function(t){
+    return '<button class="chip'+(t===docFilter?" on":"")+'" data-dc="'+t+'">'+
+      (t==="ทั้งหมด"?"ทั้งหมด":esc(DT[t].n))+'</button>';}).join("") : "";
+  var q=(($("docq")&&$("docq").value)||"").trim().toLowerCase();
+  var l=docs.filter(function(d){
+    if(!(docFilter==="ทั้งหมด"||d.type===docFilter)) return false;
+    if(q){
+      var hay=[d.no,d.cName,d.project,d.ref].join(" ").toLowerCase();
+      if(hay.indexOf(q)<0) return false;
+    }
+    return true;
+  });
+  var tot=0; l.forEach(function(d){ tot+=calc(d).pay; });
+  if($("docSum")) $("docSum").innerHTML = l.length
+    ? '<div style="display:flex;justify-content:space-between;background:#fff;border:1px solid var(--line);border-radius:10px;padding:10px 13px;margin-bottom:9px;font-size:13px">'+
+      '<span style="color:var(--ink3)">'+l.length+' ฉบับ</span><b class="mono">฿'+fm(tot)+'</b></div>' : '';
+  $("docList").innerHTML = l.length ? l.map(function(d){
+    var c=calc(d);
+    return '<div class="doc-i"><div class="doc-ic" data-doc="'+esc(d.id)+'">'+DT[d.type].p+'</div>'+
+      '<div class="doc-tx" data-doc="'+esc(d.id)+'"><b>'+esc(DT[d.type].n)+'</b>'+
+      '<span>'+esc(d.no||"")+' · '+esc(d.cName||"ยังไม่ระบุลูกค้า")+' · '+esc(thDate(d.date))+'</span></div>'+
+      '<div class="doc-amt" data-doc="'+esc(d.id)+'">฿'+fm(c.pay)+'</div>'+
+      '<button class="docdel" data-docdel="'+esc(d.id)+'" title="ลบเอกสาร">🗑</button></div>';
+  }).join("") : '<div class="blank">ยังไม่มีเอกสาร — กด “สร้างเอกสารใหม่” เพื่อเริ่ม</div>';
+}
+(function(){ var q=document.getElementById("docq");
+  if(q) q.addEventListener("input",function(){ renderDocs(); }); })();
+$("newDoc").onclick=function(){
+  $("pickBox").innerHTML=Object.keys(DT).map(function(k){
+    return '<button data-pick="'+k+'"><b>'+esc(DT[k].n)+'</b><span>'+DT[k].en+'</span></button>';}).join("");
+  open($("ovPick"));
+};
+document.addEventListener("click",function(e){
+  var p=e.target.closest("[data-pick]");
+  if(p){ close($("ovPick")); openDoc(null,p.getAttribute("data-pick")); return; }
+  var dc=e.target.closest("[data-dc]");
+  if(dc){ docFilter=dc.getAttribute("data-dc"); renderDocs(); return; }
+  var dd=e.target.closest("[data-docdel]");
+  if(dd){ delDoc(dd.getAttribute("data-docdel")); return; }
+  var dv=e.target.closest("[data-doc]");
+  if(dv){ viewDoc(dv.getAttribute("data-doc")); }
+});
+function delDoc(id){
+  var d=null; for(var i=0;i<docs.length;i++) if(docs[i].id===id) d=docs[i];
+  if(!d||!db) return;
+  ask("ลบ "+DT[d.type].n+" เลขที่ "+(d.no||"")+" ?","ยืนยันลบ",function(){ doDelDoc(id); });
+}
+function doDelDoc(id){
+  if(!db) return;
+  toast("กำลังลบ…");
+  dbDel("docs/"+id).then(function(){
+    docs=docs.filter(function(x){return x.id!==id;}); renderDocs(); toast("ลบเอกสารแล้ว");
+  }).catch(function(e){ toast(errMsg(e,"ลบ")); });
+}
+
+function itemRow(it){
+  it=it||{};
+  return '<div class="it"><textarea class="it-d" placeholder="รายละเอียดงาน / วัสดุ">'+esc(it.d||"")+'</textarea>'+
+    '<div class="it-r"><input class="it-q" inputmode="decimal" placeholder="จำนวน" value="'+esc(it.q||"")+'">'+
+    '<input class="it-u" placeholder="หน่วย" value="'+esc(it.u||"")+'">'+
+    '<input class="it-p" inputmode="decimal" placeholder="ราคา/หน่วย" value="'+esc(it.p||"")+'">'+
+    '<button class="it-x" data-itx>✕</button></div><div class="it-sum">0.00</div></div>';
+}
+function readItems(){
+  return Array.prototype.map.call($("deItems").querySelectorAll(".it"),function(n){
+    return { d:n.querySelector(".it-d").value.trim(), q:n.querySelector(".it-q").value.trim(),
+             u:n.querySelector(".it-u").value.trim(), p:n.querySelector(".it-p").value.trim() };
+  }).filter(function(x){ return x.d||x.p; });
+}
+function liveSum(){
+  var d={ items:readItems(), disc:$("deDisc").value, vat:$("deVat").checked,
+          inc:$("deInc").checked, wht:$("deWht").checked };
+  Array.prototype.forEach.call($("deItems").querySelectorAll(".it"),function(n){
+    var q=Number(n.querySelector(".it-q").value)||0, p=Number(n.querySelector(".it-p").value)||0;
+    n.querySelector(".it-sum").textContent=fm(q*p);
+  });
+  var c=calc(d), h='<div><span>รวมเป็นเงิน</span><span class="num">'+fm(c.g)+'</span></div>';
+  if(c.disc) h+='<div><span>ส่วนลด</span><span class="num">-'+fm(c.disc)+'</span></div>';
+  if(d.vat){ h+='<div><span>มูลค่าก่อนภาษี</span><span class="num">'+fm(c.base)+'</span></div>'+
+    '<div><span>ภาษีมูลค่าเพิ่ม 7%</span><span class="num">'+fm(c.vat)+'</span></div>'; }
+  h+='<div class="gd"><span>รวมทั้งสิ้น</span><span class="num">'+fm(c.total)+'</span></div>';
+  if(d.wht) h+='<div><span>หัก ณ ที่จ่าย 3%</span><span class="num">-'+fm(c.wht)+'</span></div>'+
+    '<div class="gd"><span>ยอดชำระสุทธิ</span><span class="num">'+fm(c.pay)+'</span></div>';
+  $("deSum").innerHTML=h;
+}
+function openDoc(d,type){
+  type = d?d.type:type;
+  var T=DT[type]; if(!T) return;
+  $("deTitle").textContent=(d?"แก้ไข":"สร้าง")+T.n;
+  $("deDueL").textContent = type==="qt" ? "ยืนราคาถึงวันที่" : "กำหนดชำระ / วันที่นัด";
+  $("deNo").value   = d?d.no:dnum(type);
+  $("deDate").value = d?(d.date||today()):today();
+  $("deDue").value  = d?(d.due||""):"";
+  $("deCName").value= d?(d.cName||""):"";
+  $("deCTax").value = d?(d.cTax||""):"";
+  $("deCTel").value = d?(d.cTel||""):"";
+  $("deCAddr").value= d?(d.cAddr||""):"";
+  $("deProj").value = d?(d.project||""):"";
+  $("deRef").value  = d?(d.ref||""):"";
+  $("deDisc").value = d?(d.disc||""):"";
+  $("deVat").checked= d?!!d.vat:(type==="tx"||type==="tr");
+  $("deInc").checked= d?!!d.inc:false;
+  $("deWht").checked= d?!!d.wht:false;
+  $("deNote").value = d?(d.note||""):(T.note||"");
+  $("deDel").style.display=d?"block":"none";
+  $("deMsg").className="msg";
+  var its=(d&&d.items&&d.items.length)?d.items:[{},{}];
+  $("deItems").innerHTML=its.map(itemRow).join("");
+  curDoc = d ? d : {type:type};
+  curDoc.type=type;
+  liveSum(); open($("ovDocEdit"));
+}
+$("deItems").addEventListener("input",liveSum);
+$("deItems").addEventListener("click",function(e){
+  var x=e.target.closest("[data-itx]"); if(!x) return;
+  var all=$("deItems").querySelectorAll(".it");
+  if(all.length>1) x.closest(".it").remove(); else { x.closest(".it").outerHTML=itemRow({}); }
+  liveSum();
+});
+["deDisc","deVat","deInc","deWht"].forEach(function(i){ $(i).addEventListener("input",liveSum); });
+$("deAddItem").onclick=function(){ $("deItems").insertAdjacentHTML("beforeend",itemRow({})); liveSum(); };
+$("deFromPay").onclick=function(){
+  if(!D.payments.length){ flash($("deMsg"),"ยังไม่มีงวดงานในเว็บ","err"); return; }
+  $("deItems").innerHTML=D.payments.map(function(p,i){
+    return itemRow({d:"งวดที่ "+(i+1)+" "+p.title+(p.detail?"\n"+p.detail:""), q:"1", u:"งวด",
+      p:p.amt?String(p.amt).replace(/[^0-9.]/g,""):""});
+  }).join("");
+  liveSum();
+};
+function saveDoc(){
+  if(!db){ flash($("deMsg"),"ยังบันทึกไม่ได้","err"); return; }
+  var items=readItems();
+  if(!items.length){ flash($("deMsg"),"กรุณาใส่รายการอย่างน้อย 1 รายการ","err"); return; }
+  var id=(curDoc&&curDoc.id)?curDoc.id:("dc"+Date.now()+Math.floor(Math.random()*900));
+  var rec={ id:id, type:curDoc.type, no:$("deNo").value.trim(), date:$("deDate").value,
+    due:$("deDue").value, cName:$("deCName").value.trim(), cTax:$("deCTax").value.trim(),
+    cTel:$("deCTel").value.trim(), cAddr:$("deCAddr").value.trim(),
+    project:$("deProj").value.trim(), ref:$("deRef").value.trim(), items:items,
+    disc:Number($("deDisc").value)||0, vat:$("deVat").checked, inc:$("deInc").checked,
+    wht:$("deWht").checked, note:$("deNote").value,
+    ord:(curDoc&&typeof curDoc.ord==="number")?curDoc.ord:-Date.now() };
+  flash($("deMsg"),"กำลังบันทึก…","ok");
+  busy(["deSave","deSave2","deDel"],true,"กำลังบันทึก…");
+  dbSet("docs/"+id,rec).then(function(){
+    busy(["deSave","deSave2","deDel"],false);
+    var k=-1; for(var i=0;i<docs.length;i++) if(docs[i].id===id) k=i;
+    if(k>=0) docs[k]=rec; else docs.push(rec);
+    sortA(docs); renderDocs(); close($("ovDocEdit")); viewDoc(id);
+  }).catch(function(e){ busy(["deSave","deSave2","deDel"],false);
+    flash($("deMsg"),errMsg(e,"บันทึก"),"err"); });
+}
+$("deSave").onclick=saveDoc; $("deSave2").onclick=saveDoc;
+$("deDel").onclick=function(){
+  if(!curDoc||!curDoc.id||!db) return;
+  var id=curDoc.id;
+  ask("ลบเอกสารฉบับนี้?","ยืนยันลบ",function(){ doDelDocEdit(id); });
+};
+function doDelDocEdit(id){
+  if(!db) return;
+  busy(["deSave","deSave2","deDel"],true,"กำลังลบ…");
+  dbDel("docs/"+id).then(function(){
+    busy(["deSave","deSave2","deDel"],false);
+    docs=docs.filter(function(x){return x.id!==id;}); renderDocs(); close($("ovDocEdit")); toast("ลบเอกสารแล้ว");
+  }).catch(function(e){ busy(["deSave","deSave2","deDel"],false);
+    flash($("deMsg"),errMsg(e,"ลบ"),"err"); });
+};
+
+function docHTML(d){
+  var T=DT[d.type], c=calc(d), B=biz;
+  var rws=(d.items||[]).map(function(it,i){
+    var amt=(Number(it.q)||0)*(Number(it.p)||0);
+    return '<tr><td class="c">'+(i+1)+'</td><td>'+esc(it.d).replace(/\n/g,"<br>")+'</td>'+
+      '<td class="c num">'+esc(it.q||"")+'</td><td class="c">'+esc(it.u||"")+'</td>'+
+      '<td class="r num">'+fm(it.p)+'</td><td class="r num">'+fm(amt)+'</td></tr>';
+  }).join("");
+  var tot='<tr><td>รวมเป็นเงิน</td><td class="r num">'+fm(c.g)+'</td></tr>';
+  if(c.disc) tot+='<tr><td>หักส่วนลด</td><td class="r num">-'+fm(c.disc)+'</td></tr>';
+  if(d.vat) tot+='<tr><td>มูลค่าก่อนภาษี</td><td class="r num">'+fm(c.base)+'</td></tr>'+
+    '<tr><td>ภาษีมูลค่าเพิ่ม 7%</td><td class="r num">'+fm(c.vat)+'</td></tr>';
+  tot+='<tr class="gd"><td>จำนวนเงินรวมทั้งสิ้น</td><td class="r num">'+fm(c.total)+'</td></tr>';
+  if(d.wht) tot+='<tr><td>หักภาษี ณ ที่จ่าย 3%</td><td class="r num">-'+fm(c.wht)+'</td></tr>'+
+    '<tr class="gd"><td>ยอดชำระสุทธิ</td><td class="r num">'+fm(c.pay)+'</td></tr>';
+  var pay="";
+  if(B.bank||B.acc) pay="\nชำระเงินผ่าน: "+(B.bank||"")+" เลขที่บัญชี "+(B.acc||"")+
+    (B.accName?" ชื่อบัญชี "+B.accName:"");
+  return '<div class="pdoc"><div class="ph1">'+
+    '<div class="biz"><b>'+esc(B.name||site.brand||"ชื่อกิจการ")+'</b>'+
+    '<span>'+esc(B.addr||"").replace(/\n/g,"<br>")+'</span>'+
+    (B.tax?'<span>เลขประจำตัวผู้เสียภาษี '+esc(B.tax)+(B.branch?' ('+esc(B.branch)+')':'')+'</span>':'')+
+    '<span>โทร '+esc(B.tel||site.phone||"")+(B.mail?' · '+esc(B.mail):'')+'</span></div>'+
+    '<div class="ttl"><b>'+esc(T.n)+'</b><em>'+T.en+'</em>'+
+    '<div class="meta">เลขที่ <b class="num">'+esc(d.no||"-")+'</b><br>วันที่ '+esc(thDate(d.date))+
+    (d.due?'<br>'+(d.type==="qt"?"ยืนราคาถึง ":"กำหนด ")+esc(thDate(d.due)):'')+
+    (d.ref?'<br>อ้างอิง '+esc(d.ref):'')+'</div></div></div>'+
+    '<div class="boxes"><div class="box"><h5>ลูกค้า / ผู้ว่าจ้าง</h5><p><b>'+esc(d.cName||"-")+'</b>'+
+    (d.cAddr?"\n"+esc(d.cAddr):"")+(d.cTax?"\nเลขประจำตัวผู้เสียภาษี "+esc(d.cTax):"")+
+    (d.cTel?"\nโทร "+esc(d.cTel):"")+'</p></div>'+
+    (d.project?'<div class="box"><h5>งาน / สถานที่</h5><p>'+esc(d.project)+'</p></div>':'')+'</div>'+
+    '<table><thead><tr><th class="c" style="width:30px">#</th><th>รายการ</th>'+
+    '<th class="c" style="width:50px">จำนวน</th><th class="c" style="width:50px">หน่วย</th>'+
+    '<th class="r" style="width:80px">ราคา/หน่วย</th><th class="r" style="width:90px">จำนวนเงิน</th></tr></thead>'+
+    '<tbody>'+rws+'</tbody></table>'+
+    '<div class="tot"><table>'+tot+'</table></div>'+
+    '<div class="baht">('+baht(c.pay)+')</div>'+
+    ((d.note||pay)?'<div class="note">'+esc((d.note||"")+pay)+'</div>':'')+
+    '<div class="sig"><div><div class="ln"></div>ผู้รับเงิน / ผู้มีอำนาจลงนาม<br>'+
+    esc(B.sign||"")+'</div><div><div class="ln"></div>ผู้ว่าจ้าง / ผู้รับสินค้า<br>วันที่ ............</div></div>'+
+    '</div>';
+}
+function docText(d){
+  var T=DT[d.type], c=calc(d), L=[];
+  L.push(T.n+" เลขที่ "+(d.no||"")); L.push("วันที่ "+thDate(d.date));
+  if(d.cName) L.push("ลูกค้า: "+d.cName);
+  if(d.project) L.push("งาน: "+d.project);
+  L.push("———");
+  (d.items||[]).forEach(function(it,i){
+    L.push((i+1)+". "+String(it.d).replace(/\n/g," ")+" | "+(it.q||"")+" "+(it.u||"")+" x "+
+      fm(it.p)+" = "+fm((Number(it.q)||0)*(Number(it.p)||0)));
+  });
+  L.push("———"); L.push("รวมเป็นเงิน "+fm(c.g));
+  if(c.disc) L.push("ส่วนลด -"+fm(c.disc));
+  if(d.vat) L.push("ภาษีมูลค่าเพิ่ม 7% "+fm(c.vat));
+  L.push("รวมทั้งสิ้น "+fm(c.total));
+  if(d.wht){ L.push("หัก ณ ที่จ่าย 3% -"+fm(c.wht)); L.push("ยอดชำระสุทธิ "+fm(c.pay)); }
+  L.push("("+baht(c.pay)+")");
+  if(d.note){ L.push("———"); L.push(d.note); }
+  L.push("———"); L.push((biz.name||site.brand)+" โทร "+(biz.tel||site.phone||""));
+  return L.join("\n");
+}
+function viewDoc(id){
+  var d=null; for(var i=0;i<docs.length;i++) if(docs[i].id===id) d=docs[i];
+  if(!d) return; curDoc=d;
+  $("dvTitle").textContent=DT[d.type].n+" "+(d.no||"");
+  $("dvBox").innerHTML=docHTML(d);
+  open($("ovDoc"));
+}
+$("dvPrint").onclick=function(){
+  try{ $("printArea").innerHTML=docHTML(curDoc); }catch(e){ toast("สร้างเอกสารไม่สำเร็จ"); return; }
+  var ok=true;
+  setTimeout(function(){
+    try{ window.print(); }catch(e){ ok=false; }
+    if(!ok) toast("พิมพ์ตรงนี้ไม่ได้ — กดปุ่ม “บันทึกไฟล์เอกสาร” แล้วเปิดไฟล์พิมพ์");
+  },80);
+};
+var PCSS="body{margin:0;padding:16px;background:#fff;color:#000;font-family:'IBM Plex Sans Thai',system-ui,sans-serif;font-size:12.5px;line-height:1.5}"+
+".pdoc .ph1{display:flex;justify-content:space-between;gap:14px;border-bottom:2px solid #000;padding-bottom:10px;margin-bottom:12px;flex-wrap:wrap}"+
+".pdoc .biz b{font-size:16px;display:block}.pdoc .biz span{font-size:11.5px;color:#333;display:block}"+
+".pdoc .ttl{text-align:right;min-width:150px}.pdoc .ttl b{font-size:17px;display:block}"+
+".pdoc .ttl em{font-size:10px;letter-spacing:1.2px;color:#555;font-style:normal;display:block}"+
+".pdoc .ttl .meta{margin-top:7px;font-size:11.5px;line-height:1.6}"+
+".pdoc .boxes{display:flex;gap:10px;margin-bottom:12px;flex-wrap:wrap}"+
+".pdoc .box{flex:1;min-width:200px;border:1px solid #999;border-radius:6px;padding:9px}"+
+".pdoc .box h5{margin:0 0 4px;font-size:10px;letter-spacing:.8px;color:#555}"+
+".pdoc .box p{margin:0;font-size:11.5px;white-space:pre-wrap}"+
+".pdoc table{width:100%;border-collapse:collapse;font-size:12px}"+
+".pdoc th{background:#eeeae5;border:1px solid #888;padding:6px 7px;text-align:left;font-size:11px;font-weight:600}"+
+".pdoc td{border:1px solid #bbb;padding:6px 7px;vertical-align:top}"+
+".pdoc .r{text-align:right}.pdoc .c{text-align:center}"+
+".pdoc .tot{display:flex;justify-content:flex-end;margin-top:10px}"+
+".pdoc .tot table{width:auto;min-width:250px}.pdoc .tot td{border:0;padding:3px 6px;font-size:12px}"+
+".pdoc .tot .gd td{border-top:1px solid #000;border-bottom:3px double #000;font-weight:700;font-size:13px}"+
+".pdoc .baht{border:1px dashed #888;border-radius:6px;padding:7px 9px;margin-top:9px;text-align:center;font-weight:600;font-size:12px}"+
+".pdoc .note{margin-top:10px;font-size:11.5px;white-space:pre-wrap;color:#222}"+
+".pdoc .sig{display:flex;gap:14px;margin-top:28px;flex-wrap:wrap}"+
+".pdoc .sig div{flex:1;min-width:140px;text-align:center;font-size:11px}"+
+".pdoc .sig .ln{border-bottom:1px dotted #000;height:36px;margin-bottom:5px}"+
+"@page{size:A4;margin:12mm}";
+function docFileHTML(d){
+  return '<!DOCTYPE html><html lang="th"><head><meta charset="utf-8">'+
+    '<meta name="viewport" content="width=device-width,initial-scale=1">'+
+    '<title>'+esc(DT[d.type].n+" "+(d.no||""))+'</title><style>'+PCSS+'</style></head><body>'+
+    docHTML(d)+'</body></html>';
+}
+$("dvDl").onclick=function(){
+  if(!curDoc) return;
+  var html, name;
+  try{ html=docFileHTML(curDoc);
+    name=((curDoc.no||DT[curDoc.type].p+"-doc")+".html").replace(/[^A-Za-z0-9._-]+/g,"_");
+  }catch(e){ toast("สร้างไฟล์ไม่สำเร็จ"); return; }
+  if(dl&&typeof dl.save==="function"){
+    withTimeout(P(dl.save({filename:name,data:html})),25000)
+      .then(function(){ toast("บันทึกไฟล์เอกสารแล้ว"); })
+      .catch(function(){ blobDl(html,name); });
+  } else blobDl(html,name);
+};
+function blobDl(html,name){
+  try{
+    var b=new Blob([html],{type:"text/html;charset=utf-8"});
+    var u=URL.createObjectURL(b);
+    var a=document.createElement("a"); a.href=u; a.download=name;
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(function(){ try{URL.revokeObjectURL(u);}catch(e){} },5000);
+    toast("ดาวน์โหลดเอกสารแล้ว");
+  }catch(e){ toast("บันทึกไฟล์ไม่ได้บนอุปกรณ์นี้"); }
+}
+$("dvEdit").onclick=function(){ var d=curDoc; close($("ovDoc")); openDoc(d,d.type); };
+$("dvDup").onclick=function(){
+  var c=JSON.parse(JSON.stringify(curDoc));
+  close($("ovDoc")); openDoc(null,c.type);
+  $("deCName").value=c.cName||""; $("deCTax").value=c.cTax||""; $("deCTel").value=c.cTel||"";
+  $("deCAddr").value=c.cAddr||""; $("deProj").value=c.project||"";
+  $("deItems").innerHTML=(c.items&&c.items.length?c.items:[{}]).map(itemRow).join("");
+  $("deDisc").value=c.disc||""; $("deVat").checked=!!c.vat; $("deInc").checked=!!c.inc;
+  $("deWht").checked=!!c.wht; $("deNote").value=c.note||""; liveSum();
+};
+$("dvCopy").onclick=function(){ copyText(docText(curDoc),"คัดลอกแล้ว วางส่งในไลน์ได้เลย"); };
+$("bizBtn").onclick=function(){
+  var m={bzName:"name",bzAddr:"addr",bzTax:"tax",bzBranch:"branch",bzTel:"tel",bzMail:"mail",
+         bzBank:"bank",bzAcc:"acc",bzAccName:"accName",bzSign:"sign"};
+  Object.keys(m).forEach(function(k){ $(k).value=biz[m[k]]||""; });
+  if(!biz.name) $("bzName").value=site.brand||"";
+  if(!biz.tel) $("bzTel").value=site.phone||"";
+  $("bzMsg").className="msg"; open($("ovBiz"));
+};
+function saveBiz(){
+  if(!db){ flash($("bzMsg"),"ยังบันทึกไม่ได้","err"); return; }
+  var rec={ name:$("bzName").value.trim(), addr:$("bzAddr").value.trim(), tax:$("bzTax").value.trim(),
+    branch:$("bzBranch").value.trim(), tel:$("bzTel").value.trim(), mail:$("bzMail").value.trim(),
+    bank:$("bzBank").value.trim(), acc:$("bzAcc").value.trim(), accName:$("bzAccName").value.trim(),
+    sign:$("bzSign").value.trim() };
+  flash($("bzMsg"),"กำลังบันทึก…","ok");
+  busy(["bzSave","bzSave2"],true,"กำลังบันทึก…");
+  dbSet("biz/info",rec).then(function(){ busy(["bzSave","bzSave2"],false);
+    biz=rec; close($("ovBiz")); toast("บันทึกแล้ว ✓"); })
+  .catch(function(e){ busy(["bzSave","bzSave2"],false);
+    flash($("bzMsg"),errMsg(e,"บันทึก"),"err"); });
+}
+$("bzSave").onclick=saveBiz; $("bzSave2").onclick=saveBiz;
+
+$("copyCust").onclick=function(){ copyText(location.href.split("#")[0],"คัดลอกลิงก์เว็บแล้ว"); };
+var BK_COLS=["services","steps","payments","links","faq","stats","tips","works","reviews","team","ba","houses"];
+$("bkDl").onclick=function(){
+  var pack={ kcs:1, at:new Date().toISOString(), site:site, biz:biz, docs:docs, data:{} };
+  BK_COLS.forEach(function(c){ pack.data[c]=D[c]||[]; });
+  var txt;
+  try{ txt=JSON.stringify(pack,null,1); }catch(e){ toast("สร้างไฟล์สำรองไม่สำเร็จ"); return; }
+  var name="kcs-backup-"+today()+".json";
+  if(dl&&typeof dl.save==="function"){
+    withTimeout(P(dl.save({filename:name,data:txt})),25000)
+      .then(function(){ toast("บันทึกไฟล์สำรองแล้ว"); })
+      .catch(function(){ blobDl2(txt,name); });
+  } else blobDl2(txt,name);
+};
+function blobDl2(txt,name){
+  try{
+    var bl=new Blob([txt],{type:"application/json;charset=utf-8"});
+    var u=URL.createObjectURL(bl);
+    var a=document.createElement("a"); a.href=u; a.download=name;
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(function(){ try{URL.revokeObjectURL(u);}catch(e){} },5000);
+    toast("ดาวน์โหลดไฟล์สำรองแล้ว");
+  }catch(e){ copyText(txt,"คัดลอกข้อมูลสำรองแล้ว เก็บไว้ในโน้ตได้"); }
+}
+$("bkFile").onchange=function(e){
+  var f=e.target.files&&e.target.files[0]; e.target.value="";
+  if(!f) return;
+  var fr=new FileReader();
+  fr.onerror=function(){ toast("อ่านไฟล์ไม่สำเร็จ"); };
+  fr.onload=function(){
+    var pack;
+    try{ pack=JSON.parse(String(fr.result)); }catch(err){ toast("ไฟล์ไม่ถูกต้อง"); return; }
+    if(!pack||!pack.data){ toast("ไฟล์นี้ไม่ใช่ไฟล์สำรองของเว็บนี้"); return; }
+    var cnt=0; BK_COLS.forEach(function(c){ cnt+=(pack.data[c]||[]).length; });
+    ask("กู้คืนข้อมูล "+cnt+" รายการ"+(pack.docs?(" และเอกสาร "+pack.docs.length+" ฉบับ"):"")+
+      " ทับข้อมูลเดิมที่ซ้ำกัน?","ยืนยันกู้คืน",function(){ doRestore(pack); });
+  };
+  fr.readAsText(f);
+};
+function doRestore(pack){
+  var ops=[];
+  if(pack.site) ops.push(["site/info",pack.site]);
+  if(pack.biz&&pack.biz.name) ops.push(["biz/info",pack.biz]);
+  BK_COLS.forEach(function(c){
+    (pack.data[c]||[]).forEach(function(r){ if(r&&r.id) ops.push([c+"/"+r.id,r]); });
+  });
+  (pack.docs||[]).forEach(function(r){ if(r&&r.id) ops.push(["docs/"+r.id,r]); });
+  if(!ops.length){ toast("ไม่มีข้อมูลในไฟล์"); return; }
+  var i=0, bad=0;
+  toast("กำลังกู้คืน 0/"+ops.length);
+  (function next(){
+    if(i>=ops.length){
+      toast(bad?("กู้คืนเสร็จ ไม่สำเร็จ "+bad+" รายการ"):"กู้คืนข้อมูลเสร็จแล้ว");
+      setTimeout(function(){ location.reload(); },1200);
+      return;
+    }
+    if(i%5===0) toast("กำลังกู้คืน "+i+"/"+ops.length);
+    dbSet(ops[i][0],ops[i][1]).then(function(){ i++; next(); })
+      .catch(function(){ bad++; i++; next(); });
+  })();
+}
+
+function loadDocs(){ renderDocs(); }
+
+/* ================= owner unlock ================= */
+var CODE="0834317893";
+function isUnlocked(){ try{ return localStorage.getItem("kcs_owner")==="1"; }catch(e){ return false; } }
+function setUnlocked(v){ try{ if(v) localStorage.setItem("kcs_owner","1");
+  else localStorage.removeItem("kcs_owner"); }catch(e){} }
+function unlock(){
+  document.body.classList.add("owner");
+  $("btnEdit").style.display="grid";
+  $("lockRow").style.display="block";
+  $("lockBtn").textContent="🔓 ออกจากโหมดเจ้าของ";
+  renderDocs(); loadDocs(); renderLinks(); hideEmptyPublic(); updatePubFlag();
+}
+function relock(){
+  setUnlocked(false); editMode=false;
+  document.body.classList.remove("owner");
+  document.body.classList.remove("edit");
+  $("btnEdit").classList.remove("on");
+  $("btnEdit").style.display="none";
+  $("lockBtn").textContent="🔒 เฉพาะเจ้าของลิงก์ · ใส่รหัสเพื่อแก้ไข";
+  renderLinks(); hideEmptyPublic(); document.body.classList.remove("unpub");
+}
+$("lockBtn").onclick=function(){
+  if(document.body.classList.contains("owner")){ relock(); return; }
+  $("lkCode").value=""; $("lkMsg").className="msg"; open($("ovLock"));
+};
+function tryCode(){
+  if($("lkCode").value.replace(/\D/g,"")===CODE){
+    setUnlocked(true); close($("ovLock")); unlock();
+  } else flash($("lkMsg"),"รหัสไม่ถูกต้อง ลองอีกครั้ง","err");
+}
+$("lkGo").onclick=tryCode;
+$("lkCode").addEventListener("keydown",function(e){ if(e.key==="Enter") tryCode(); });
+
+
+/* ---- closing a sheet must never fail: several independent paths ---- */
+function closeTop(){
+  var list=document.querySelectorAll(".ov.open");
+  if(list.length){ close(list[list.length-1]); return true; }
+  var lb=document.getElementById("lbox");
+  if(lb&&lb.classList.contains("on")){ lbClose(); return true; }
+  return false;
+}
+(function(){
+  function bindDirect(el){
+    if(!el||el.__cb) return;
+    el.__cb=1;
+    el.addEventListener("click",function(ev){
+      ev.preventDefault(); ev.stopPropagation();
+      var ov=el.closest(".ov");
+      if(ov) close(ov); else closeTop();
+    });
+  }
+  Array.prototype.forEach.call(document.querySelectorAll(".ov"),function(o){
+    if(o.id==="lbox") return;
+    if(!o.querySelector(":scope > .ovx")){
+      var x=document.createElement("button");
+      x.className="ovx"; x.setAttribute("data-close","");
+      x.setAttribute("aria-label","ปิด"); x.textContent="✕";
+      o.insertBefore(x,o.firstChild);
+    }
+    var body=o.querySelector(".sheet-body");
+    if(body&&!body.querySelector(".closebig")){
+      var big=document.createElement("button");
+      big.className="closebig"; big.setAttribute("data-close","");
+      big.textContent="ปิดหน้านี้";
+      body.appendChild(big);
+    }
+    Array.prototype.forEach.call(o.querySelectorAll("[data-close]"),bindDirect);
+  });
+  document.addEventListener("keydown",function(e){
+    if(e.key==="Escape") closeTop();
+  });
+  var sy=null, st=null;
+  document.addEventListener("touchstart",function(e){
+    var t=e.target.closest(".sheet-top");
+    if(!t||!e.touches||e.touches.length!==1){ sy=null; return; }
+    sy=e.touches[0].clientY; st=t.closest(".ov");
+  },{passive:true});
+  document.addEventListener("touchend",function(e){
+    if(sy===null) return;
+    var ey=(e.changedTouches&&e.changedTouches[0])?e.changedTouches[0].clientY:sy;
+    var d=ey-sy; var ov=st; sy=null; st=null;
+    if(d>70&&ov) close(ov);
+  },{passive:true});
+})();
+
+
+/* ================= สร้างไฟล์เว็บเวอร์ชันใหม่สำหรับอัปขึ้นโฮสต์ ================= */
+function publicPack(){
+  var pack={ v:Date.now(), site:Object.assign({},DEF,STORE["site/info"]||{}) };
+  delete pack.site.__mod; delete pack.site.__pub;
+  PUBLIC_COLS.forEach(function(c){
+    pack[c]=Object.keys(STORE).filter(function(k){ return k.indexOf(c+"/")===0; })
+      .map(function(k){ var o=Object.assign({},STORE[k]); o.id=o.id||k.slice(c.length+1); return o; })
+      .sort(function(a,b){ return (a.ord||0)-(b.ord||0); });
+  });
+  return pack;
+}
+function buildSiteHTML(){
+  var root=document.documentElement.cloneNode(true);
+  var q=function(sel){ return root.querySelector(sel); };
+  var all=function(sel){ return Array.prototype.slice.call(root.querySelectorAll(sel)); };
+  all(".ovx,.closebig").forEach(function(e){ e.remove(); });
+  var b=root.querySelector("body");
+  if(b){ b.removeAttribute("class"); b.removeAttribute("style"); }
+  var pw=root.querySelector("#pubWarn"); if(pw) pw.removeAttribute("style");
+  all(".ov").forEach(function(e){ e.classList.remove("open"); });
+  var lb=q("#lbox"); if(lb) lb.classList.remove("on","err");
+  var im=q("#lbImg"); if(im) im.removeAttribute("src");
+  var hi=q("#heroImg"); if(hi){ hi.removeAttribute("src"); hi.setAttribute("style","display:none"); }
+  ["list","svcBox","stepBox","payBox","lkBox","faqBox","tipBox","workBox","revBox","teamBox","baBox",
+   "statsBox","estBox","docList","docSum","docChips","chips","vGal","vPills","vBlocks","vCta","hCta",
+   "fCta","bar","info","fFields","printArea","tGal","tCta","pickBox","found","deItems","deSum"]
+   .forEach(function(id){ var e=q("#"+id); if(e) e.innerHTML=""; });
+  var ta=q("#copyTa"); if(ta) ta.textContent="";
+  all("input").forEach(function(e){ e.removeAttribute("value"); });
+  all("textarea").forEach(function(e){ e.textContent=""; });
+  var tg=q("#toast"); if(tg){ tg.textContent=""; tg.className=""; }
+  var lr=q("#lockRow"); if(lr) lr.removeAttribute("style");
+  all("section,.tape,.nav a").forEach(function(e){ e.removeAttribute("style"); });
+  var be=q("#btnEdit"); if(be) be.setAttribute("style","display:none");
+  var pl=q("#pubLog"); if(pl){ pl.textContent=""; pl.setAttribute("style","display:none"); }
+  var dat=q("#kcs-data");
+  if(dat) dat.textContent="\n"+JSON.stringify(publicPack())+"\n";
+  return "<!DOCTYPE html>\n"+root.outerHTML;
+}
+$("pubBtn").onclick=function(){
+  var html;
+  try{ html=buildSiteHTML(); }catch(e){ toast("สร้างไฟล์ไม่สำเร็จ"); return; }
+  var mb=html.length/1048576;
+  ask("สร้างไฟล์เว็บเวอร์ชันใหม่ ขนาดประมาณ "+(mb<0.1?"<0.1":mb.toFixed(1))+" MB\n\n"+
+      "ไฟล์นี้มีเฉพาะข้อมูลที่ลูกค้าเห็น เอกสารและข้อมูลลูกค้าไม่ถูกใส่ลงไป",
+      "ดาวน์โหลดไฟล์", function(){
+    try{
+      var bl=new Blob([html],{type:"text/html;charset=utf-8"});
+      var u=URL.createObjectURL(bl);
+      var a=document.createElement("a"); a.href=u; a.download="index.html";
+      document.body.appendChild(a); a.click(); a.remove();
+      setTimeout(function(){ try{ URL.revokeObjectURL(u); }catch(e){} },6000);
+      STORE.__pub=Date.now(); persist();
+      toast("ได้ไฟล์ index.html แล้ว — อัปขึ้นโฮสต์ทับไฟล์เดิม");
+    }catch(e){ toast("ดาวน์โหลดไม่ได้บนอุปกรณ์นี้ ลองใช้คอมพิวเตอร์"); }
+  });
+};
+$("helpBtn").onclick=function(){ open($("ovHelp")); };
+$("pubGo").onclick=autoPublish;
+$("pubCfgBtn").onclick=function(){
+  var c=cfg();
+  $("pcOwner").value=c.owner||""; $("pcRepo").value=c.repo||"";
+  $("pcBranch").value=c.branch||"main"; $("pcPath").value=c.path||"index.html";
+  $("pcToken").value=c.token||""; $("pcLive").value=c.live||"";
+  $("pcMsg").className="msg"; open($("ovPubCfg"));
+};
+$("pcSave").onclick=function(){
+  var rec={ owner:$("pcOwner").value.trim(), repo:$("pcRepo").value.trim(),
+    branch:($("pcBranch").value.trim()||"main"), path:($("pcPath").value.trim()||"index.html"),
+    token:$("pcToken").value.trim(), live:$("pcLive").value.trim() };
+  if(!rec.owner||!rec.repo||!rec.token){ flash($("pcMsg"),"กรุณากรอกชื่อผู้ใช้ ชื่อ repo และโทเคน","err"); return; }
+  STORE["cfg/pub"]=rec;
+  persist().then(function(){ close($("ovPubCfg")); toast("บันทึกการตั้งค่าแล้ว"); });
+};
+$("pcTest").onclick=function(){
+  var rec={ owner:$("pcOwner").value.trim(), repo:$("pcRepo").value.trim(),
+    branch:($("pcBranch").value.trim()||"main"), path:($("pcPath").value.trim()||"index.html"),
+    token:$("pcToken").value.trim(), live:$("pcLive").value.trim() };
+  if(!rec.owner||!rec.repo||!rec.token){ flash($("pcMsg"),"กรอกให้ครบก่อนทดสอบ","err"); return; }
+  STORE["cfg/pub"]=rec;
+  busy(["pcTest","pcSave"],true,"กำลังทดสอบ…");
+  gh("/git/ref/heads/"+encodeURIComponent(rec.branch)).then(function(){
+    busy(["pcTest","pcSave"],false);
+    flash($("pcMsg"),"เชื่อมต่อได้ ✓ กดบันทึกแล้วใช้ปุ่มเผยแพร่ได้เลย","ok");
+    persist();
+  }).catch(function(e){
+    busy(["pcTest","pcSave"],false);
+    flash($("pcMsg"),(e&&e.message==="TIMEOUT")?"ใช้เวลานานเกินไป ลองใหม่":ghErr(e&&e.status),"err");
+  });
+};
+$("pubNow").onclick=function(){
+  if(cfgReady()){ autoPublish(); return; }
+  var el=document.getElementById("s-doc");
+  if(el&&el.scrollIntoView) el.scrollIntoView({block:"start"});
+  setTimeout(function(){ $("pubCfgBtn").click(); },280);
+};
+$("resetFile").onclick=function(){
+  ask("โหลดข้อมูลจากไฟล์เว็บนี้ ทับข้อมูลที่แก้ไว้ในเครื่อง?","ยืนยัน",function(){
+    STORE=LOCAL.fromFile();
+    persist().then(function(){ toast("โหลดข้อมูลจากไฟล์แล้ว"); setTimeout(function(){ location.reload(); },900); });
+  });
+};
+
+
+/* ================= เผยแพร่ขึ้นเว็บเองในปุ่มเดียว (ผ่าน GitHub) ================= */
+function cfg(){ return STORE["cfg/pub"]||{}; }
+function cfgReady(){ var c=cfg(); return !!(c.owner&&c.repo&&c.token); }
+function b64utf8(str){
+  var bytes=new TextEncoder().encode(str), bin="", CH=0x8000;
+  for(var i=0;i<bytes.length;i+=CH){
+    bin+=String.fromCharCode.apply(null,bytes.subarray(i,Math.min(i+CH,bytes.length)));
+  }
+  return btoa(bin);
+}
+function ghErr(st){
+  if(st===401||st===403) return "โทเคนไม่ถูกต้องหรือหมดอายุ — สร้างโทเคนใหม่แล้ววางใหม่";
+  if(st===404) return "ไม่พบที่เก็บไฟล์ — ตรวจชื่อผู้ใช้ GitHub, ชื่อ repo และ branch อีกครั้ง";
+  if(st===409||st===422) return "มีการแก้ไขจากที่อื่นอยู่ กดเผยแพร่อีกครั้ง";
+  if(st===413) return "ไฟล์ใหญ่เกินไป ลบรูปที่ไม่ใช้ออกบ้าง";
+  if(!st) return "ติดต่อ GitHub ไม่ได้ — ตรวจสัญญาณเน็ตแล้วลองใหม่";
+  return "เผยแพร่ไม่สำเร็จ (รหัส "+st+")";
+}
+function gh(path,opts){
+  var c=cfg();
+  opts=opts||{};
+  var url="https://api.github.com/repos/"+encodeURIComponent(c.owner)+"/"+encodeURIComponent(c.repo)+path;
+  var init={ method:opts.method||"GET",
+    headers:{ "Authorization":"Bearer "+c.token, "Accept":"application/vnd.github+json",
+              "X-GitHub-Api-Version":"2022-11-28" } };
+  if(opts.body){ init.headers["Content-Type"]="application/json"; init.body=JSON.stringify(opts.body); }
+  return withTimeout(fetch(url,init).then(function(r){
+    if(!r.ok){ var e=new Error("GH"); e.status=r.status; throw e; }
+    return r.json();
+  }),45000);
+}
+function pubStep(msg){
+  var el=document.getElementById("pubLog");
+  if(el){ el.style.display="block"; el.textContent=msg; }
+  toast(msg);
+}
+function autoPublish(){
+  if(!cfgReady()){ open($("ovPubCfg")); toast("ตั้งค่าการเผยแพร่ครั้งแรกก่อน"); return; }
+  var c=cfg(), html;
+  try{ html=buildSiteHTML(); }catch(e){ toast("สร้างไฟล์ไม่สำเร็จ"); return; }
+  var mb=html.length/1048576;
+  if(mb>60){ toast("ไฟล์ใหญ่เกิน 60 MB เผยแพร่ไม่ได้ ลบรูปบางส่วนออก"); return; }
+  var branch=c.branch||"main", path=c.path||"index.html";
+  var content;
+  try{ content=b64utf8(html); }catch(e){ toast("แปลงไฟล์ไม่สำเร็จ"); return; }
+  busy(["pubGo","pubNow","pubBtn"],true,"กำลังเผยแพร่…");
+  var fail=function(e){
+    busy(["pubGo","pubNow","pubBtn"],false);
+    var m=(e&&e.message==="TIMEOUT")?"ใช้เวลานานเกินไป ลองใหม่อีกครั้ง":ghErr(e&&e.status);
+    pubStep("❌ "+m);
+  };
+  pubStep("1/5 กำลังเชื่อมต่อ GitHub…");
+  gh("/git/ref/heads/"+encodeURIComponent(branch)).then(function(ref){
+    var baseSha=ref&&ref.object&&ref.object.sha;
+    if(!baseSha) throw new Error("NOREF");
+    pubStep("2/5 อ่านข้อมูลเว็บเดิม…");
+    return gh("/git/commits/"+baseSha).then(function(cm){
+      pubStep("3/5 กำลังอัปไฟล์ ("+(mb<0.1?"<0.1":mb.toFixed(1))+" MB)…");
+      return gh("/git/blobs",{method:"POST",body:{content:content,encoding:"base64"}})
+      .then(function(bl){
+        pubStep("4/5 กำลังบันทึก…");
+        return gh("/git/trees",{method:"POST",body:{ base_tree:cm.tree.sha,
+          tree:[{path:path,mode:"100644",type:"blob",sha:bl.sha}] }});
+      })
+      .then(function(tr){
+        return gh("/git/commits",{method:"POST",body:{
+          message:"อัปเดตเว็บ "+new Date().toLocaleString("th-TH"),
+          tree:tr.sha, parents:[baseSha] }});
+      })
+      .then(function(nc){
+        pubStep("5/5 กำลังเผยแพร่…");
+        return gh("/git/refs/heads/"+encodeURIComponent(branch),
+          {method:"PATCH",body:{sha:nc.sha,force:false}});
+      });
+    });
+  }).then(function(){
+    busy(["pubGo","pubNow","pubBtn"],false);
+    STORE.__pub=Date.now(); persist();
+    pubStep("✅ เผยแพร่สำเร็จ — เว็บจะอัปเดตภายใน 1-2 นาที");
+  }).catch(fail);
+}
+
+/* ================= boot ================= */
+renderSite();
+var fin=false;
+var t=setTimeout(function(){ if(!fin){ fin=true; renderAll(); } },10000);
+
+LOCAL.start().then(function(){
+  fin=true; clearTimeout(t);
+  var v=STORE["site/info"];
+  if(v&&(v.brand||v.title)) site=Object.assign({},DEF,v);
+  Object.keys(D).forEach(function(col){
+    D[col]=Object.keys(STORE).filter(function(k){ return k.indexOf(col+"/")===0; })
+      .map(function(k){ var o=Object.assign({},STORE[k]); o.id=o.id||k.slice(col.length+1); return o; })
+      .filter(function(o){ return o.id; });
+    sortA(D[col]);
+  });
+  docs=Object.keys(STORE).filter(function(k){ return k.indexOf("docs/")===0; })
+    .map(function(k){ var o=Object.assign({},STORE[k]); o.id=o.id||k.slice(5); return o; });
+  sortA(docs);
+  var bz=STORE["biz/info"]; if(bz&&bz.name) biz=bz;
+  renderSite(); renderAll(); openFromHash();
+  canEdit=true;
+  if(isUnlocked()) unlock(); else $("lockRow").style.display="block";
+}).catch(function(e){
+  fin=true; clearTimeout(t);
+  renderSite(); renderAll();
+  canEdit=true; $("lockRow").style.display="block";
+  toast("เปิดข้อมูลในเครื่องไม่ได้ กำลังแสดงข้อมูลจากไฟล์เว็บ");
+});
+
+})();
+</script>
+</body>
+</html>
